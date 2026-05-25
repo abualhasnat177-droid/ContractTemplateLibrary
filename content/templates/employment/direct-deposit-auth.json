@@ -1,0 +1,153 @@
+{
+  "id": "direct-deposit-auth",
+  "slug": "direct-deposit-auth",
+  "category": "employment",
+  "subcategory": "Onboarding Documents",
+  "title": "Direct Deposit Authorization",
+  "description": "Authorization form to set up direct payroll deposit into the employee's designated checking or savings accounts.",
+  "whatsCovered": [
+    "Authorization for electronic funds transfers (EFT)",
+    "Checking and savings account routing details",
+    "Allocation options (100% to single account or percentage split)",
+    "Procedure for correcting payment deposit errors",
+    "Authorization termination guidelines"
+  ],
+  "whenToUse": "Use this payroll form during employee onboarding to gather bank account numbers, routing numbers, and deposit splits.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "bank_name",
+      "label": "Bank Institution Name",
+      "type": "text",
+      "placeholder": "e.g. Chase Bank",
+      "required": true,
+      "group": "Bank Details"
+    },
+    {
+      "id": "account_type",
+      "label": "Account Type",
+      "type": "select",
+      "options": [
+        "Checking",
+        "Savings",
+        "Split Account"
+      ],
+      "defaultValue": "Checking",
+      "required": true,
+      "group": "Bank Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "DIRECT DEPOSIT AUTHORIZATION",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Direct Deposit Authorization. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "bank_auth",
+      "heading": "2. Electronic Funds Transfer",
+      "body": "Employee authorizes payroll funds to be sent directly to {bank_name} under account type: {account_type}. This authorization remains in effect until terminated in writing.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "direct-deposit",
+    "payroll",
+    "onboarding",
+    "bank",
+    "directdeposit"
+  ]
+}

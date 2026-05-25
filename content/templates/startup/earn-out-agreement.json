@@ -1,0 +1,146 @@
+{
+  "id": "earn-out-agreement",
+  "slug": "earn-out-agreement",
+  "category": "startup",
+  "subcategory": "Exits & Acquisitions",
+  "title": "Acquisition Earn-Out Agreement",
+  "description": "Details additional post-acquisition cash payments to founders contingent on meeting future revenue or user milestones.",
+  "whatsCovered": [
+    "Calculation of post-closing financial performance metrics",
+    "Earn-out payout targets and payment dates",
+    "Buyer obligation to run the startup in good faith",
+    "Audit and dispute rights for financial reports",
+    "Acceleration of earn-out on subsequent sale of buyer"
+  ],
+  "whenToUse": "Use this earn-out agreement when there is a valuation gap between the buyer and selling founders to link payouts to future performance.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "founder_name",
+      "label": "Selling Founder Name",
+      "type": "text",
+      "placeholder": "e.g. Tony Stark",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "buyer_name",
+      "label": "Buyer Company",
+      "type": "text",
+      "placeholder": "e.g. Stark Industries Acquisitions",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "milestone_revenue",
+      "label": "Target Revenue Milestone ($)",
+      "type": "currency",
+      "placeholder": "e.g. 5,000,000.00",
+      "required": true,
+      "group": "Earn-Out Details"
+    },
+    {
+      "id": "earnout_payment",
+      "label": "Earn-Out Payout ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,000,000.00",
+      "required": true,
+      "group": "Earn-Out Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ACQUISITION EARN-OUT AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Acquisition Earn-Out Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "earnout_milestones",
+      "heading": "2. Earn-Out Performance Milestones",
+      "body": "Buyer {buyer_name} shall pay Founder {founder_name} an earn-out sum of {earnout_payment} contingent on startup reaching the target of {milestone_revenue}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is an earn-out agreement?",
+      "answer": "It is an acquisition payment method where the buyer pays part of the purchase price only if the acquired business hits specific financial goals in the future."
+    },
+    {
+      "question": "What is the biggest risk of an earn-out?",
+      "answer": "The buyer might change management or reduce the budget, making it impossible for the founders to hit the milestone (this template requires the buyer to run the business in good faith)."
+    }
+  ],
+  "tags": [
+    "earnout",
+    "acquisition",
+    "exit",
+    "milestone",
+    "payout"
+  ]
+}

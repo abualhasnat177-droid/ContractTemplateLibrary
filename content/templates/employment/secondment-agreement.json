@@ -1,0 +1,148 @@
+{
+  "id": "secondment-agreement",
+  "slug": "secondment-agreement",
+  "category": "employment",
+  "subcategory": "Specialized Employment Types",
+  "title": "Secondment Agreement",
+  "description": "Agreement detailing the temporary transfer of an employee to an affiliate company or international client.",
+  "whatsCovered": [
+    "Duration of secondment and target host company",
+    "Preservation of salary, benefits, and home company status",
+    "Host company workplace rules and supervision",
+    "IP rights in works created during secondment (assigned to host or home)",
+    "Return process to home job post-secondment"
+  ],
+  "whenToUse": "Use this agreement when loaning an employee to a partner firm or overseas subsidiary for a temporary period.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "host_company",
+      "label": "Host Company Name",
+      "type": "text",
+      "placeholder": "e.g. Global Tech Partners Ltd",
+      "required": true,
+      "group": "Secondment Details"
+    },
+    {
+      "id": "secondment_months",
+      "label": "Secondment Duration (Months)",
+      "type": "number",
+      "placeholder": "e.g. 6",
+      "required": true,
+      "group": "Secondment Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "SECONDMENT AGREEMENT",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Secondment Agreement. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "secondment_host",
+      "heading": "2. Secondment Timeline",
+      "body": "Employee is seconded to Host Company {host_company} for a duration of {secondment_months} months. Employment contract with home Company remains active.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "secondment",
+    "expat",
+    "affiliate",
+    "temporary",
+    "employment"
+  ]
+}

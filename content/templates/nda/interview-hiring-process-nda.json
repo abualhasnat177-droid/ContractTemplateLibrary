@@ -1,0 +1,163 @@
+{
+  "id": "interview-hiring-process-nda",
+  "slug": "interview-hiring-process-nda",
+  "category": "nda",
+  "subcategory": "Situation-Specific",
+  "title": "Interview / Hiring Process NDA",
+  "description": "Signed by job candidates prior to interviewing, protecting sensitive pre-release products or company codebases discussed.",
+  "whatsCovered": [
+    "Unreleased software features and code bases",
+    "Company financial targets and roadmap schedules",
+    "Prohibition on sharing technical interview challenges",
+    "Standard confidentiality exemptions",
+    "Immediate return of trial project details"
+  ],
+  "whenToUse": "Use this NDA when interviewing job candidates for roles that require reviewing your unreleased software, product roadmaps, or private repositories.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "candidate_role",
+      "label": "Target Candidate Role",
+      "type": "text",
+      "placeholder": "e.g. Senior Software Architect",
+      "required": true,
+      "group": "Candidate Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INTERVIEW / HIRING PROCESS NDA",
+      "body": "This Unilateral Confidentiality Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {disclosing_party}, located at {disclosing_address} (\"Discloser\"), and {receiving_party}, located at {receiving_address} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information includes all proprietary technical, financial, or business information disclosed by Discloser to Recipient, whether in writing, orally, or visually, including but not limited to trade secrets, blueprints, algorithms, or client rosters.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Obligations",
+      "body": "Recipient agrees to hold Discloser's Confidential Information in trust and secrecy. Recipient shall not copy, disclose, or use the information for any purpose other than to evaluate a prospective business relationship with Discloser. This obligation shall survive for {term_years} years from the Effective Date.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "interview_questions",
+      "heading": "3. Non-Disclosure of Interview Process",
+      "body": "Candidate shall not publish, share, or post any details of the technical interview questions, architecture challenges, or hiring process on platforms such as Glassdoor or personal blogs.",
+      "optional": true,
+      "optionalLabel": "Include Interview Question Ban?",
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "4. Exclusions",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach, (b) was already in Recipient's possession, (c) is independently developed, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "Can candidates talk about their interview experience on Glassdoor?",
+      "answer": "They can discuss the general interview atmosphere, but this NDA strictly prohibits them from leaking the exact code challenges or secret product roadmaps they reviewed."
+    },
+    {
+      "question": "What happens to the homework trial project they submit?",
+      "answer": "This template confirms that company-specific trials or coding exercises are proprietary and cannot be published or shared online."
+    }
+  ],
+  "tags": [
+    "interview",
+    "hiring",
+    "hr",
+    "candidate",
+    "nda"
+  ]
+}

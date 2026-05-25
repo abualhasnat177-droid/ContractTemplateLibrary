@@ -1,0 +1,146 @@
+{
+  "id": "webinar-cohost-agreement",
+  "slug": "webinar-cohost-agreement",
+  "category": "creator",
+  "subcategory": "Digital Products & Courses",
+  "title": "Webinar Co-Host Agreement",
+  "description": "An agreement detailing webinar registration splits, email list collections, and sales pitch pitches.",
+  "whatsCovered": [
+    "Definition of creative webinar pitches, registration lists, and sales commission splits",
+    "Intellectual property licensing, usage rights, and exclusivity",
+    "Payment milestones, brand payouts, and affiliate commissions",
+    "Content moderation, FTC disclosures compliance, and safety rules",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when establishing guidelines for webinar pitches, registration lists, and sales commission splits to ensure legal safety for intellectual property and payments.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Creator / Licensor Name",
+      "type": "text",
+      "placeholder": "e.g. Alexa Green Influencer LLC",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Creator Mailing Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Prose Lane, Portland, OR 97201",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Brand / Licensee Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Cosmetic Group Inc.",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Brand Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "pitch_format",
+      "label": "Webinar Agenda & Pitch Format",
+      "type": "textarea",
+      "placeholder": "e.g. 45-minute educational content followed by a 15-minute pitch for the program...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "sales_commission_split",
+      "label": "Course Sales Split (%)",
+      "type": "text",
+      "placeholder": "e.g. 40% commission on course sales tracked through custom checkout link",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "WEBINAR CO-HOST AGREEMENT",
+      "body": "This Creator Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Creator\"), and {client_name}, located at {client_address} (\"Brand\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Creative Deliverables & Milestones",
+      "body": "Cohosts shall present content and pitch courses according to: {pitch_format}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment and Sponsorship Fees",
+      "body": "Sales generated during the webinar shall be divided according to the split: {sales_commission_split}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "licensing",
+      "heading": "3. Intellectual Property and FTC Disclosures",
+      "body": "Both hosts shall receive equal rights to upload the registration email list to their CRMs.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "influencer-agreement",
+    "ugc-creator-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Are FTC disclosures mandatory under this contract?",
+      "answer": "Yes. Both parties are legally required to ensure all sponsored posts include clear, conspicuous hashtags such as #ad or #sponsored."
+    },
+    {
+      "question": "Who owns the video files after campaign completion?",
+      "answer": "The creator retains copyright in all original files, granting the brand a licensing right to share and host the assets."
+    }
+  ],
+  "tags": [
+    "creator",
+    "contract",
+    "influencer",
+    "sale"
+  ]
+}

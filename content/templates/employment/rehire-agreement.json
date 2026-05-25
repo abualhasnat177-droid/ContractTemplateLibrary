@@ -1,0 +1,151 @@
+{
+  "id": "rehire-agreement",
+  "slug": "rehire-agreement",
+  "category": "employment",
+  "subcategory": "Specialized Employment Types",
+  "title": "Rehire Agreement",
+  "description": "Re-employment contract specifying seniority restoration, adjusted vesting dates, and prior IP integration.",
+  "whatsCovered": [
+    "Restoration of seniority rights and benefit levels",
+    "Prior intellectual property assignments verification",
+    "Adjusted stock option vesting start dates",
+    "New job responsibilities and salary structures",
+    "Termination of prior severance obligations"
+  ],
+  "whenToUse": "Use this contract when rehiring a former employee to define if their prior years of service affect their vacation rates and option vesting.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "prior_exit_date",
+      "label": "Prior Departure Date",
+      "type": "date",
+      "required": true,
+      "group": "Prior Service"
+    },
+    {
+      "id": "seniority_restored",
+      "label": "Restore Seniority?",
+      "type": "select",
+      "options": [
+        "Yes - Full Restoration",
+        "No - Treat as New Hire"
+      ],
+      "defaultValue": "No - Treat as New Hire",
+      "required": true,
+      "group": "Prior Service"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "REHIRE AGREEMENT",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Rehire Agreement. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "rehire_seniority_rules",
+      "heading": "2. Seniority Status",
+      "body": "Employee is rehired following prior departure on {prior_exit_date}. Seniority and option vesting adjustments: {seniority_restored}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "rehire",
+    "seniority",
+    "vesting",
+    "hr",
+    "employment"
+  ]
+}

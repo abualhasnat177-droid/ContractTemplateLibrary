@@ -1,0 +1,140 @@
+{
+  "id": "beta-software-testing",
+  "slug": "beta-software-testing",
+  "category": "vendor",
+  "subcategory": "Technology & SaaS",
+  "title": "Beta Software Testing Agreement",
+  "description": "Agreement for developers testing pre-release software, protecting feature designs and collecting bug reports.",
+  "whatsCovered": [
+    "Early software access grant and testing scopes",
+    "Strict confidentiality: no screenshots, reviews, or stream posts",
+    "Ownership of tester feedback and system bug reports",
+    "Disclaimer of software stability (pre-release crash warnings)",
+    "Automatic expiration of beta access on official launch date"
+  ],
+  "whenToUse": "Use this beta test agreement to invite developers to test unreleased software builds and protect system interface details.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "EU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Purchasing Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "vendor_name",
+      "label": "Vendor / Supplier Name",
+      "type": "text",
+      "placeholder": "e.g. Globex Manufacturing Solutions",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "vendor_address",
+      "label": "Vendor Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industrial Pkwy, Cleveland, OH",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "beta_software_title",
+      "label": "Beta Software Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Studio Beta Build v5.1",
+      "required": true,
+      "group": "App Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "BETA SOFTWARE TESTING AGREEMENT",
+      "body": "This procurement agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {vendor_name}, located at {vendor_address} (\"Vendor\" or \"Supplier\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_provisions",
+      "heading": "1. Scope of Services & Materials",
+      "body": "This agreement sets out the supply specifications, technology licensing, financial payment terms, or compliance frameworks for Beta Software Testing Agreement. Vendor agrees to perform services or deliver goods matching the quality standards set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "beta_test_secrecy",
+      "heading": "2. Software Secrecy Covenants",
+      "body": "Tester agrees to test the pre-release software: {beta_software_title}. Tester is barred from posting screenshots, stream recordings, or reviews.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance_checks",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Both parties agree to handle transactions in compliance with local commercial codes. Disputes shall be resolved through binding arbitration under the rules of the American Arbitration Association.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "vendor-agreement",
+    "service-level-agreement"
+  ],
+  "faq": [
+    {
+      "question": "How do I customize this procurement template?",
+      "answer": "You can edit this template online and append custom schedules detailing material spec sheets or IT SLA metrics."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by authorized corporate procurement officers, it becomes a legally binding commercial contract."
+    }
+  ],
+  "tags": [
+    "beta",
+    "software",
+    "tester",
+    "bug-report",
+    "saas"
+  ]
+}

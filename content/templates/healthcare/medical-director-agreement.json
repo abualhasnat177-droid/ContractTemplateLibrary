@@ -1,0 +1,131 @@
+{
+  "id": "medical-director-agreement",
+  "slug": "medical-director-agreement",
+  "category": "healthcare",
+  "title": "Medical Director Agreement",
+  "description": "An administrative contract appointing a licensed physician to serve as the medical director overseeing clinical compliance, safety, and protocols.",
+  "whatsCovered": [
+    "Administrative oversight, staff credentialing, and clinical audit tasks",
+    "Appointed physician licensing and board certification rules",
+    "Director stipend payment schedules (complying with Stark/AKS laws)",
+    "Time allocation specifications (typically 10-20 hours monthly)",
+    "HIPAA data protection and practice safety covenants"
+  ],
+  "whenToUse": "Use this agreement when hiring a physician to oversee administrative compliance and set clinical protocols for an urgent care center, medspa, or nursing home.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-16",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "facility_name",
+      "label": "Facility / Clinic Name",
+      "type": "text",
+      "placeholder": "e.g. Oakridge Recovery Center LLC",
+      "required": true,
+      "group": "Facility Info"
+    },
+    {
+      "id": "director_name",
+      "label": "Medical Director Full Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton",
+      "required": true,
+      "group": "Director Info"
+    },
+    {
+      "id": "monthly_stipend",
+      "label": "Monthly Director Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 5,000.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MEDICAL DIRECTOR AGREEMENT",
+      "body": "This Medical Director Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {facility_name} (\"Facility\"), and {director_name} (\"Medical Director\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "appointment",
+      "heading": "1. Appointment & Duties",
+      "body": "Facility hereby appoints Medical Director to perform clinical advisory, administrative supervision, and compliance audit tasks. Medical Director shall ensure that Facility's patient protocols comply with federal and state regulations.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Administrative Stipend",
+      "body": "Facility shall pay Medical Director a monthly stipend of {monthly_stipend} for the administrative services. Both parties represent that this fee reflects Fair Market Value and is not linked to patient referrals.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance",
+      "heading": "3. Stark and Anti-Kickback Compliance",
+      "body": "This Agreement is intended to comply with the Stark Law and federal Anti-Kickback Statutes. The compensation is set in advance, does not take into account the volume or value of referrals, and represents a safe harbor agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "insurance",
+      "heading": "4. Director Malpractice Liability Coverage",
+      "body": "Facility shall maintain, at its sole cost, administrative liability insurance covering the Medical Director's advisory and supervision activities on behalf of the Facility.",
+      "optional": true,
+      "optionalLabel": "Provide Administrative Liability Insurance?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "independent-contractor-clinical",
+    "group-practice-associate"
+  ],
+  "faq": [
+    {
+      "question": "Why does this contract mention Stark and Anti-Kickback compliance?",
+      "answer": "Federal health regulations (Stark Law/AKS) ban clinics from paying physicians in exchange for referring patients. The medical director stipend must represent Fair Market Value for actual administrative hours worked."
+    },
+    {
+      "question": "Does this cover direct patient treatment?",
+      "answer": "No. This agreement covers only administrative oversight and protocol setting. Direct patient care requires a separate clinical contract."
+    }
+  ],
+  "tags": [
+    "director",
+    "medicaldirector",
+    "compliance",
+    "admin",
+    "physician"
+  ],
+  "subcategory": "Clinical / Practice"
+}

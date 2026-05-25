@@ -1,0 +1,146 @@
+{
+  "id": "creator-llc-operating",
+  "slug": "creator-llc-operating",
+  "category": "creator",
+  "subcategory": "Misc Creator Legal",
+  "title": "Creator LLC Operating Agreement",
+  "description": "An operating agreement for a creator LLC defining member equity, channel asset transfers, and expense approvals.",
+  "whatsCovered": [
+    "Definition of creative LLC structures, member equity shares, and channel asset transfers",
+    "Intellectual property licensing, usage rights, and exclusivity",
+    "Payment milestones, brand payouts, and affiliate commissions",
+    "Content moderation, FTC disclosures compliance, and safety rules",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when establishing guidelines for LLC structures, member equity shares, and channel asset transfers to ensure legal safety for intellectual property and payments.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Creator / Licensor Name",
+      "type": "text",
+      "placeholder": "e.g. Alexa Green Influencer LLC",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Creator Mailing Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Prose Lane, Portland, OR 97201",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Brand / Licensee Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Cosmetic Group Inc.",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Brand Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "members_equity_schedule",
+      "label": "LLC Members & Equity Shares",
+      "type": "textarea",
+      "placeholder": "e.g. Member X: 70% equity (primary talent), Member Y: 30% equity (operations manager)...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "expense_approval_limit",
+      "label": "Manager Expense Approval Limit ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CREATOR LLC OPERATING AGREEMENT",
+      "body": "This Creator Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Creator\"), and {client_name}, located at {client_address} (\"Brand\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Creative Deliverables & Milestones",
+      "body": "Members establish LLC rules and set the manager expense approval limit to: {expense_approval_limit}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment and Sponsorship Fees",
+      "body": "LLC profits and losses shall be distributed according to: {members_equity_schedule}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "licensing",
+      "heading": "3. Intellectual Property and FTC Disclosures",
+      "body": "All channel logins, YouTube accounts, domain records, and camera equipment belong to the LLC.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "influencer-agreement",
+    "ugc-creator-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Are FTC disclosures mandatory under this contract?",
+      "answer": "Yes. Both parties are legally required to ensure all sponsored posts include clear, conspicuous hashtags such as #ad or #sponsored."
+    },
+    {
+      "question": "Who owns the video files after campaign completion?",
+      "answer": "The creator retains copyright in all original files, granting the brand a licensing right to share and host the assets."
+    }
+  ],
+  "tags": [
+    "creator",
+    "contract",
+    "influencer",
+    "agreement"
+  ]
+}

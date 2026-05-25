@@ -1,0 +1,136 @@
+{
+  "id": "legal-consulting-agreement",
+  "slug": "legal-consulting-agreement",
+  "category": "consulting",
+  "subcategory": "Specialist Consulting",
+  "title": "Legal Consulting Agreement (Non-Attorney)",
+  "description": "Non-attorney consulting services agreement, clarifying that no attorney-client relationship is established and no legal advice is being given.",
+  "whatsCovered": [
+    "Strict disclaimer: no attorney-client privilege created",
+    "Services are regulatory or strategic, not legal representation",
+    "Consultant is not acting as an attorney under state bar rules",
+    "Confidentiality and protection of proprietary materials",
+    "Limitation of consultant liability for policy outcomes"
+  ],
+  "whenToUse": "Use this agreement when hiring or working as a regulatory, contract management, or policy advisor who is NOT acting as legal counsel.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Company/Individual",
+      "type": "text",
+      "placeholder": "e.g. Apex Corporation",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Street Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Summit Blvd, Suite 400, Chicago, IL",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Horizon Growth Advisors",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Street Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Innovation Way, Austin, TX",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "legal_topic_scope",
+      "label": "Regulatory Consulting Scope",
+      "type": "text",
+      "placeholder": "e.g. Contract Management Workflow Optimization",
+      "required": true,
+      "group": "Scope"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Illinois",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "LEGAL CONSULTING AGREEMENT (NON-ATTORNEY)",
+      "body": "This professional services agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "1. Independent Contractor Status",
+      "body": "Provider acts solely as an independent contractor. Nothing in this Agreement shall construct an employer-employee relationship, partnership, or joint venture between the parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_attorney_disclaimer",
+      "heading": "2. Strict Legal Disclaimer",
+      "body": "Provider is conducting consulting regarding: {legal_topic_scope}. Client acknowledges that Provider is not a licensed attorney, does not practice law in this jurisdiction, and that no attorney-client privilege is created. Communications are NOT legal advice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "Confidentiality & Trade Secrecy",
+      "body": "Both parties agree to treat all business plans, customer metrics, financial spreadsheets, and personal disclosures shared during the engagement as strictly confidential.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "coaching-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this the same as hiring an attorney?",
+      "answer": "No. This template explicitly states that the consultant is not acting as your lawyer, meaning the attorney-client privilege does not apply to your communications."
+    }
+  ],
+  "tags": [
+    "regulatory",
+    "non-attorney",
+    "consulting",
+    "policy",
+    "legal"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "real-estate-consulting-agreement",
+  "slug": "real-estate-consulting-agreement",
+  "category": "consulting",
+  "subcategory": "Specialist Consulting",
+  "title": "Real Estate Consulting Agreement",
+  "description": "Property portfolio management, asset advisory, and market research consulting.",
+  "whatsCovered": [
+    "Property portfolio valuations and market analysis logs",
+    "Exclusion of broker services (consultant is not representing as transactional agent)",
+    "Conflict of interest: consultant must disclose personal property stakes",
+    "Confidentiality of client acquisition targets",
+    "Payment schedules (fixed fee or hourly rates)"
+  ],
+  "whenToUse": "Use this contract when working with a real estate advisor to compile market studies, evaluate building investments, or audit lease portfolios.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Company/Individual",
+      "type": "text",
+      "placeholder": "e.g. Apex Corporation",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Street Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Summit Blvd, Suite 400, Chicago, IL",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Horizon Growth Advisors",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Street Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Innovation Way, Austin, TX",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "real_estate_portfolio",
+      "label": "Consulting Target Portfolio",
+      "type": "text",
+      "placeholder": "e.g. Commercial Office Space Lease Portfolio",
+      "required": true,
+      "group": "Scope"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Illinois",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "REAL ESTATE CONSULTING AGREEMENT",
+      "body": "This professional services agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "1. Independent Contractor Status",
+      "body": "Provider acts solely as an independent contractor. Nothing in this Agreement shall construct an employer-employee relationship, partnership, or joint venture between the parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "property_advisory",
+      "heading": "2. Real Estate Portfolio Auditing",
+      "body": "Provider shall perform strategic market analysis and portfolio research regarding: {real_estate_portfolio}. Client confirms Provider is acting as advisor only, not as a transaction broker.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "Confidentiality & Trade Secrecy",
+      "body": "Both parties agree to treat all business plans, customer metrics, financial spreadsheets, and personal disclosures shared during the engagement as strictly confidential.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "coaching-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom annexes for specific consulting milestones or agendas."
+    },
+    {
+      "question": "Is this agreement suitable for international clients?",
+      "answer": "Yes, the contract includes governing law and independent contractor clauses that are easily adaptable for cross-border coaching or consulting."
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "broker",
+    "portfolio",
+    "consulting",
+    "property"
+  ]
+}

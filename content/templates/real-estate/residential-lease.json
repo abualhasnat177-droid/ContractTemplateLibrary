@@ -1,0 +1,169 @@
+{
+  "id": "residential-lease",
+  "slug": "residential-lease",
+  "category": "real-estate",
+  "title": "Residential Lease Agreement",
+  "description": "A standard residential lease contract setting term duration, rent payments, security deposits, utility guidelines, and maintenance expectations.",
+  "whatsCovered": [
+    "Definition of premises, landlord, and tenant parties",
+    "Lease term duration (fixed term or month-to-month)",
+    "Monthly rent rate, due dates, and late payment penalties",
+    "Security deposit amount and terms of return",
+    "Landlord maintenance obligations and tenant rules"
+  ],
+  "whenToUse": "Use this agreement when renting out a residential house, apartment, condo, or bedroom to a tenant.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-17",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "landlord_name",
+      "label": "Landlord Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. John Smith Property Group",
+      "required": true,
+      "group": "Landlord Details"
+    },
+    {
+      "id": "landlord_address",
+      "label": "Landlord Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Real Estate Rd, Miami, FL 33130",
+      "required": true,
+      "group": "Landlord Details"
+    },
+    {
+      "id": "tenant_name",
+      "label": "Tenant Full Name(s)",
+      "type": "text",
+      "placeholder": "e.g. Alice Miller",
+      "required": true,
+      "group": "Tenant Details"
+    },
+    {
+      "id": "premises_address",
+      "label": "Property/Premises Address",
+      "type": "text",
+      "placeholder": "e.g. 789 Ocean Blvd, Apt 5A, Miami, FL 33139",
+      "required": true,
+      "group": "Property Details"
+    },
+    {
+      "id": "lease_start",
+      "label": "Lease Start Date",
+      "type": "date",
+      "required": true,
+      "group": "Lease Dates"
+    },
+    {
+      "id": "lease_end",
+      "label": "Lease End Date",
+      "type": "date",
+      "required": true,
+      "group": "Lease Dates"
+    },
+    {
+      "id": "monthly_rent",
+      "label": "Monthly Rent Amount ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,200.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "security_deposit",
+      "label": "Security Deposit Amount ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,200.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing State",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "RESIDENTIAL LEASE AGREEMENT",
+      "body": "This Residential Lease Agreement (the \"Lease\") is entered into by and between {landlord_name}, located at {landlord_address} (\"Landlord\"), and {tenant_name} (\"Tenant\"). Landlord leases to Tenant, and Tenant rents from Landlord, the residential premises located at: {premises_address} (the \"Premises\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "term",
+      "heading": "1. Term",
+      "body": "The Lease shall commence on {lease_start} and shall expire on {lease_end} (the \"Term\"). Upon expiration, the Lease shall not automatically renew unless a written extension is executed by both Parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "rent",
+      "heading": "2. Rent",
+      "body": "Tenant agrees to pay Landlord a monthly rent of {monthly_rent}, due in advance on the 1st day of each calendar month. Rent shall be paid via electronic bank transfer or check.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "deposit",
+      "heading": "3. Security Deposit",
+      "body": "Upon signing this Lease, Tenant shall pay Landlord a security deposit of {security_deposit}. Landlord shall hold the security deposit in a separate interest-bearing account and return it to Tenant, minus any allowable deductions for damages beyond normal wear and tear, within 30 days of the Tenant vacating the Premises.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "pets",
+      "heading": "4. Pets Policy",
+      "body": "Tenant shall be permitted to keep up to two common household pets (dogs/cats under 40 lbs) on the Premises, subject to a monthly non-refundable pet fee of $50.00.",
+      "optional": true,
+      "optionalLabel": "Allow pets on the premises?",
+      "enabledByDefault": false,
+      "riskLevel": "low"
+    },
+    {
+      "id": "sublease",
+      "heading": "5. Subleasing Restriction",
+      "body": "Tenant shall not sublease, assign, or transfer any part of the Premises without Landlord's prior written approval, which may be withheld at Landlord's sole discretion.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "6. Governing Law",
+      "body": "This Lease shall be governed and interpreted according to the laws of the State/Country of {governing_state}, including all tenant-landlord protection statutes.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release"
+  ],
+  "faq": [
+    {
+      "question": "Can the landlord enter the apartment at any time?",
+      "answer": "No. Most jurisdictions require landlords to give at least 24 or 48 hours' written notice before entering the property, except in case of emergencies."
+    },
+    {
+      "question": "What is security deposit protection?",
+      "answer": "Landlords are legally obligated to return your deposit after you move out, unless there is actual damage to the premises that exceeds normal wear and tear."
+    }
+  ],
+  "tags": [
+    "lease",
+    "realestate",
+    "rental",
+    "apartment",
+    "tenant"
+  ],
+  "subcategory": "Landlord & Tenant"
+}

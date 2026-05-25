@@ -1,0 +1,146 @@
+{
+  "id": "patient-financial-responsibility",
+  "slug": "patient-financial-responsibility",
+  "category": "healthcare",
+  "subcategory": "Patient-Facing",
+  "title": "Patient Financial Responsibility Agreement",
+  "description": "A clinic policy agreement signed by patients acknowledging insurance billing rules, copays, and collection interest rates.",
+  "whatsCovered": [
+    "Definition of professional copays, insurance billing, and collection rates",
+    "HIPAA compliance rules, records storage, and PHI protection",
+    "Billing routines, insurance claims, and cash splits",
+    "Stark Law, Anti-Kickback Statute, and medical ethics covenants",
+    "Standard governing law and medical liability settings"
+  ],
+  "whenToUse": "Use this agreement when setting up legal guidelines for copays, insurance billing, and collection rates to ensure strict compliance with HIPAA and clinical standards.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Medical Provider / Practice",
+      "type": "text",
+      "placeholder": "e.g. Family Health Partners LLC",
+      "required": true,
+      "group": "Clinic Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Practice Office Address",
+      "type": "text",
+      "placeholder": "e.g. 400 Medical Center Dr, Suite 200, Austin, TX 78701",
+      "required": true,
+      "group": "Clinic Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Patient / Contractor Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Patient / Contractor Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Pine St, Austin, TX 78759",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "late_fee_rules",
+      "label": "Late Payment / Billing Penalties",
+      "type": "textarea",
+      "placeholder": "e.g. A $25.00 late fee for outstanding balances past 30 days and 1% monthly interest...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "copay_rule",
+      "label": "Copay Collection Policy",
+      "type": "text",
+      "placeholder": "e.g. Copays must be paid at the time of check-in",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Texas",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "PATIENT FINANCIAL RESPONSIBILITY AGREEMENT",
+      "body": "This Healthcare Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Practice\"), and {client_name}, located at {client_address} (\"Participant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Professional Clinical Services",
+      "body": "Patient agrees that copays are due in advance: {copay_rule}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment and Billing Terms",
+      "body": "Patient acknowledges liability for outstanding balances and agrees to penalty rates: {late_fee_rules}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "hipaa",
+      "heading": "3. HIPAA Safeguards and Protected Health Information",
+      "body": "All billing logs, invoices, and payment card profiles are handled in compliance with PCI regulations.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "hipaa-baa",
+    "patient-consent-form"
+  ],
+  "faq": [
+    {
+      "question": "Is this contract HIPAA compliant?",
+      "answer": "Yes. It contains standard clauses requiring both parties to maintain administrative and electronic safeguards for patient data."
+    },
+    {
+      "question": "Can this contract be terminated early?",
+      "answer": "Yes, standard terms allow termination by either party upon 30 days written notice, provided all patient chart transfer protocols are followed."
+    }
+  ],
+  "tags": [
+    "healthcare",
+    "contract",
+    "medical",
+    "billing"
+  ]
+}

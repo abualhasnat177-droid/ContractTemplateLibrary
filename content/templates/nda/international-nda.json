@@ -1,0 +1,186 @@
+{
+  "id": "international-nda",
+  "slug": "international-nda",
+  "category": "nda",
+  "subcategory": "Format Variants",
+  "title": "International NDA (cross-border)",
+  "description": "Designed for cross-border transactions, specifying international dispute resolution forums and cross-jurisdictional compliance.",
+  "whatsCovered": [
+    "Cross-border data transfer protections",
+    "International arbitration forum and seat selection",
+    "Multilingual contract interpretation precedence",
+    "Compliance with export control regulations",
+    "Sovereign immunity waivers"
+  ],
+  "whenToUse": "Use this NDA when sharing secrets with an international vendor, contractor, or business partner located in a different country.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "EU",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "arbitration_seat",
+      "label": "Arbitration Seat (City/Country)",
+      "type": "text",
+      "placeholder": "e.g. London, United Kingdom",
+      "required": true,
+      "group": "International"
+    },
+    {
+      "id": "disclosing_country",
+      "label": "Discloser Country",
+      "type": "text",
+      "placeholder": "e.g. United States",
+      "required": true,
+      "group": "Discloser Country"
+    },
+    {
+      "id": "receiving_country",
+      "label": "Recipient Country",
+      "type": "text",
+      "placeholder": "e.g. Germany",
+      "required": true,
+      "group": "Recipient Country"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INTERNATIONAL NDA (CROSS-BORDER)",
+      "body": "This Unilateral Confidentiality Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {disclosing_party}, located at {disclosing_address} (\"Discloser\"), and {receiving_party}, located at {receiving_address} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information includes all proprietary technical, financial, or business information disclosed by Discloser to Recipient, whether in writing, orally, or visually, including but not limited to trade secrets, blueprints, algorithms, or client rosters.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Obligations",
+      "body": "Recipient agrees to hold Discloser's Confidential Information in trust and secrecy. Recipient shall not copy, disclose, or use the information for any purpose other than to evaluate a prospective business relationship with Discloser. This obligation shall survive for {term_years} years from the Effective Date.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "arbitration",
+      "heading": "3. International Arbitration",
+      "body": "Any dispute arising from this Agreement shall be referred to and finally resolved by arbitration under the rules of the International Chamber of Commerce (ICC) at the seat of {arbitration_seat}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "export_control",
+      "heading": "4. Export Controls",
+      "body": "Both parties agree to adhere to all applicable export control and sanctions laws of {disclosing_country} and {receiving_country} when sharing tech files.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "5. Exclusions",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach, (b) was already in Recipient's possession, (c) is independently developed, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "6. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "Where are disputes settled in an international NDA?",
+      "answer": "Disputes are settled in international arbitration (e.g., ICC rules) at the designated seat city, avoiding local courts in either party's home country."
+    },
+    {
+      "question": "How does this NDA address translation disputes?",
+      "answer": "It dictates that the English version of the contract takes legal precedence over any translated copies."
+    }
+  ],
+  "tags": [
+    "international",
+    "crossborder",
+    "arbitration",
+    "icc",
+    "nda"
+  ]
+}

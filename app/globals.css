@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  /* Light mode */
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F7FA;
+  --color-surface-2: #EDF0F7; /* Sidebar, filter panel */
+  --color-border: #D8DFED;
+  --color-border-strong: #B0BCCE;
+  --color-text-primary: #0D1B2A;
+  --color-text-secondary: #4A5E78;
+  --color-text-muted: #7C92A8;
+  --color-accent: #1B4FD8;
+  --color-accent-hover: #1540B8;
+  --color-accent-light: #EBF0FD;
+  --color-success: #0F6B3F;
+  --color-warning: #92610A;
+  --color-error: #B91C1C;
+
+  --font-document: 'Georgia', 'Times New Roman', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode */
+    --color-bg: #080F1A;
+    --color-surface: #0D1B2A;
+    --color-surface-2: #112238;
+    --color-border: #1E3050;
+    --color-border-strong: #2A4470;
+    --color-text-primary: #EDF2FF;
+    --color-text-secondary: #8AAAC8;
+    --color-text-muted: #5A7A96;
+    --color-accent: #4B7FE8;
+    --color-accent-hover: #6495ED;
+    --color-accent-light: #112248;
+  }
+}
+
+@theme {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-light: var(--color-accent-light);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Document preview styling (PRD Section 5.3) */
+.document-preview {
+  font-family: var(--font-document);
+  font-size: 14px;
+  line-height: 1.9;
+  color: #0D1B2A; /* Document text always dark/auth look */
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 64px;
+  background: #FFFFFF;
+  border: 0.5px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(13, 27, 42, 0.06);
+}
+
+.document-preview h1 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2rem;
+}
+
+.document-preview .section-heading {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.document-preview .smart-field {
+  background: var(--color-accent-light);
+  border-bottom: 2px solid var(--color-accent);
+  padding: 0 4px;
+  border-radius: 2px 2px 0 0;
+  cursor: pointer;
+  min-width: 60px;
+  display: inline-block;
+  color: var(--color-accent);
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.document-preview .smart-field:focus-within {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.document-preview .smart-field.filled {
+  border-bottom: none;
+  background: transparent;
+  padding: 0;
+  color: #0D1B2A;
+  font-weight: normal;
+}
+
+.document-preview .optional-clause {
+  opacity: 0.35;
+  transition: opacity 0.2s;
+  text-decoration: line-through;
+}
+
+.document-preview .optional-clause.active {
+  opacity: 1;
+  text-decoration: none;
+}

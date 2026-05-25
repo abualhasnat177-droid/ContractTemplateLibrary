@@ -1,0 +1,147 @@
+{
+  "id": "safe-agreement",
+  "slug": "safe-agreement",
+  "category": "startup",
+  "title": "Simple Agreement for Future Equity (SAFE)",
+  "description": "A standard YC-style SAFE contract (Valuation Cap only) allowing startups to raise early capital from angel investors without setting an immediate valuation.",
+  "whatsCovered": [
+    "Definition of investment purchase price and future equity conversion",
+    "Valuation Cap and conversion pricing during a priced round",
+    "Treatment of SAFE during liquidity events (acquisition/IPO)",
+    "Investor status (no voting rights prior to share conversion)",
+    "Representations and warranties of the startup founders"
+  ],
+  "whenToUse": "Use this SAFE contract to raise pre-seed or seed capital from angel investors and convert their cash investment into shares during a future Series Apriced round.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. Orion Labs Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 120 Mission St, San Francisco, CA 94103",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "investor_name",
+      "label": "Investor Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Valley Angels Ventures LLC",
+      "required": true,
+      "group": "Investor Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "purchase_amount",
+      "label": "Investment Amount ($)",
+      "type": "currency",
+      "placeholder": "e.g. 100,000.00",
+      "required": true,
+      "group": "Investment Details"
+    },
+    {
+      "id": "valuation_cap",
+      "label": "Valuation Cap ($)",
+      "type": "currency",
+      "placeholder": "e.g. 5,000,000.00",
+      "required": true,
+      "group": "Investment Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "SIMPLE AGREEMENT FOR FUTURE EQUITY",
+      "body": "This Simple Agreement for Future Equity (the \"SAFE\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, a corporation located at {company_address} (the \"Company\"), and {investor_name} (\"Investor\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "purchase",
+      "heading": "1. Investment Purchase",
+      "body": "In exchange for a cash payment of {purchase_amount} (the \"Purchase Amount\") by Investor, Company hereby issues to Investor the right to acquire shares of the Company's Preferred Stock on the terms set forth herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "conversion",
+      "heading": "2. Equity Conversion Events",
+      "body": "Upon the closing of the next priced equity financing round (the \"Equity Financing\") where the Company issues Preferred Stock, this SAFE shall automatically convert into Preferred Stock at a share price determined by the Valuation Cap of {valuation_cap}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "mfn",
+      "heading": "3. Most Favored Nation (MFN)",
+      "body": "If the Company issues any subsequent SAFE instruments with terms more favorable than this SAFE prior to conversion, Company shall notify Investor and amend this SAFE to reflect the more favorable terms.",
+      "optional": true,
+      "optionalLabel": "Include Most Favored Nation (MFN) Clause?",
+      "enabledByDefault": false,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "reps",
+      "heading": "4. Company Representations",
+      "body": "The Company represents that it is a corporation duly organized and in good standing under the laws of its state of incorporation, and that the execution of this SAFE has been authorized by all necessary corporate actions.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This SAFE shall be governed by, and interpreted in accordance with, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "co-founder-agreement",
+    "advisor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a Valuation Cap?",
+      "answer": "A Valuation Cap sets the maximum valuation at which your investment will convert into shares. It protects early investors by giving them a lower conversion price if the company's valuation sky-rockets."
+    },
+    {
+      "question": "Is a SAFE a debt instrument?",
+      "answer": "No. A SAFE is not a loan, does not accrue interest, and has no maturity date. It is a contract that converts into stock when the company raises a priced Series A round."
+    }
+  ],
+  "tags": [
+    "safe",
+    "startup",
+    "equity",
+    "investment",
+    "angel"
+  ],
+  "subcategory": "Fundraising & Investment"
+}

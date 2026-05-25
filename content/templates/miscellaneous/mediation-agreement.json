@@ -1,0 +1,148 @@
+{
+  "id": "mediation-agreement",
+  "slug": "mediation-agreement",
+  "category": "miscellaneous",
+  "subcategory": "Dispute & Resolution",
+  "title": "Mediation Agreement",
+  "description": "Agreement to submit an ongoing dispute to mediation, establishing mediator neutrality and confidentiality.",
+  "whatsCovered": [
+    "Appointment of mediator and session schedules",
+    "Mediator neutrality: mediator cannot act as counsel for either party",
+    "Strict confidentiality: mediation files are inadmissible in lawsuits",
+    "Split of mediator retainer and facility fees",
+    "Procedure for drafting binding settlement agreements"
+  ],
+  "whenToUse": "Use this mediation contract before starting mediation sessions to ensure all disclosures remain strictly inadmissible in court.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "mediator_name",
+      "label": "Appointed Mediator Name",
+      "type": "text",
+      "placeholder": "e.g. Hon. Arthur Pendelton (Ret.)",
+      "required": true,
+      "group": "Mediation Details"
+    },
+    {
+      "id": "mediator_fee_split",
+      "label": "Fee Split (Party A% / Party B%)",
+      "type": "text",
+      "placeholder": "e.g. 50% / 50%",
+      "required": true,
+      "group": "Billing"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MEDIATION AGREEMENT",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the Mediation Agreement. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "mediator_appointment",
+      "heading": "2. Mediator Retainers",
+      "body": "Parties appoint mediator: {mediator_name}. All mediation communication remains confidential. Mediator fees shall be shared matching split: {mediator_fee_split}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "mediation",
+    "dispute",
+    "settlement",
+    "confidentiality",
+    "arbitration"
+  ]
+}

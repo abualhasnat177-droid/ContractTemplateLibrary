@@ -1,0 +1,148 @@
+{
+  "id": "car-allowance-agreement",
+  "slug": "car-allowance-agreement",
+  "category": "employment",
+  "subcategory": "Compensation & Benefits",
+  "title": "Car Allowance Agreement",
+  "description": "Car allowance policy outlining monthly stipends, insurance criteria, and mileage log audits.",
+  "whatsCovered": [
+    "Monthly car allowance stipend size",
+    "Required minimum auto liability insurance coverage",
+    "Mileage tracking logs and audit submissions",
+    "Employee responsibility for vehicle maintenance and fuel",
+    "Limitation of company liability for driving accidents"
+  ],
+  "whenToUse": "Use this contract for staff (such as field sales reps) who must drive personal vehicles for business operations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "monthly_allowance",
+      "label": "Monthly Car Allowance ($)",
+      "type": "currency",
+      "placeholder": "e.g. 450.00",
+      "required": true,
+      "group": "Allowance"
+    },
+    {
+      "id": "min_insurance",
+      "label": "Minimum Liability Coverage ($)",
+      "type": "currency",
+      "placeholder": "e.g. 300,000.00",
+      "required": true,
+      "group": "Insurance"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CAR ALLOWANCE AGREEMENT",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Car Allowance Agreement. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "car_allowance_details",
+      "heading": "2. Vehicle Allowance Stipends",
+      "body": "Company shall supply a monthly car allowance of {monthly_allowance}. Employee agrees to carry vehicle liability insurance of at least {min_insurance}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "car-allowance",
+    "vehicle",
+    "mileage",
+    "reimbursement",
+    "compensation"
+  ]
+}

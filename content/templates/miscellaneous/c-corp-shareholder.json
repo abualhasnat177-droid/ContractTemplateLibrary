@@ -1,0 +1,140 @@
+{
+  "id": "c-corp-shareholder",
+  "slug": "c-corp-shareholder",
+  "category": "miscellaneous",
+  "subcategory": "Business Structures",
+  "title": "C-Corp Shareholder Agreement",
+  "description": "Governs C-Corporation shares, investor voting rights, board compositions, and drag-along / tag-along privileges.",
+  "whatsCovered": [
+    "Board of directors election allocations",
+    "Preemptive rights for future capital raises",
+    "Drag-along and tag-along stock sale rights",
+    "Information rights and corporate audit access",
+    "Share vesting schedules and founder departures"
+  ],
+  "whenToUse": "Use this shareholder agreement when establishing a standard C-Corporation with venture investors or multiple founders.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "board_seats",
+      "label": "Total Board Seats",
+      "type": "number",
+      "placeholder": "e.g. 5",
+      "required": true,
+      "group": "Governance"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "C-CORP SHAREHOLDER AGREEMENT",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the C-Corp Shareholder Agreement. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "ccorp_board_seats",
+      "heading": "2. Board Elections",
+      "body": "Shareholders agree to vote to establish a Board of Directors containing {board_seats} seats. Preemptive rights apply to all future rounds of funding.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "c-corp",
+    "shareholder",
+    "investor",
+    "drag-along",
+    "corporate"
+  ]
+}

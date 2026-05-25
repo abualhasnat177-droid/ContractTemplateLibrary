@@ -1,0 +1,131 @@
+{
+  "id": "locum-tenens-agreement",
+  "slug": "locum-tenens-agreement",
+  "category": "healthcare",
+  "title": "Locum Tenens Physician Agreement",
+  "description": "A staffing agreement used to hire a temporary substitute physician to cover a medical practice during a staff physician's leave of absence.",
+  "whatsCovered": [
+    "Substitute physician duties, scheduling, and clinical coverage",
+    "Daily or weekly flat compensation rates",
+    "Travel, lodging, and credentialing cost reimbursements",
+    "Liability insurance coverage provision details",
+    "HIPAA patient data security covenants"
+  ],
+  "whenToUse": "Use this agreement to secure a locum tenens (temporary substitute) doctor to cover your clinic during a primary physician's vacation, maternity leave, or illness.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-14",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "clinic_name",
+      "label": "Practice / Clinic Name",
+      "type": "text",
+      "placeholder": "e.g. Westside Pediatrics Group",
+      "required": true,
+      "group": "Practice Info"
+    },
+    {
+      "id": "physician_name",
+      "label": "Substitute Physician Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Evelyn Vance",
+      "required": true,
+      "group": "Physician Info"
+    },
+    {
+      "id": "daily_rate",
+      "label": "Daily Cover Rate ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,500.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "start_date",
+      "label": "Coverage Start Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "end_date",
+      "label": "Coverage End Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "LOCUM TENENS AGREEMENT",
+      "body": "This Locum Tenens Agreement (the \"Agreement\") is entered into by and between {clinic_name} (\"Practice\"), and {physician_name} (\"Physician\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "term",
+      "heading": "1. Term of Coverage",
+      "body": "Physician shall provide temporary locum tenens clinical coverage for Practice starting on {start_date} and ending on {end_date}, unless extended by mutual written agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Daily Compensation Rate",
+      "body": "Practice shall pay Physician a daily rate of {daily_rate} for each day of clinical coverage provided. Payments are due within 15 days of receiving the coverage invoice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "expenses",
+      "heading": "3. Travel and Lodging Reimbursement",
+      "body": "Practice agrees to reimburse Physician for reasonable, pre-approved travel and hotel lodging expenses incurred during the coverage period.",
+      "optional": true,
+      "optionalLabel": "Reimburse travel & lodging?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed by, and interpreted in accordance with, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "independent-contractor-clinical"
+  ],
+  "faq": [
+    {
+      "question": "What is locum tenens?",
+      "answer": "Locum tenens is a Latin phrase meaning 'to hold the place of.' It refers to a temporary practitioner filling in for a primary physician."
+    },
+    {
+      "question": "Does this cover credentialing?",
+      "answer": "The substitute physician must cooperate with the practice to complete facility credentialing before the coverage start date."
+    }
+  ],
+  "tags": [
+    "locum",
+    "physician",
+    "substitute",
+    "temp",
+    "doctor"
+  ],
+  "subcategory": "Clinical / Practice"
+}

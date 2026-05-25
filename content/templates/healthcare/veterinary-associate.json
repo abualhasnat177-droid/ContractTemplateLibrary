@@ -1,0 +1,124 @@
+{
+  "id": "veterinary-associate",
+  "slug": "veterinary-associate",
+  "category": "healthcare",
+  "title": "Veterinary Associate Employment Agreement",
+  "description": "An employment agreement for a veterinarian joining an established animal hospital, specifying clinical duties, salary, and professional liability insurance.",
+  "whatsCovered": [
+    "Associate veterinarian clinical duties and state licensing rules",
+    "Base salary guarantees and Pro-Sal (commission-based) compensation",
+    "Emergency night/weekend clinical coverage rosters",
+    "Professional liability insurance and licensing fees coverage",
+    "Standard dispute resolution and governing law"
+  ],
+  "whenToUse": "Use this agreement when hiring an associate veterinarian to join an animal hospital or veterinary clinic team.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "hospital_name",
+      "label": "Animal Hospital / Clinic Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Veterinary Hospital LLC",
+      "required": true,
+      "group": "Hospital Details"
+    },
+    {
+      "id": "veterinarian_name",
+      "label": "Associate Veterinarian Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton, DVM",
+      "required": true,
+      "group": "Associate Details"
+    },
+    {
+      "id": "base_salary",
+      "label": "Annual Base Salary ($)",
+      "type": "currency",
+      "placeholder": "e.g. 95,000.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ASSOCIATE VETERINARIAN EMPLOYMENT AGREEMENT",
+      "body": "This Veterinary Associate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {hospital_name} (\"Hospital\"), and {veterinarian_name} (\"Associate\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "duties",
+      "heading": "1. Veterinarian Duties",
+      "body": "Associate shall provide professional veterinary care, surgical procedures, and wellness examinations at Hospital locations. Associate represents that they hold and will maintain an active DVM veterinary license in this state.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Salary Compensation",
+      "body": "Hospital shall pay Associate an annual base salary of {base_salary}, payable in semi-monthly installments. Associate may also participate in the Hospital's Pro-Sal commission plans.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "insurance",
+      "heading": "3. Vet Liability Insurance",
+      "body": "Hospital shall maintain, at its sole cost, professional liability (malpractice) insurance covering the clinical activities of Associate during the employment term.",
+      "optional": true,
+      "optionalLabel": "Provide Vet Malpractice Coverage?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "independent-contractor-clinical",
+    "group-practice-associate"
+  ],
+  "faq": [
+    {
+      "question": "What is Pro-Sal compensation?",
+      "answer": "Pro-Sal is a standard veterinarian compensation model combining a guaranteed base salary with a production commission percentage, incentivizing client volume."
+    },
+    {
+      "question": "Who buys surgical supplies?",
+      "answer": "The animal hospital is responsible for providing all medical supplies, veterinary tech support staff, and surgical suites."
+    }
+  ],
+  "tags": [
+    "veterinary",
+    "veterinarian",
+    "dvm",
+    "animal",
+    "clinic"
+  ],
+  "subcategory": "Clinical / Practice"
+}

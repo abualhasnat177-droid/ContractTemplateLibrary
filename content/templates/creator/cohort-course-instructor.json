@@ -1,0 +1,146 @@
+{
+  "id": "cohort-course-instructor",
+  "slug": "cohort-course-instructor",
+  "category": "creator",
+  "subcategory": "Digital Products & Courses",
+  "title": "Cohort-Based Course Instructor Agreement",
+  "description": "An instructor hiring agreement detailing lecture schedules, slides, grading duties, and student fees splits.",
+  "whatsCovered": [
+    "Definition of creative cohort courses, live lecture hours, and student splits",
+    "Intellectual property licensing, usage rights, and exclusivity",
+    "Payment milestones, brand payouts, and affiliate commissions",
+    "Content moderation, FTC disclosures compliance, and safety rules",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when establishing guidelines for cohort courses, live lecture hours, and student splits to ensure legal safety for intellectual property and payments.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Creator / Licensor Name",
+      "type": "text",
+      "placeholder": "e.g. Alexa Green Influencer LLC",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Creator Mailing Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Prose Lane, Portland, OR 97201",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Brand / Licensee Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Cosmetic Group Inc.",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Brand Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "cohort_schedule",
+      "label": "Live Lecture Schedule",
+      "type": "textarea",
+      "placeholder": "e.g. Four (4) live Zoom lectures on consecutive Thursdays at 7 PM EST...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "instructor_payout_per_student",
+      "label": "Payout Per Student Enrolled ($)",
+      "type": "currency",
+      "placeholder": "e.g. 150.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "COHORT-BASED COURSE INSTRUCTOR AGREEMENT",
+      "body": "This Creator Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Creator\"), and {client_name}, located at {client_address} (\"Brand\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Creative Deliverables & Milestones",
+      "body": "Instructor shall conduct live lectures and guide students according to: {cohort_schedule}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment and Sponsorship Fees",
+      "body": "Platform shall pay Instructor a student acquisition fee of {instructor_payout_per_student} per enrollment.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "licensing",
+      "heading": "3. Intellectual Property and FTC Disclosures",
+      "body": "Platform retains rights to recorded Zoom video VODs, and Instructor retains slide designs.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "influencer-agreement",
+    "ugc-creator-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Are FTC disclosures mandatory under this contract?",
+      "answer": "Yes. Both parties are legally required to ensure all sponsored posts include clear, conspicuous hashtags such as #ad or #sponsored."
+    },
+    {
+      "question": "Who owns the video files after campaign completion?",
+      "answer": "The creator retains copyright in all original files, granting the brand a licensing right to share and host the assets."
+    }
+  ],
+  "tags": [
+    "creator",
+    "contract",
+    "influencer",
+    "student"
+  ]
+}

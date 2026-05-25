@@ -1,0 +1,148 @@
+{
+  "id": "pllc-operating",
+  "slug": "pllc-operating",
+  "category": "miscellaneous",
+  "subcategory": "Business Structures",
+  "title": "Professional LLC (PLLC) Agreement",
+  "description": "Operating agreement for licensed professionals (doctors, lawyers, CPAs) complying with state professional licensing boards.",
+  "whatsCovered": [
+    "Licensing criteria for all PLLC members",
+    "Compliance with state professional licensing board bylaws",
+    "Restrictions on transferring ownership to unlicensed individuals",
+    "Malpractice insurance guidelines",
+    "Procedures if a member's state license is suspended or revoked"
+  ],
+  "whenToUse": "Use this PLLC operating agreement when forming an LLC for licensed practices where members must hold specific state licenses.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "professional_service_type",
+      "label": "Licensed Professional Service",
+      "type": "text",
+      "placeholder": "e.g. Licensed Medical Practice / Legal Services",
+      "required": true,
+      "group": "Practice Details"
+    },
+    {
+      "id": "licensing_board",
+      "label": "State Licensing Board",
+      "type": "text",
+      "placeholder": "e.g. California State Medical Board",
+      "required": true,
+      "group": "Compliance"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "PROFESSIONAL LLC (PLLC) AGREEMENT",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the Professional LLC (PLLC) Agreement. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "pllc_licensing",
+      "heading": "2. State Board Licensing",
+      "body": "Members must maintain licenses to practice {professional_service_type} under the authority of {licensing_board}. Loss of license results in member withdrawal.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "pllc",
+    "professional",
+    "doctor",
+    "lawyer",
+    "operating-agreement"
+  ]
+}

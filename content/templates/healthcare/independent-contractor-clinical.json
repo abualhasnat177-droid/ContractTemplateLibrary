@@ -1,0 +1,145 @@
+{
+  "id": "independent-contractor-clinical",
+  "slug": "independent-contractor-clinical",
+  "category": "healthcare",
+  "title": "Clinical Independent Contractor Agreement",
+  "description": "A specialized employment agreement for medical practitioners, nurses, or clinicians providing contract services at a medical facility.",
+  "whatsCovered": [
+    "Clinician credentials, licensing, and liability insurance requirements",
+    "Independent contractor tax status and billing exclusions",
+    "Confidentiality of patient charts and HIPAA regulations",
+    "Practice coverage schedules and emergency contact duty",
+    "Termination terms (usually 30 days written notice)"
+  ],
+  "whenToUse": "Use this agreement when hiring a contract nurse, physician assistant, or medical specialist to support clinical care on an independent contractor basis.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "clinic_name",
+      "label": "Facility / Clinic Name",
+      "type": "text",
+      "placeholder": "e.g. Oakridge Urgent Care LLC",
+      "required": true,
+      "group": "Facility Details"
+    },
+    {
+      "id": "provider_name",
+      "label": "Clinician / Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton",
+      "required": true,
+      "group": "Clinician Details"
+    },
+    {
+      "id": "provider_license",
+      "label": "Medical License Number",
+      "type": "text",
+      "placeholder": "e.g. MD-9098765-FL",
+      "required": true,
+      "group": "Clinician Details"
+    },
+    {
+      "id": "specialty",
+      "label": "Clinical Specialty",
+      "type": "text",
+      "placeholder": "e.g. Family Medicine",
+      "required": true,
+      "group": "Clinician Details"
+    },
+    {
+      "id": "hourly_rate",
+      "label": "Contract Hourly Rate ($)",
+      "type": "currency",
+      "placeholder": "e.g. 120.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CLINICAL CONTRACTOR AGREEMENT",
+      "body": "This Clinical Independent Contractor Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {clinic_name} (the \"Facility\"), and {provider_name}, licensed under number {provider_license} (\"Clinician\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Scope of Clinical Services",
+      "body": "Clinician agrees to provide clinical services in the specialty of {specialty} at Facility. Clinician represents that they hold and will maintain a valid, active medical license to practice in this jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Hourly Compensation",
+      "body": "Facility shall compensate Clinician at the rate of {hourly_rate} per hour for all hours of clinical service provided. Clinician shall submit monthly invoice logs for payment verification.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "insurance",
+      "heading": "3. Professional Liability Insurance",
+      "body": "Clinician shall maintain professional liability (malpractice) insurance coverage with limits of not less than $1,000,000 per claim and $3,000,000 in the aggregate, and shall provide proof of coverage to Facility.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "hipaa",
+      "heading": "4. HIPAA Compliance",
+      "body": "Clinician shall comply with the Health Insurance Portability and Accountability Act (HIPAA) and shall protect the privacy, security, and integrity of all patient protected health information (PHI).",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "hipaa-authorization",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Does this contract provide employee benefits?",
+      "answer": "No. The clinician is classified as an independent contractor and is responsible for their own taxes, insurance, and retirement plans."
+    },
+    {
+      "question": "Is malpractice insurance required under this contract?",
+      "answer": "Yes. The clinician must provide proof of malpractice insurance meeting the specified coverage limits before providing care."
+    }
+  ],
+  "tags": [
+    "clinical",
+    "doctor",
+    "nurse",
+    "contractor",
+    "medical"
+  ],
+  "subcategory": "Clinical / Practice"
+}

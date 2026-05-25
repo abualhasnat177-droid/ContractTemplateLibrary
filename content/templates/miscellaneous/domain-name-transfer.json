@@ -1,0 +1,148 @@
+{
+  "id": "domain-name-transfer",
+  "slug": "domain-name-transfer",
+  "category": "miscellaneous",
+  "subcategory": "IP & Digital",
+  "title": "Domain Name Transfer Agreement",
+  "description": "Agreement transferring domain name ownership, registrar credentials, and associated branding.",
+  "whatsCovered": [
+    "Domain URL names and registrar details",
+    "Purchase price and escrow transaction structures",
+    "Delivery of domain authorization EPP codes",
+    "Representations that domain has no active UDRP disputes",
+    "Transition of email records and host names"
+  ],
+  "whenToUse": "Use this contract when selling or buying high-value internet domains, securing domain transfer codes (EPP keys).",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "domain_url",
+      "label": "Domain Name (URL)",
+      "type": "text",
+      "placeholder": "e.g. cyberflow.com",
+      "required": true,
+      "group": "Domain Details"
+    },
+    {
+      "id": "domain_price",
+      "label": "Domain Purchase Price ($)",
+      "type": "currency",
+      "placeholder": "e.g. 5,000.00",
+      "required": true,
+      "group": "Billing"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "DOMAIN NAME TRANSFER AGREEMENT",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the Domain Name Transfer Agreement. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "domain_epp_delivery",
+      "heading": "2. EPP Key Deliveries",
+      "body": "Seller shall sell domain {domain_url} for the purchase price of {domain_price}. Seller shall deliver registrar EPP authorization codes.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "domain",
+    "url",
+    "escrow",
+    "registrar",
+    "epp-key"
+  ]
+}

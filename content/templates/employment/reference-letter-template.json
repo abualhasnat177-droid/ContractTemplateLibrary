@@ -1,0 +1,148 @@
+{
+  "id": "reference-letter-template",
+  "slug": "reference-letter-template",
+  "category": "employment",
+  "subcategory": "Offboarding & Disputes",
+  "title": "Employment Reference Letter",
+  "description": "Professional reference letter template confirming an employee's role, tenure, and positive contributions.",
+  "whatsCovered": [
+    "Verification of job title and employment dates",
+    "Description of employee duties and accomplishments",
+    "Positive review of work ethic and team performance",
+    "Signer's professional contact information",
+    "Standard disclaimer of company liability for future performance"
+  ],
+  "whenToUse": "Use this template when writing a recommendation or reference letter for a departing employee who left in good standing.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "former_role",
+      "label": "Former Job Title",
+      "type": "text",
+      "placeholder": "e.g. Lead Frontend Developer",
+      "required": true,
+      "group": "Reference Details"
+    },
+    {
+      "id": "years_worked",
+      "label": "Years of Service",
+      "type": "text",
+      "placeholder": "e.g. 4",
+      "required": true,
+      "group": "Reference Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "EMPLOYMENT REFERENCE LETTER",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Employment Reference Letter. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "reference_text",
+      "heading": "2. Employment Recommendation",
+      "body": "Company confirms that Employee served as {former_role} for {years_worked} years. We confirm their positive team contributions.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "reference",
+    "recommendation",
+    "offboarding",
+    "career",
+    "hr"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "unilateral-nda",
+  "slug": "unilateral-nda",
+  "category": "nda",
+  "title": "One-Way (Unilateral) Non-Disclosure Agreement",
+  "description": "A protective one-way confidentiality agreement when only one party is sharing confidential secrets or business ideas with another party.",
+  "whatsCovered": [
+    "Protection of sensitive business plans, financials, and source code",
+    "Restricted use of information to the designated evaluation purpose",
+    "Reasonable exceptions to confidentiality (public records, subpoenas)",
+    "Confidentiality term length and return of materials",
+    "Injunction remedies for breach of secrecy"
+  ],
+  "whenToUse": "Use this unilateral NDA when you are disclosing proprietary secrets or product concepts to a vendor, contractor, or investor, and they are not sharing secrets with you.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ 85001",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ 85281",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "evaluation_purpose",
+      "label": "Purpose of Evaluation",
+      "type": "text",
+      "placeholder": "e.g. assessing a prospective manufacturing partnership",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Arizona",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ONE-WAY NON-DISCLOSURE AGREEMENT",
+      "body": "This Unilateral Non-Disclosure Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {disclosing_party}, located at {disclosing_address} (\"Discloser\"), and {receiving_party}, located at {receiving_address} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "\"Confidential Information\" refers to any proprietary information, business files, trade secrets, software code, customer data, and designs disclosed by Discloser to Recipient during the discussions, whether marked as confidential or not.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Obligations",
+      "body": "Recipient agrees to hold Discloser's Confidential Information in strict confidence and shall not disclose it to any third party. Recipient shall use the Confidential Information solely for the following purpose: {evaluation_purpose}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "duration",
+      "heading": "3. Term of Protection",
+      "body": "The confidentiality obligations under this Agreement shall survive for a period of {term_years} years from the Effective Date, after which the Recipient's obligations shall expire.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_solicit",
+      "heading": "4. Non-Solicitation of Clients",
+      "body": "Recipient agrees that during the term of discussions and for 12 months thereafter, Recipient shall not solicit, contract, or do business with any client or customer of Discloser introduced during the evaluation.",
+      "optional": true,
+      "optionalLabel": "Include Client Non-Solicitation Clause?",
+      "enabledByDefault": false,
+      "riskLevel": "high"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "consulting-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between a mutual and a one-way NDA?",
+      "answer": "A mutual NDA protects secrets shared by both parties. A one-way (unilateral) NDA only protects secrets shared by one party (the discloser) with a receiving party."
+    },
+    {
+      "question": "Are verbal disclosures protected under this NDA?",
+      "answer": "It is always best practice to put disclosures in writing. However, this contract covers any disclosures made during discussions, regardless of medium."
+    }
+  ],
+  "tags": [
+    "nda",
+    "confidentiality",
+    "secrecy",
+    "unilateral",
+    "oneway"
+  ],
+  "subcategory": "Standard NDAs"
+}

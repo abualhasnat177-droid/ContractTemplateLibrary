@@ -1,0 +1,169 @@
+{
+  "id": "service-level-agreement",
+  "slug": "service-level-agreement",
+  "category": "vendor",
+  "title": "Service Level Agreement (SLA)",
+  "description": "A technical IT vendor agreement detailing service availability (uptime), response times, server hosting maintenance, and downtime credits.",
+  "whatsCovered": [
+    "Definition of service scope and cloud hosting availability",
+    "Uptime guarantee percentage (e.g. 99.9% availability)",
+    "Support ticket priority response times (Severity 1 to Severity 3)",
+    "Service credit calculations for uptime violations",
+    "Scheduled server maintenance windows and notice times"
+  ],
+  "whenToUse": "Use this SLA when you are a SaaS or hosting vendor committing to specific performance benchmarks, or a client securing uptime guarantees from an IT provider.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-13",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Acme Tech Solutions LLC",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industry Pkwy, Seattle, WA 98101",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "vendor_name",
+      "label": "SaaS / IT Vendor Company Name",
+      "type": "text",
+      "placeholder": "e.g. CloudSync Storage Systems Inc.",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "vendor_address",
+      "label": "Vendor Address",
+      "type": "text",
+      "placeholder": "e.g. 102 hosting Circle, San Jose, CA 95112",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "uptime_percentage",
+      "label": "Uptime Guarantee (%)",
+      "type": "select",
+      "options": [
+        "99.0",
+        "99.5",
+        "99.9",
+        "99.99"
+      ],
+      "defaultValue": "99.9",
+      "required": true,
+      "group": "Service Metrics"
+    },
+    {
+      "id": "support_response",
+      "label": "Critical Response Time (Hours)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "12",
+        "24"
+      ],
+      "defaultValue": "2",
+      "required": true,
+      "group": "Service Metrics"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "SERVICE LEVEL AGREEMENT",
+      "body": "This Service Level Agreement (the \"SLA\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {client_name}, located at {client_address} (\"Client\"), and {vendor_name}, located at {vendor_address} (\"Vendor\"). This SLA governs the hosting and cloud services provided by Vendor.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "uptime",
+      "heading": "1. Uptime Commitment",
+      "body": "Vendor guarantees that the cloud hosting services shall achieve a monthly uptime availability of at least {uptime_percentage}% (excluding scheduled maintenance). Availability is calculated on a monthly billing cycle basis.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "support",
+      "heading": "2. Help Desk Response Times",
+      "body": "Vendor shall maintain a technical support help desk. For critical (Severity 1) hosting errors that block core application operations, Vendor shall respond to Client's support ticket within {support_response} hours.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "credits",
+      "heading": "3. Service Credits",
+      "body": "If Vendor fails to meet the {uptime_percentage}% uptime guarantee in any given month, Client shall be entitled to request a service credit equal to 10% of that month's subscription fee, applied to the next billing invoice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "maintenance",
+      "heading": "4. Scheduled Maintenance Notice",
+      "body": "Vendor shall provide Client with at least 48 hours' written notice prior to conducting any scheduled hardware upgrades or database maintenance that might result in service downtime.",
+      "optional": true,
+      "optionalLabel": "Include Scheduled Maintenance Notice?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This SLA shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "vendor-agreement",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "What is excluded from uptime calculations?",
+      "answer": "Uptime metrics exclude scheduled server maintenance (with 48h notice), client-caused network blockages, and Force Majeure (natural disasters) events."
+    },
+    {
+      "question": "How do I claim service credits?",
+      "answer": "You must submit a credit request ticket to the vendor helpdesk within 30 days after the end of the month in which the uptime violation occurred."
+    }
+  ],
+  "tags": [
+    "sla",
+    "hosting",
+    "vendor",
+    "saas",
+    "uptime"
+  ],
+  "subcategory": "Technology & SaaS"
+}

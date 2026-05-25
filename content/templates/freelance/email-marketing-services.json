@@ -1,0 +1,146 @@
+{
+  "id": "email-marketing-services",
+  "slug": "email-marketing-services",
+  "category": "freelance",
+  "subcategory": "Marketing & Growth",
+  "title": "Email Marketing Services Agreement",
+  "description": "A digital marketing agreement detailing email copy drafting, automation setup, list segmentation, and analytics tracking.",
+  "whatsCovered": [
+    "Definition of freelance email marketing campaigns, automations, or list management",
+    "Payment terms, invoice dates, and retainer options",
+    "Intellectual property transfer guidelines upon invoice clearance",
+    "Late payment interest fees and cancellation notice timelines",
+    "Standard governing law and dispute resolution details"
+  ],
+  "whenToUse": "Use this contract when you are hired to provide professional email marketing campaigns, automations, or list management as an independent contractor or agency.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name / Firm",
+      "type": "text",
+      "placeholder": "e.g. Apex Creative Group LLC",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Office Address",
+      "type": "text",
+      "placeholder": "e.g. 10 Pine St, Portland, OR 97201",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Zenith Tech Solutions Inc.",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "campaign_scope",
+      "label": "Campaign Scope & Platform",
+      "type": "textarea",
+      "placeholder": "e.g. Klaviyo email flows setup and weekly marketing broadcasts...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "payment_amount",
+      "label": "Campaign Retainer Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,500.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "EMAIL MARKETING SERVICES AGREEMENT",
+      "body": "This Services Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Scope of Services",
+      "body": "Marketer shall configure, manage, and scale the following email marketing flows: {campaign_scope}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment Covenants",
+      "body": "Client shall pay Marketer a monthly retainer of {payment_amount} for email marketing support.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "intellectual_property",
+      "heading": "3. Intellectual Property Rights",
+      "body": "All email templates, graphics, and automation structures belong to the Client.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract after signing?",
+      "answer": "Yes. Any changes to scope, payment, or timelines require a written amendment signed by both parties."
+    },
+    {
+      "question": "Who pays for third-party hosting or materials?",
+      "answer": "Under this contract, the client is responsible for purchasing all third-party subscriptions, hosting, and assets directly."
+    }
+  ],
+  "tags": [
+    "freelance",
+    "contract",
+    "services",
+    "month"
+  ]
+}

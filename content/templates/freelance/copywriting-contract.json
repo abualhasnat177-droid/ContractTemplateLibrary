@@ -1,0 +1,159 @@
+{
+  "id": "copywriting-contract",
+  "slug": "copywriting-contract",
+  "category": "freelance",
+  "subcategory": "Writing & Content",
+  "title": "Copywriting Services Agreement",
+  "description": "A freelance writing contract detailing the scope of copy deliverables (web copy, blog posts, ad scripts), flat fees, revision loops, and copyright release.",
+  "whatsCovered": [
+    "Defined writing deliverables and word count guidelines",
+    "Flat fee invoicing and deposit payment timeline",
+    "Round of revisions limitations (preventing scope creep)",
+    "Full transfer of copyrights upon receipt of payment",
+    "Portfolio rights allowing display of draft work"
+  ],
+  "whenToUse": "Use this contract when you are hired as a copywriter, blogger, or content marketer to write copy for a business client.",
+  "jurisdictions": ["US", "UK", "CA"],
+  "lastReviewedAt": "2026-05-11",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "copywriter_name",
+      "label": "Copywriter Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. WordCraft Creative Services",
+      "required": true,
+      "group": "Copywriter Info"
+    },
+    {
+      "id": "copywriter_address",
+      "label": "Copywriter Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Prose Lane, Portland, OR 97201",
+      "required": true,
+      "group": "Copywriter Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Acme Tech Solutions LLC",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industry Pkwy, Seattle, WA 98101",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "writing_deliverables",
+      "label": "Description of Deliverables",
+      "type": "textarea",
+      "placeholder": "Describe the articles, sales pages, or blog posts to write...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "flat_fee",
+      "label": "Flat Service Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,200.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "revisions_count",
+      "label": "Number of Revision Rounds",
+      "type": "select",
+      "options": ["1", "2", "3", "Unlimited"],
+      "defaultValue": "2",
+      "required": true,
+      "group": "Revisions"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing State",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "COPYWRITING SERVICES AGREEMENT",
+      "body": "This Copywriting Services Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {copywriter_name}, located at {copywriter_address} (\"Copywriter\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "deliverables",
+      "heading": "1. Writing Deliverables",
+      "body": "Copywriter agrees to write and deliver the following copy: {writing_deliverables}. All drafts shall be submitted in electronic text format (Google Docs, Word, or Markdown).",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "revisions",
+      "heading": "2. Revisions and Feedback",
+      "body": "Client is entitled to up to {revisions_count} rounds of revisions based on the initial brief, provided such feedback is submitted within 10 business days of receiving the draft. Additional revision rounds shall be billed at $75.00 per hour.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "payment",
+      "heading": "3. Service Fee & Deposit",
+      "body": "Client shall pay Copywriter a flat fee of {flat_fee} for the deliverables. A 50% deposit is due prior to project kickoff, and the final 50% balance is due within 15 days of final approval.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "ip",
+      "heading": "4. Intellectual Property Release",
+      "body": "Upon receipt of full and final payment, Copywriter hereby transfers all copyrights and intellectual property ownership in the approved copy to Client. Client may publish, edit, and repurpose the copy without attribution.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "portfolio",
+      "heading": "4.1 Portfolio Display Rights",
+      "body": "Copywriter retains the right to display portions of the approved copy in Copywriter's professional portfolio and case studies, except for proprietary/confidential business info.",
+      "optional": true,
+      "optionalLabel": "Allow Copywriter portfolio rights?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": ["web-design-contract", "mutual-nda"],
+  "faq": [
+    {
+      "question": "What happens if I change the scope mid-project?",
+      "answer": "If you add deliverables not included in the initial brief, they will be billed separately as 'out of scope' work at the copywriter's standard hourly rate."
+    },
+    {
+      "question": "Who owns the copy if I cancel early?",
+      "answer": "The copywriter retains all rights to any draft materials. Rights only transfer to the client upon full payment of the final invoice."
+    }
+  ],
+  "tags": ["copywriting", "writing", "blogging", "content", "marketing"]
+}

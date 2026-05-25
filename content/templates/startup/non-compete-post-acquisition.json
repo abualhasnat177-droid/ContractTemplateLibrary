@@ -1,0 +1,152 @@
+{
+  "id": "non-compete-post-acquisition",
+  "slug": "non-compete-post-acquisition",
+  "category": "startup",
+  "subcategory": "Exits & Acquisitions",
+  "title": "Post-Acquisition Non-Compete",
+  "description": "Restricted covenant signed by departing founders preventing them from competing with the acquired startup entity.",
+  "whatsCovered": [
+    "Scope of prohibited competitive operations",
+    "Post-closing non-compete duration (e.g. 3-5 years)",
+    "Geographic region boundaries (frequently global)",
+    "Exceptions for minor passive public stock investments",
+    "Injunction pathways and enforcement rules"
+  ],
+  "whenToUse": "Use this non-compete contract to ensure that selling founders do not launch a similar product right after receiving their buyout check.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "founder_name",
+      "label": "Selling Founder Full Name",
+      "type": "text",
+      "placeholder": "e.g. Bruce Wayne",
+      "required": true,
+      "group": "Restricted Party"
+    },
+    {
+      "id": "buyer_name",
+      "label": "Acquiring Buyer Company",
+      "type": "text",
+      "placeholder": "e.g. Wayne Enterprises Holdings",
+      "required": true,
+      "group": "Buyer Info"
+    },
+    {
+      "id": "noncompete_years",
+      "label": "Non-Compete Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "Covenants"
+    },
+    {
+      "id": "geographic_scope",
+      "label": "Geographic Boundary",
+      "type": "text",
+      "placeholder": "e.g. Worldwide",
+      "required": true,
+      "group": "Covenants"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "POST-ACQUISITION NON-COMPETE",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Post-Acquisition Non-Compete. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "post_acq_noncompete",
+      "heading": "2. Restricted Competition",
+      "body": "Founder {founder_name} agrees not to engage in competing business with {buyer_name} for a period of {noncompete_years} years within {geographic_scope}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Are post-acquisition non-competes easier to enforce?",
+      "answer": "Yes. While employment non-competes are heavily restricted in places like California, non-competes signed in connection with the SALE of a business are highly enforceable."
+    },
+    {
+      "question": "Can founders work as consultants in the same industry?",
+      "answer": "Generally no, unless explicitly carved out as an exception in this agreement."
+    }
+  ],
+  "tags": [
+    "noncompete",
+    "acquisition",
+    "founder-exit",
+    "exit",
+    "restrictive"
+  ]
+}

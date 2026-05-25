@@ -1,0 +1,147 @@
+{
+  "id": "roommate-agreement",
+  "slug": "roommate-agreement",
+  "category": "real-estate",
+  "title": "Co-Tenant Roommate Agreement",
+  "description": "A housemate contract detailing sharing rules for rent, utilities, cleaning schedules, guests, and security deposit return divisions.",
+  "whatsCovered": [
+    "Allocation of monthly rent and utility splits (electricity, internet)",
+    "Security deposit contribution divisions and return rules",
+    "Household chore schedules and cleaning guidelines",
+    "Guest policy limits (overnight stays and quiet hours)",
+    "Resolution procedures and moving-out notice timelines"
+  ],
+  "whenToUse": "Use this agreement when you are moving into a shared apartment or house with roommates to define financial and social boundaries.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "roommate_a",
+      "label": "Roommate A Full Name",
+      "type": "text",
+      "placeholder": "e.g. Alice Miller",
+      "required": true,
+      "group": "Roommates"
+    },
+    {
+      "id": "roommate_b",
+      "label": "Roommate B Full Name",
+      "type": "text",
+      "placeholder": "e.g. Robert Smith",
+      "required": true,
+      "group": "Roommates"
+    },
+    {
+      "id": "premises_address",
+      "label": "Shared Property Address",
+      "type": "text",
+      "placeholder": "e.g. 789 Ocean Blvd, Apt 5A, Miami, FL 33139",
+      "required": true,
+      "group": "Property Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "total_rent",
+      "label": "Total Monthly Rent ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,400.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "rent_split",
+      "label": "Roommate B Monthly Rent Split ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,200.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ROOMMATE AGREEMENT",
+      "body": "This Roommate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {roommate_a} and {roommate_b} (collectively, the \"Roommates\") sharing the residential property located at {premises_address} (the \"Premises\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "rent",
+      "heading": "1. Rent Allocation & Splits",
+      "body": "The total monthly rent for the Premises is {total_rent}. The Roommates agree to split the rent as follows: Roommate A shall pay a monthly portion of the rent, and Roommate B shall pay a monthly portion of {rent_split}. Payments must be submitted to the Landlord by the 1st of each month.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "utilities",
+      "heading": "2. Utility and Bills Splits",
+      "body": "Roommates agree to split all shared utility expenses (electricity, gas, high-speed internet, water) equally (50/50). One roommate shall pay the bills directly and submit requests for reimbursement to the other, which must be paid within 5 business days.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "chores",
+      "heading": "3. Cleaning and Maintenance",
+      "body": "The Roommates agree to keep the shared common areas (kitchen, living room, bathrooms) clean and tidy. A weekly rotating chore schedule shall be established to distribute cleaning tasks fairly.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "guests",
+      "heading": "4. Overnight Guest Policies",
+      "body": "Overnight guests are permitted on the Premises, provided that no single guest stays for more than three consecutive nights, or more than six nights total in a calendar month, without the prior consent of the other Roommate.",
+      "optional": true,
+      "optionalLabel": "Include Overnight Guest Policy?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Dispute Resolution & Governing Law",
+      "body": "The Roommates agree to settle all disputes in a friendly manner. This Agreement shall be interpreted in accordance with the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "residential-lease"
+  ],
+  "faq": [
+    {
+      "question": "Does this contract bind the landlord?",
+      "answer": "No. This roommate agreement is an agreement between the roommates themselves. The lease you signed with the landlord is the only contract binding the landlord."
+    },
+    {
+      "question": "What happens if a roommate moves out early?",
+      "answer": "Under the lease, you are typically 'jointly and severally' liable to the landlord for the full rent. However, this roommate agreement allows you to legally recover the early-departing roommate's rent share in court."
+    }
+  ],
+  "tags": [
+    "roommate",
+    "rental",
+    "lease",
+    "room",
+    "housemate"
+  ],
+  "subcategory": "Landlord & Tenant"
+}

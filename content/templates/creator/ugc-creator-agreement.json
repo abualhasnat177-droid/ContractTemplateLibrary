@@ -1,0 +1,156 @@
+{
+  "id": "ugc-creator-agreement",
+  "slug": "ugc-creator-agreement",
+  "category": "creator",
+  "title": "UGC (User Generated Content) Creator Agreement",
+  "description": "A creative contract for User Generated Content (UGC) campaigns, transferring copyright and advertising licensing usage rights to the brand for paid ad use.",
+  "whatsCovered": [
+    "Definition of UGC video/image deliverables and aspect ratios",
+    "Brand ownership and raw file transfer guidelines",
+    "Full digital advertising licensing rights (typically 12 months)",
+    "Compensation payouts and raw footage usage options",
+    "Mutual confidentiality and brand safety covenants"
+  ],
+  "whenToUse": "Use this agreement when you are hired by a brand to create raw video clips (unboxing, reviews, product demos) intended for the brand's paid social ads rather than your own page posts.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-22",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "brand_name",
+      "label": "Brand / Company Name",
+      "type": "text",
+      "placeholder": "e.g. SkinCare Radiance Inc.",
+      "required": true,
+      "group": "Brand Details"
+    },
+    {
+      "id": "brand_address",
+      "label": "Brand Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Beauty Way, Suite 400, New York, NY 10012",
+      "required": true,
+      "group": "Brand Details"
+    },
+    {
+      "id": "creator_name",
+      "label": "UGC Creator Name",
+      "type": "text",
+      "placeholder": "e.g. Jessica Miller",
+      "required": true,
+      "group": "Creator Details"
+    },
+    {
+      "id": "creator_address",
+      "label": "Creator Address",
+      "type": "text",
+      "placeholder": "e.g. 55 Sentinel Way, Orlando, FL 32801",
+      "required": true,
+      "group": "Creator Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "deliverables_desc",
+      "label": "UGC Video Deliverables Description",
+      "type": "textarea",
+      "placeholder": "e.g. Three (3) 9:16 TikTok-style review videos, each between 15-30 seconds, covering the facial serum product...",
+      "required": true,
+      "group": "Campaign Info"
+    },
+    {
+      "id": "payment_rate",
+      "label": "Content Creator Payment ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,500.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. New York",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "USER GENERATED CONTENT AGREEMENT",
+      "body": "This UGC Creator Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {brand_name}, located at {brand_address} (\"Brand\"), and {creator_name}, located at {creator_address} (\"Creator\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "deliverables",
+      "heading": "1. Creative Deliverables",
+      "body": "Creator agrees to script, record, and deliver the following custom digital content: {deliverables_desc}. All raw videos must be delivered in high-definition 9:16 format via Google Drive or Dropbox links.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Compensation",
+      "body": "Brand shall pay Creator a flat fee of {payment_rate} as full compensation for the creative work. Payment shall be sent within 15 days of content delivery and technical QA verification.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "rights",
+      "heading": "3. Advertising Usage Rights",
+      "body": "Creator hereby grants Brand a worldwide, royalty-free, exclusive license for a period of 12 months to use, edit, cut, and run the deliverables as paid social media advertising (Meta, TikTok, Pinterest ads) across all channels.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "raw_footage",
+      "heading": "3.1 Raw Footage Rights Transfer",
+      "body": "In addition to the edited deliverables, Creator agrees to transfer all rights to the raw, unedited camera video clips to Brand, which may be repurposed into new ad variations.",
+      "optional": true,
+      "optionalLabel": "Include Raw Footage Transfer?",
+      "enabledByDefault": false,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed by the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "influencer-agreement",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between UGC and Influencer marketing?",
+      "answer": "Influencer marketing requires posting the sponsored content to your own social channels. UGC creators produce content for the brand to post on their own profiles or run as paid advertisements."
+    },
+    {
+      "question": "Can I repost UGC content on my personal feeds?",
+      "answer": "Unless otherwise agreed, you can post snippets for your portfolio, but the commercial rights are licensed exclusively to the brand during the campaign term."
+    }
+  ],
+  "tags": [
+    "ugc",
+    "creator",
+    "influencer",
+    "ads",
+    "tiktok"
+  ],
+  "subcategory": "Platform-Specific Sponsorship"
+}

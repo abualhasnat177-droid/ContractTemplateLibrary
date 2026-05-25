@@ -1,0 +1,146 @@
+{
+  "id": "commercial-lease-addendum",
+  "slug": "commercial-lease-addendum",
+  "category": "real-estate",
+  "subcategory": "Commercial Real Estate",
+  "title": "Commercial Lease Addendum",
+  "description": "A general addendum modifying specific commercial lease covenants (signage rights, subleasing, tenant improvements).",
+  "whatsCovered": [
+    "Definition of professional signage rights, tenant improvements, and subleasing terms",
+    "Security deposits, escrow rules, and payment milestones",
+    "Property access, landlord entry, and keys protocols",
+    "Disclosures, lead paint compliance, and state law notices",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when organizing transactions or agreements for signage rights, tenant improvements, and subleasing terms to maintain complete legal compliance with state property regulations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Owner / Landlord / First Party Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Property Investments LLC",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Landmark Blvd, Denver, CO 80202",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Tenant / Buyer / Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Ridge Way, Boulder, CO 80301",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "signage_rights_rules",
+      "label": "Exterior Signage Guidelines",
+      "type": "textarea",
+      "placeholder": "e.g. Tenant is authorized to install exterior logo sign on main directory plaque...",
+      "required": true,
+      "group": "Property Details"
+    },
+    {
+      "id": "improvements_allowance",
+      "label": "Tenant Improvements Allowance ($)",
+      "type": "currency",
+      "placeholder": "e.g. 10,000.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "COMMERCIAL LEASE ADDENDUM",
+      "body": "This Real Estate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"First Party\"), and {client_name}, located at {client_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Property / Covenants Scope",
+      "body": "Tenant is granted exterior signage and buildout rights as follows: {signage_rights_rules}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Financial Obligations & Fees",
+      "body": "Landlord shall credit Tenant an improvements allowance of {improvements_allowance} upon completion of buildout phases.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance",
+      "heading": "3. Disclosures and Environmental Covenants",
+      "body": "All permanent electrical and partition upgrades remain the property of the Landlord.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "residential-lease",
+    "roommate-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement binding in all US states?",
+      "answer": "Yes, but real estate laws vary significantly. Ensure you specify the correct governing state in the Legal Settings field before closing."
+    },
+    {
+      "question": "How are security or escrow funds handled?",
+      "answer": "All security and earnest deposits must be held in dedicated escrow trust accounts in accordance with state license commission laws."
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "contract",
+    "property",
+    "addendum"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "startup-mentorship-agreement",
+  "slug": "startup-mentorship-agreement",
+  "category": "startup",
+  "subcategory": "Operations & Governance",
+  "title": "Startup Mentorship Agreement",
+  "description": "Mentorship framework outlining advisory meetings, session durations, and standard confidentiality covenants.",
+  "whatsCovered": [
+    "Scope of mentorship coaching and monthly schedules",
+    "Mentee confidentiality obligations regarding business metrics",
+    "No-employee and independent contractor status of mentor",
+    "Liability waiver for advisor business recommendations",
+    "Easy termination parameters (at-will by either party)"
+  ],
+  "whenToUse": "Use this agreement when establishing a formal relationship with a startup mentor who provides coaching without taking direct equity.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "mentor_name",
+      "label": "Mentor Full Name",
+      "type": "text",
+      "placeholder": "e.g. Arthur Kirkland",
+      "required": true,
+      "group": "Mentor Details"
+    },
+    {
+      "id": "monthly_sessions",
+      "label": "Monthly Meeting Count",
+      "type": "number",
+      "placeholder": "e.g. 2",
+      "required": true,
+      "group": "Schedule"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "STARTUP MENTORSHIP AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Startup Mentorship Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "mentorship_schedule",
+      "heading": "2. Coaching Schedules",
+      "body": "Mentor {mentor_name} shall provide mentorship to startup, coordinating at least {monthly_sessions} meetings per month.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is a mentor liable for poor business results?",
+      "answer": "No, this agreement contains a strict liability waiver stating that the mentor offers advice but is not responsible for the startup's financial success."
+    },
+    {
+      "question": "Can this convert into an advisory board role?",
+      "answer": "Yes, if the partnership works, founders often upgrade mentors to advisors using a Board Advisor template with equity."
+    }
+  ],
+  "tags": [
+    "mentorship",
+    "advisor",
+    "coaching",
+    "startup",
+    "education"
+  ]
+}

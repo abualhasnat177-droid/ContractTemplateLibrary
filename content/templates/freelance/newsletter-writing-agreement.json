@@ -1,0 +1,146 @@
+{
+  "id": "newsletter-writing-agreement",
+  "slug": "newsletter-writing-agreement",
+  "category": "freelance",
+  "subcategory": "Writing & Content",
+  "title": "Newsletter Writing Agreement",
+  "description": "An email newsletter writing contract outlining copy drafting, templates, schedule frequencies, and platform uploads.",
+  "whatsCovered": [
+    "Definition of freelance newsletter campaigns, email copywriting, or broadcasts",
+    "Payment terms, invoice dates, and retainer options",
+    "Intellectual property transfer guidelines upon invoice clearance",
+    "Late payment interest fees and cancellation notice timelines",
+    "Standard governing law and dispute resolution details"
+  ],
+  "whenToUse": "Use this contract when you are hired to provide professional newsletter campaigns, email copywriting, or broadcasts as an independent contractor or agency.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name / Firm",
+      "type": "text",
+      "placeholder": "e.g. Apex Creative Group LLC",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Office Address",
+      "type": "text",
+      "placeholder": "e.g. 10 Pine St, Portland, OR 97201",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Zenith Tech Solutions Inc.",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "newsletter_scope",
+      "label": "Newsletter Schedule Details",
+      "type": "textarea",
+      "placeholder": "e.g. Weekly email newsletters for Substack/Klaviyo audience...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "payment_amount",
+      "label": "Monthly Retainer ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "NEWSLETTER WRITING AGREEMENT",
+      "body": "This Services Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Scope of Services",
+      "body": "Writer shall draft, review, and schedule the following newsletters: {newsletter_scope}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment Covenants",
+      "body": "Client shall pay Writer a monthly fee of {payment_amount} for newsletter campaign support.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "intellectual_property",
+      "heading": "3. Intellectual Property Rights",
+      "body": "Upon receipt of payment, all newsletter copy and designs belong to the Client.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract after signing?",
+      "answer": "Yes. Any changes to scope, payment, or timelines require a written amendment signed by both parties."
+    },
+    {
+      "question": "Who pays for third-party hosting or materials?",
+      "answer": "Under this contract, the client is responsible for purchasing all third-party subscriptions, hosting, and assets directly."
+    }
+  ],
+  "tags": [
+    "freelance",
+    "contract",
+    "services",
+    "month"
+  ]
+}

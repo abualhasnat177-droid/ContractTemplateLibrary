@@ -1,0 +1,171 @@
+{
+  "id": "influencer-agreement",
+  "slug": "influencer-agreement",
+  "category": "creator",
+  "title": "Influencer Brand Agreement",
+  "description": "A campaign-focused sponsorship contract between a brand and an influencer defining deliverables, content guidelines, usage rights, and flat payments.",
+  "whatsCovered": [
+    "Definition of sponsor brand and influencer parties",
+    "List of creative deliverables and publishing deadlines",
+    "Flat-fee sponsorship payments and payment schedules",
+    "Content approval workflow and compliance (FTC tags)",
+    "Content licensing/usage rights and exclusivity"
+  ],
+  "whenToUse": "Use this agreement when you are a brand sponsoring an influencer, or a content creator partnering with a company for a sponsored campaign.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-22",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "brand_name",
+      "label": "Sponsor Brand / Company Name",
+      "type": "text",
+      "placeholder": "e.g. FitLife Supplements Inc.",
+      "required": true,
+      "group": "Brand Details"
+    },
+    {
+      "id": "brand_address",
+      "label": "Brand Address",
+      "type": "text",
+      "placeholder": "e.g. 505 Fitness Way, Los Angeles, CA 90025",
+      "required": true,
+      "group": "Brand Details"
+    },
+    {
+      "id": "influencer_name",
+      "label": "Influencer / Creator Name",
+      "type": "text",
+      "placeholder": "e.g. David 'Healthy' Harris",
+      "required": true,
+      "group": "Creator Details"
+    },
+    {
+      "id": "influencer_address",
+      "label": "Influencer Address",
+      "type": "text",
+      "placeholder": "e.g. 12 Venice Beach Dr, Venice, CA 90291",
+      "required": true,
+      "group": "Creator Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "campaign_name",
+      "label": "Campaign Name",
+      "type": "text",
+      "placeholder": "e.g. Summer Fitness Kickoff 2026",
+      "required": true,
+      "group": "Campaign Info"
+    },
+    {
+      "id": "deliverables_desc",
+      "label": "Deliverables Description",
+      "type": "textarea",
+      "placeholder": "e.g. One (1) dedicated YouTube video review, and two (2) Instagram Stories tagging @brand...",
+      "required": true,
+      "group": "Campaign Info"
+    },
+    {
+      "id": "payment_amount",
+      "label": "Sponsorship Payment ($)",
+      "type": "currency",
+      "placeholder": "e.g. 3,500.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INFLUENCER MARKETING AGREEMENT",
+      "body": "This Influencer Marketing Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {brand_name}, located at {brand_address} (\"Sponsor\"), and {influencer_name}, located at {influencer_address} (\"Creator\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "deliverables",
+      "heading": "1. Services and Deliverables",
+      "body": "Creator agrees to create and publish sponsored content for the {campaign_name} campaign. The deliverables shall consist of: {deliverables_desc}. Creator shall submit all drafts to Sponsor for review prior to publication.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "ftc_compliance",
+      "heading": "2. Regulatory and FTC Compliance",
+      "body": "Creator shall clearly and conspicuously display sponsorship disclosures in accordance with all Federal Trade Commission (FTC) guidelines, including tags such as '#ad' or '#sponsored' in the top description or video frames.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "payment",
+      "heading": "3. Sponsorship Fee",
+      "body": "Sponsor agrees to pay Creator a flat fee of {payment_amount} as full compensation for the services. Payments shall be made within 15 days after all deliverables are published and verify compliance.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "licensing",
+      "heading": "4. Intellectual Property and Licensing",
+      "body": "Creator retains ownership of all creative content. Creator hereby grants Sponsor a worldwide, non-exclusive, royalty-free, perpetual license to repost, share, and use the deliverables for Sponsor's owned media channels.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusivity",
+      "heading": "4.1 Exclusivity Period",
+      "body": "For a period of 30 days starting from the date of final publication, Creator shall not partner with, post reviews for, or represent any direct competitors of Sponsor in the nutrition/supplement industry.",
+      "optional": true,
+      "optionalLabel": "Include Competitor Exclusivity Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed by, and interpreted under, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "consulting-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is the FTC disclosure requirement?",
+      "answer": "The FTC requires that you clearly disclose your partnership. Using tags like #ad, #sponsored, or mentioning 'Thanks to brand for sponsoring' is required to remain legal."
+    },
+    {
+      "question": "Can the brand reuse my content?",
+      "answer": "Yes, under this contract the brand has a non-exclusive license to share and repurpose your posts for their advertising or social media channels, but they do not own your creative assets."
+    }
+  ],
+  "tags": [
+    "influencer",
+    "sponsor",
+    "creator",
+    "socialmedia",
+    "ad"
+  ],
+  "subcategory": "Platform-Specific Sponsorship"
+}

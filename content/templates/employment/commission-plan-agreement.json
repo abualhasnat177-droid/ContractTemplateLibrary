@@ -1,0 +1,148 @@
+{
+  "id": "commission-plan-agreement",
+  "slug": "commission-plan-agreement",
+  "category": "employment",
+  "subcategory": "Compensation & Benefits",
+  "title": "Commission Plan Agreement",
+  "description": "Sales commission structure outlining targets, payout calculations, and rules for earned vs. unearned accounts.",
+  "whatsCovered": [
+    "Sales targets, quotas, and commission tiers",
+    "Definition of when a commission is officially earned",
+    "Draw accounts (recoverable vs non-recoverable)",
+    "Impact of product returns or customer defaults",
+    "Commission payouts following employee termination"
+  ],
+  "whenToUse": "Use this agreement when hiring or configuring a sales representative who receives commissions based on closed deals.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "commission_rate_sales",
+      "label": "Base Commission Rate (%)",
+      "type": "text",
+      "placeholder": "e.g. 10.00",
+      "required": true,
+      "group": "Commission Details"
+    },
+    {
+      "id": "target_quota",
+      "label": "Quarterly Sales Quota ($)",
+      "type": "currency",
+      "placeholder": "e.g. 100,000.00",
+      "required": true,
+      "group": "Commission Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "COMMISSION PLAN AGREEMENT",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Commission Plan Agreement. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "commission_rates",
+      "heading": "2. Sales Commission Quotas",
+      "body": "Employee is eligible for a commission rate of {commission_rate_sales}% on sales. Quarterly quota targets are established at {target_quota}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "commission",
+    "sales",
+    "bonus",
+    "quota",
+    "compensation"
+  ]
+}

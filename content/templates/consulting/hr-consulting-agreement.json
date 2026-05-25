@@ -1,0 +1,148 @@
+{
+  "id": "hr-consulting-agreement",
+  "slug": "hr-consulting-agreement",
+  "category": "consulting",
+  "subcategory": "Specialist Consulting",
+  "title": "HR Consulting Agreement",
+  "description": "Services agreement for human resources consulting, covering audits, compliance, handbook updates, and recruiting setups.",
+  "whatsCovered": [
+    "Scope of HR compliance audits and advisory reviews",
+    "Drafting and updating employee handbook templates",
+    "Support for hiring, recruiting, and onboarding pipelines",
+    "Independent contractor classification of the advisor",
+    "Standard client and employee solicitation bans"
+  ],
+  "whenToUse": "Use this consulting agreement when hiring or working as an HR specialist to conduct employee handbooks audits or setup HR software integrations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Company/Individual",
+      "type": "text",
+      "placeholder": "e.g. Apex Corporation",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Street Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Summit Blvd, Suite 400, Chicago, IL",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Horizon Growth Advisors",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Street Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Innovation Way, Austin, TX",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "hr_audit_scope",
+      "label": "Audit Focus Area",
+      "type": "text",
+      "placeholder": "e.g. Employee Handbook Audit and Recruiting Pipelines",
+      "required": true,
+      "group": "HR Details"
+    },
+    {
+      "id": "monthly_hours",
+      "label": "Consulting Hours per Month",
+      "type": "number",
+      "placeholder": "e.g. 20",
+      "required": true,
+      "group": "Schedule"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Illinois",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "HR CONSULTING AGREEMENT",
+      "body": "This professional services agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "1. Independent Contractor Status",
+      "body": "Provider acts solely as an independent contractor. Nothing in this Agreement shall construct an employer-employee relationship, partnership, or joint venture between the parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "hr_terms",
+      "heading": "2. HR Consulting Services",
+      "body": "Provider shall audit employee files, handbooks, and hiring practices in connection with: {hr_audit_scope}. Provider shall allocate up to {monthly_hours} hours per month to perform these tasks.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "Confidentiality & Trade Secrecy",
+      "body": "Both parties agree to treat all business plans, customer metrics, financial spreadsheets, and personal disclosures shared during the engagement as strictly confidential.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "coaching-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom annexes for specific consulting milestones or agendas."
+    },
+    {
+      "question": "Is this agreement suitable for international clients?",
+      "answer": "Yes, the contract includes governing law and independent contractor clauses that are easily adaptable for cross-border coaching or consulting."
+    }
+  ],
+  "tags": [
+    "hr",
+    "human-resources",
+    "handbook",
+    "compliance",
+    "consulting"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "telemedicine-consent",
+  "slug": "telemedicine-consent",
+  "category": "healthcare",
+  "title": "Telehealth & Telemedicine Consent Form",
+  "description": "An informed consent document advising patients about the technology, privacy risks, and technical limitations of video consultations.",
+  "whatsCovered": [
+    "Explanation of interactive video, audio, and imaging tools",
+    "Network security safeguards and encryption disclosures",
+    "Limitations of remote exams (no physical touch, emergency exclusions)",
+    "Technical failure plans (rescheduling or phone call backup)",
+    "Billing details for remote telemedicine sessions"
+  ],
+  "whenToUse": "Use this form prior to providing remote clinical checkups, psychiatric consultations, or nutritional counseling sessions via video.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-21",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "patient_dob",
+      "label": "Patient Date of Birth",
+      "type": "date",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "provider_name",
+      "label": "Medical Clinic Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Health Group LLC",
+      "required": true,
+      "group": "Clinic Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INFORMED TELEHEALTH CONSENT",
+      "body": "This Telehealth Consent is signed by {patient_name}, DOB: {patient_dob} (\"Patient\"), in favor of {provider_name} (\"Provider\"), on {effective_date}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "telehealth_definition",
+      "heading": "1. What is Telemedicine?",
+      "body": "Telemedicine involves the delivery of healthcare services using interactive audio, video, and digital communication tools. This allows Patient to consult with a provider remotely without a physical clinic visit.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "limitations",
+      "heading": "2. Limits of Telemedicine Care",
+      "body": "Patient understands that a remote video exam is not a complete physical exam. If the provider determines that an in-person diagnostic test or emergency intervention is necessary, Patient agrees to visit a local clinic or emergency room immediately.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "privacy",
+      "heading": "3. Network Security & Encryption",
+      "body": "All video interactions are encrypted and comply with HIPAA security guidelines. Patient agrees to use a private network and secure device to prevent eavesdropping during the consultation.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "technical_failure",
+      "heading": "4. Technical Failures",
+      "body": "If a technical glitch or internet disconnection blocks the video call, the provider shall attempt to call Patient's telephone number within 5 minutes to complete or reschedule the session.",
+      "optional": true,
+      "optionalLabel": "Include Technical Failure Protocol?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This consent document shall be interpreted and governed under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "patient-consent-form",
+    "medical-consent"
+  ],
+  "faq": [
+    {
+      "question": "Does insurance cover telemedicine calls?",
+      "answer": "Most health insurance providers cover telehealth sessions, but patients are responsible for verifying their specific coverage prior to scheduling."
+    },
+    {
+      "question": "Can I get prescriptions during a video call?",
+      "answer": "Yes. Providers can send prescriptions directly to your pharmacy, subject to regulatory laws governing controlled substances."
+    }
+  ],
+  "tags": [
+    "telehealth",
+    "telemedicine",
+    "video",
+    "consent",
+    "remote"
+  ],
+  "subcategory": "Patient-Facing"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "cliff-vesting-agreement",
+  "slug": "cliff-vesting-agreement",
+  "category": "startup",
+  "subcategory": "Equity & Compensation",
+  "title": "Cliff Vesting Agreement",
+  "description": "An equity grant agreement establishing a standard 1-year cliff before monthly vesting commences.",
+  "whatsCovered": [
+    "Total share grant size and option strike price",
+    "One-year cliff date and subsequent vesting schedule",
+    "Forfeiture of unvested shares upon termination",
+    "Repurchase rights of unvested shares",
+    "Transfer restrictions prior to full vesting"
+  ],
+  "whenToUse": "Use this restricted stock or option agreement when onboarding new team members to ensure they must stay a full year before earning any equity.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "grantee_name",
+      "label": "Grantee Name",
+      "type": "text",
+      "placeholder": "e.g. Derek Shepherd",
+      "required": true,
+      "group": "Grantee Info"
+    },
+    {
+      "id": "shares_amount",
+      "label": "Total Shares Granted",
+      "type": "number",
+      "placeholder": "e.g. 50000",
+      "required": true,
+      "group": "Equity Details"
+    },
+    {
+      "id": "cliff_date",
+      "label": "Cliff Completion Date",
+      "type": "date",
+      "required": true,
+      "group": "Vesting Dates"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CLIFF VESTING AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Cliff Vesting Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "cliff_vesting_terms",
+      "heading": "2. Vesting Cliff Dates",
+      "body": "Grantee {grantee_name} receives {shares_amount} shares. Shares shall carry a strict 1-year cliff expiring on {cliff_date}, prior to which zero shares vest.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a 1-year cliff?",
+      "answer": "It is a trial period during which no shares vest. On the 1st anniversary, exactly 25% of the equity vests, and the remaining 75% vests monthly over 3 years."
+    },
+    {
+      "question": "What happens if the employee leaves at 11 months?",
+      "answer": "They forfeit all rights to the equity, and they receive zero shares or options."
+    }
+  ],
+  "tags": [
+    "cliff",
+    "vesting",
+    "equity",
+    "options",
+    "retention"
+  ]
+}

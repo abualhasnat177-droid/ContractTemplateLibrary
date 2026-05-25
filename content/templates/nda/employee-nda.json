@@ -1,0 +1,131 @@
+{
+  "id": "employee-nda",
+  "slug": "employee-nda",
+  "category": "nda",
+  "title": "Employee Non-Disclosure Agreement",
+  "description": "A robust unilateral confidentiality agreement signed by newly hired employees to protect company trade secrets, source code, and client databases.",
+  "whatsCovered": [
+    "Definition of company confidential information and source code",
+    "Survival of non-disclosure obligations post-employment",
+    "Return of all company computing devices and digital accounts",
+    "Injunctive relief pathways in event of data leaks",
+    "Exclusion for whistleblowing and legal subpoenas"
+  ],
+  "whenToUse": "Use this confidentiality agreement when onboarding new employees (full-time or part-time) who will have access to sensitive server keys, source code, or financial lists.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-16",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "employer_name",
+      "label": "Employer / Company Name",
+      "type": "text",
+      "placeholder": "e.g. Innovate Web Solutions Corp",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "employer_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industry Pkwy, Seattle, WA 98101",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee Full Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Doe",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "EMPLOYEE CONFIDENTIALITY AGREEMENT",
+      "body": "This Employee Non-Disclosure Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {employer_name}, located at {employer_address} (the \"Employer\"), and {employee_name} (\"Employee\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Proprietary & Confidential Information",
+      "body": "Employee understands that during the course of employment, Employee will have access to confidential trade secrets, software source code, customer records, financial charts, and marketing plans (collectively, \"Confidential Information\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Commitments",
+      "body": "Employee agrees to hold all Confidential Information in trust and secrecy. Employee shall not disclose, copy, or use any Confidential Information for personal gain or for the benefit of any competitor of Employer.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "return",
+      "heading": "3. Return of Materials",
+      "body": "Upon termination of employment for any reason, Employee shall immediately return to Employer all files, access credentials, keys, laptop computers, and documents containing or relating to Confidential Information.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_solicit_employees",
+      "heading": "4. Non-Solicitation of Personnel",
+      "body": "For a period of 12 months following the termination of employment, Employee shall not directly or indirectly recruit, solicit, or encourage any other employee of Employer to leave the company.",
+      "optional": true,
+      "optionalLabel": "Include Employee Non-Solicitation Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "Does this NDA expire when my employment ends?",
+      "answer": "No. The obligation to protect proprietary information and trade secrets survives indefinitely, even after you leave the company."
+    },
+    {
+      "question": "Can I share my salary information under this NDA?",
+      "answer": "No. Federal labor law (NLRA) protects employees' rights to discuss their salary and working conditions. Any clause in an NDA banning salary discussions is void and illegal."
+    }
+  ],
+  "tags": [
+    "employment",
+    "nda",
+    "employee",
+    "confidentiality",
+    "hr"
+  ],
+  "subcategory": "Standard NDAs"
+}

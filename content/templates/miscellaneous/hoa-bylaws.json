@@ -1,0 +1,153 @@
+{
+  "id": "hoa-bylaws",
+  "slug": "hoa-bylaws",
+  "category": "miscellaneous",
+  "subcategory": "Business Structures",
+  "title": "HOA Bylaws",
+  "description": "Homeowners Association bylaws defining board elections, dues collection, and common area maintenance rules.",
+  "whatsCovered": [
+    "HOA board of directors voting, meetings, and term limits",
+    "Annual dues assessments, collection schedules, and lien options",
+    "Common area maintenance, landscaping, and safety tasks",
+    "Architectural control committee review processes",
+    "Fines and penalty structures for neighborhood violations"
+  ],
+  "whenToUse": "Use this HOA bylaws template to establish or update the governance framework for a residential neighborhood or condo association.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "hoa_dues_cycle",
+      "label": "HOA Assessment Cycle",
+      "type": "select",
+      "options": [
+        "Monthly",
+        "Quarterly",
+        "Annually"
+      ],
+      "defaultValue": "Annually",
+      "required": true,
+      "group": "Finance"
+    },
+    {
+      "id": "community_name",
+      "label": "Residential Community Name",
+      "type": "text",
+      "placeholder": "e.g. Whispering Pines Subdivision",
+      "required": true,
+      "group": "Community"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "HOA BYLAWS",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the HOA Bylaws. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "hoa_dues",
+      "heading": "2. Homeowners Dues Assessments",
+      "body": "Homeowners in subdivision {community_name} shall pay assessments on a {hoa_dues_cycle} schedule. Overdue assessments carry lien options on the property.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "hoa",
+    "bylaws",
+    "condo",
+    "property",
+    "neighborhood"
+  ]
+}

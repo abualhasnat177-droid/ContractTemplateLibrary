@@ -1,0 +1,146 @@
+{
+  "id": "lease-violation-notice",
+  "slug": "lease-violation-notice",
+  "category": "real-estate",
+  "subcategory": "Landlord & Tenant",
+  "title": "Lease Violation Notice",
+  "description": "A formal notice detailing a lease breach (noise, unauthorized occupants) and demanding cure.",
+  "whatsCovered": [
+    "Definition of professional lease violations, cure notices, and landlord rules",
+    "Security deposits, escrow rules, and payment milestones",
+    "Property access, landlord entry, and keys protocols",
+    "Disclosures, lead paint compliance, and state law notices",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when organizing transactions or agreements for lease violations, cure notices, and landlord rules to maintain complete legal compliance with state property regulations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Owner / Landlord / First Party Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Property Investments LLC",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Landmark Blvd, Denver, CO 80202",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Tenant / Buyer / Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Ridge Way, Boulder, CO 80301",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "violation_details",
+      "label": "Description of Lease Violation",
+      "type": "textarea",
+      "placeholder": "e.g. Unauthorized dog kept at unit in violation of Section 12...",
+      "required": true,
+      "group": "Property Details"
+    },
+    {
+      "id": "cure_deadline",
+      "label": "Deadline to Cure (Date)",
+      "type": "date",
+      "placeholder": "e.g. 2,500.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "LEASE VIOLATION NOTICE",
+      "body": "This Real Estate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"First Party\"), and {client_name}, located at {client_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Property / Covenants Scope",
+      "body": "Tenant is in violation of the lease terms due to: {violation_details}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Financial Obligations & Fees",
+      "body": "Tenant must cure the violation or vacate the unit by the deadline: {cure_deadline}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance",
+      "heading": "3. Disclosures and Environmental Covenants",
+      "body": "Failure to resolve the breach will lead to immediate lease termination and eviction filings.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "residential-lease",
+    "roommate-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement binding in all US states?",
+      "answer": "Yes, but real estate laws vary significantly. Ensure you specify the correct governing state in the Legal Settings field before closing."
+    },
+    {
+      "question": "How are security or escrow funds handled?",
+      "answer": "All security and earnest deposits must be held in dedicated escrow trust accounts in accordance with state license commission laws."
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "contract",
+    "property",
+    "notice"
+  ]
+}

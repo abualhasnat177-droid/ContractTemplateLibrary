@@ -1,0 +1,153 @@
+{
+  "id": "mutual-separation-agreement",
+  "slug": "mutual-separation-agreement",
+  "category": "employment",
+  "subcategory": "Offboarding & Disputes",
+  "title": "Mutual Separation Agreement",
+  "description": "Severance contract specifying release of employment claims, payout amounts, and offboarding schedules.",
+  "whatsCovered": [
+    "Final departure date and outstanding pay calculations",
+    "Severance cash details and health coverage extensions",
+    "General release of claims under federal/state laws (ADEA, Title VII)",
+    "Return of all company laptops and data room files",
+    "Older Workers Benefit Protection Act (OWBPA) review periods"
+  ],
+  "whenToUse": "Use this separation agreement during employee layoffs or mutual departures to guarantee a legal release in exchange for severance.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "severance_weeks",
+      "label": "Severance Pay (Weeks)",
+      "type": "number",
+      "placeholder": "e.g. 8",
+      "required": true,
+      "group": "Severance Package"
+    },
+    {
+      "id": "review_days",
+      "label": "Legal Review Window (Days)",
+      "type": "select",
+      "options": [
+        "7",
+        "21",
+        "45"
+      ],
+      "defaultValue": "21",
+      "required": true,
+      "group": "Compliance"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MUTUAL SEPARATION AGREEMENT",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Mutual Separation Agreement. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "separation_severance",
+      "heading": "2. Severance Packages & Reviews",
+      "body": "Company shall pay Employee {severance_weeks} weeks of severance in exchange for a general release of claims. Review window is set at {review_days} days.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "separation",
+    "severance",
+    "release",
+    "offboarding",
+    "layoff"
+  ]
+}

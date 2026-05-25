@@ -1,0 +1,174 @@
+{
+  "id": "advisor-agreement",
+  "slug": "advisor-agreement",
+  "category": "startup",
+  "title": "Startup Board Advisor Agreement",
+  "description": "A standard founder-to-advisor equity agreement based on the FAST model, establishing equity vesting terms, advisory roles, and IP protection.",
+  "whatsCovered": [
+    "Definition of advisory services, meeting cadence, and mentoring",
+    "Granting of stock options or equity shares in exchange for services",
+    "Vesting schedule details (typically monthly vesting without a cliff)",
+    "Proprietary information ownership and non-disclosure covenants",
+    "Simple termination terms (termination at-will by either party)"
+  ],
+  "whenToUse": "Use this agreement when you are a startup founder recruiting an experienced advisor, mentor, or board member and compensating them with equity rather than cash.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-15",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 104 Innovators Blvd, San Francisco, CA 94107",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "advisor_name",
+      "label": "Advisor Full Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton",
+      "required": true,
+      "group": "Advisor Info"
+    },
+    {
+      "id": "advisor_address",
+      "label": "Advisor Residential Address",
+      "type": "text",
+      "placeholder": "e.g. 23 Valley View Rd, Los Altos, CA 94024",
+      "required": true,
+      "group": "Advisor Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "advisory_role",
+      "label": "Description of Advisory Services",
+      "type": "textarea",
+      "placeholder": "Describe what mentoring or industry connections the advisor will provide...",
+      "required": true,
+      "group": "Engagement Details"
+    },
+    {
+      "id": "equity_percentage",
+      "label": "Advisory Equity Percentage (%)",
+      "type": "text",
+      "placeholder": "e.g. 0.50",
+      "required": true,
+      "group": "Equity Compensation"
+    },
+    {
+      "id": "vesting_months",
+      "label": "Vesting Period (Months)",
+      "type": "select",
+      "options": [
+        "12",
+        "24",
+        "36",
+        "48"
+      ],
+      "defaultValue": "24",
+      "required": true,
+      "group": "Equity Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ADVISORY BOARD AGREEMENT",
+      "body": "This Advisory Board Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, a corporation located at {company_address} (the \"Company\"), and {advisor_name}, residing at {advisor_address} (\"Advisor\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Advisory Role & Services",
+      "body": "Advisor agrees to serve as a member of the Company's Advisory Board. Advisor shall provide mentoring, strategic advice, and business introductions as outlined: {advisory_role}. Advisor agrees to dedicate up to 5 hours per month to these activities.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "equity",
+      "heading": "2. Equity Compensation",
+      "body": "As full compensation for Advisor's services, and subject to approval by the Company's Board of Directors, Advisor shall be granted an option to purchase common shares representing {equity_percentage}% of the Company's fully-diluted capitalization.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "vesting",
+      "heading": "2.1 Vesting Schedule",
+      "body": "The option grant shall vest in equal monthly installments over a period of {vesting_months} months starting from the Effective Date, subject to the Advisor's continued engagement with the Company.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "ip",
+      "heading": "3. Intellectual Property Rights",
+      "body": "Advisor agrees that all ideas, inventions, patent disclosures, and designs conceived during the performance of advisory services shall be the sole and exclusive property of the Company.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_disclosure",
+      "heading": "4. Secrecy and Confidentiality",
+      "body": "Advisor shall maintain the confidentiality of all trade secrets, customer profiles, product specifications, and financial plans shared by the Company and shall not disclose them to any third party.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "co-founder-agreement",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "What is the FAST model?",
+      "answer": "The FAST (Founder Advisor Standard Template) was created by the Founder Institute. It provides standard equity percentages for advisors depending on the stage of the startup and level of advisory involvement."
+    },
+    {
+      "question": "Does this agreement grant stock options immediately?",
+      "answer": "No. The agreement sets the contract terms. The actual option grant must be formally approved by the Company's Board of Directors and is issued under a separate Option Plan Document."
+    }
+  ],
+  "tags": [
+    "advisor",
+    "advisory",
+    "startup",
+    "equity",
+    "fast"
+  ],
+  "subcategory": "Operations & Governance"
+}

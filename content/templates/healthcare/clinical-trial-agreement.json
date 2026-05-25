@@ -1,0 +1,138 @@
+{
+  "id": "clinical-trial-agreement",
+  "slug": "clinical-trial-agreement",
+  "category": "healthcare",
+  "title": "Clinical Trial Participant Consent",
+  "description": "An informed consent and liability waiver for research study participants, explaining experimental drug details, schedules, and confidentiality.",
+  "whatsCovered": [
+    "Clinical study protocol and experimental treatment overview",
+    "Potential research side-effects and safety hazard disclosures",
+    "Participant compensation and tracking schedules",
+    "Voluntary participation and withdrawal rules (anytime revocation)",
+    "Strict data anonymization and privacy protections"
+  ],
+  "whenToUse": "Use this form when enrolling human subjects in clinical trials, research studies, pharmaceutical tests, or academic healthcare experiments.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "participant_name",
+      "label": "Participant Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green",
+      "required": true,
+      "group": "Participant Info"
+    },
+    {
+      "id": "study_title",
+      "label": "Research Study Title",
+      "type": "text",
+      "placeholder": "e.g. Phase II Study on CardioProtect Beta-3",
+      "required": true,
+      "group": "Study Details"
+    },
+    {
+      "id": "principal_investigator",
+      "label": "Principal Investigator Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton",
+      "required": true,
+      "group": "Study Details"
+    },
+    {
+      "id": "stipend_amount",
+      "label": "Completion Stipend ($)",
+      "type": "currency",
+      "placeholder": "e.g. 500.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Maryland",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INFORMED CONSENT FOR CLINICAL STUDY",
+      "body": "This Consent and Waiver is signed on {effective_date} by {participant_name} (\"Participant\") in favor of Principal Investigator {principal_investigator} for the research study: {study_title}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "protocol",
+      "heading": "1. Study Objective & Procedure",
+      "body": "Participant agrees to participate in the clinical trial. Participant will receive the experimental therapy and undergo clinical monitoring. The schedule of checks has been explained to the Participant.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "risks",
+      "heading": "2. Research Risks & Disclaimers",
+      "body": "Participant understands that this study involves experimental testing. Potential side-effects may include allergic reactions, nausea, dizziness, or other unexpected complications. Participant agrees to report all symptoms immediately.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "voluntary",
+      "heading": "3. Voluntary Participation & Withdrawal",
+      "body": "Participation is completely voluntary. Participant has the right to withdraw from the research study at any time, for any reason, without losing eligibility for routine medical care.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "4. Participant Stipend",
+      "body": "In exchange for complete participation in the study visits, Participant shall receive a total stipend of {stipend_amount}, payable upon completion of the final checkup visit.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This consent document shall be interpreted and governed under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "patient-consent-form",
+    "medical-consent"
+  ],
+  "faq": [
+    {
+      "question": "Can I leave the study early if I feel sick?",
+      "answer": "Yes. You have the right to withdraw from the clinical trial at any moment. Your safety and health always remain the highest priority."
+    },
+    {
+      "question": "Will my name be shared in scientific papers?",
+      "answer": "No. All participant data is anonymized and assigned a research code. Your name will never appear in any published research studies."
+    }
+  ],
+  "tags": [
+    "clinicaltrial",
+    "research",
+    "study",
+    "consent",
+    "participant"
+  ],
+  "subcategory": "Administrative / Compliance"
+}

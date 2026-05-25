@@ -1,0 +1,162 @@
+{
+  "id": "multi-party-nda",
+  "slug": "multi-party-nda",
+  "category": "nda",
+  "subcategory": "Format Variants",
+  "title": "Multi-party NDA (3+ parties)",
+  "description": "A tripartite or multiparty NDA to protect confidential information shared among three or more participating entities.",
+  "whatsCovered": [
+    "Tripartite confidentiality covenants",
+    "Equal protection for all disclosing and receiving parties",
+    "Standard exclusions from confidentiality",
+    "Term of protection and return of materials",
+    "Joint and several liability for data leaks"
+  ],
+  "whenToUse": "Use this NDA when three or more distinct businesses or individuals are participating in discussions together and sharing confidential data.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "Party A Company/Individual Name",
+      "type": "text",
+      "placeholder": "e.g. InnovateTech Inc.",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_a_address",
+      "label": "Party A Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Jose, CA",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Party B Company/Individual Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Ventures LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Party B Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Equity Towers, Boston, MA",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_c_name",
+      "label": "Party C Company/Individual Name",
+      "type": "text",
+      "placeholder": "e.g. Zenith Consulting LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_c_address",
+      "label": "Party C Address",
+      "type": "text",
+      "placeholder": "e.g. 700 Summit Ave, Seattle, WA",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MULTI-PARTY NON-DISCLOSURE AGREEMENT",
+      "body": "This Multi-Party Non-Disclosure Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and among {party_a_name}, located at {party_a_address}, {party_b_name}, located at {party_b_address}, and {party_c_name}, located at {party_c_address} (each a \"Party\" and collectively \"the Parties\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information refers to any proprietary information, technical data, trade secrets, software code, customer records, and product roadmaps disclosed by any Party to the other Parties during their joint evaluation of business opportunities.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligations",
+      "heading": "2. Obligations of Confidentiality",
+      "body": "Each Party agrees: (a) to hold all other Parties' Confidential Information in strict confidence, (b) to use such information solely to evaluate the prospective collaboration, and (c) to restrict access to employees or representatives who are bound by matching confidentiality terms. These obligations shall persist for a period of {term_years} years.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "3. Exclusions from Confidentiality",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach, (b) was already in the receiving party's possession, (c) is independently developed, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law and Remedies",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between a bilateral and multiparty NDA?",
+      "answer": "Bilateral is between 2 parties. Multiparty (tripartite) covers 3 or more parties, saving everyone from signing multiple separate agreements."
+    },
+    {
+      "question": "Does a breach by one party release the others?",
+      "answer": "No. If one party leaks files, the other parties remain bound to protect the discloser's secrets under this contract."
+    }
+  ],
+  "tags": [
+    "multiparty",
+    "tripartite",
+    "group",
+    "nda"
+  ]
+}

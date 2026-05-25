@@ -1,0 +1,156 @@
+{
+  "id": "vendor-agreement",
+  "slug": "vendor-agreement",
+  "category": "vendor",
+  "title": "Standard Vendor Service Agreement",
+  "description": "A formal procurement contract between a client and a vendor specifying the delivery of goods or commercial services, pricing structure, and deadlines.",
+  "whatsCovered": [
+    "Definition of client and vendor parties",
+    "Detailed specifications of goods/services to be delivered",
+    "Invoicing terms, retail prices, and payment schedules",
+    "Delivery schedules, shipping risk, and product inspections",
+    "Indemnification guidelines and termination rules"
+  ],
+  "whenToUse": "Use this agreement when you are sourcing goods, event services, raw materials, or commercial equipment supply from an external vendor.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-14",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Zenith Hospitality Group LLC",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, Suite 300, New York, NY 10022",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "vendor_name",
+      "label": "Vendor Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Elite Catering Services Inc.",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "vendor_address",
+      "label": "Vendor Address",
+      "type": "text",
+      "placeholder": "e.g. 102 Gourmet Way, Brooklyn, NY 11201",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "goods_services_desc",
+      "label": "Goods or Services Description",
+      "type": "textarea",
+      "placeholder": "Provide detailed descriptions of goods or catering services to be supplied...",
+      "required": true,
+      "group": "Procurement Info"
+    },
+    {
+      "id": "pricing_amount",
+      "label": "Contract Pricing / Cost ($)",
+      "type": "currency",
+      "placeholder": "e.g. 8,500.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. New York",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "VENDOR SERVICE AGREEMENT",
+      "body": "This Vendor Service Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {client_name}, located at {client_address} (\"Client\"), and {vendor_name}, located at {vendor_address} (\"Vendor\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "goods",
+      "heading": "1. Goods or Services Provided",
+      "body": "Vendor agrees to supply and deliver the following goods or services as outlined: {goods_services_desc}. Vendor guarantees that all items delivered conform strictly to the specifications and standards requested by Client.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "pricing",
+      "heading": "2. Price and Payment Terms",
+      "body": "Client shall pay Vendor a contract amount of {pricing_amount} for the goods or services. Payment shall be due net 30 days after the Client receives a detailed invoice following delivery.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "inspection",
+      "heading": "3. Inspection and Rejection",
+      "body": "Client shall inspect all products upon arrival. Client has 5 business days from delivery to reject any defective, damaged, or non-conforming goods. Rejected items shall be replaced by Vendor within 7 days at no additional cost to Client.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "limitation_liability",
+      "heading": "4. Limitation of Liability",
+      "body": "Neither party shall be liable to the other for any indirect, incidental, special, or consequential damages (including loss of profits) arising under this Agreement, even if advised of the possibility of such damages.",
+      "optional": true,
+      "optionalLabel": "Include Limitation of Liability Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed by, and interpreted in accordance with, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "consulting-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What happens if a product is damaged during shipping?",
+      "answer": "Under this contract's inspection clause, the client has 5 days to inspect and reject damaged items. The vendor must replace rejected items at their own expense."
+    },
+    {
+      "question": "Can I cancel a vendor order?",
+      "answer": "Yes, but termination details must be mutually agreed upon or require a prior written notice amendment to prevent breach of contract liabilities."
+    }
+  ],
+  "tags": [
+    "vendor",
+    "procurement",
+    "supply",
+    "goods",
+    "services"
+  ],
+  "subcategory": "Supplier & Sourcing"
+}

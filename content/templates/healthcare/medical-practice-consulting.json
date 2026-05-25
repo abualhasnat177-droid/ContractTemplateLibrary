@@ -1,0 +1,122 @@
+{
+  "id": "medical-practice-consulting",
+  "slug": "medical-practice-consulting",
+  "category": "healthcare",
+  "title": "Medical Practice Consulting Agreement",
+  "description": "A consulting agreement signed when an external advisor assists a medical practice with operational efficiency, billing, coding audits, or marketing.",
+  "whatsCovered": [
+    "Consulting scope of work (billing, compliance, or practice management)",
+    "Hourly or monthly retainer billing terms",
+    "HIPAA business associate compliance provisions",
+    "Ownership of intellectual property (custom systems or reports)",
+    "Standard dispute resolution and governing law"
+  ],
+  "whenToUse": "Use this agreement when hiring a consultant to audit medical coding, optimize billing, or advise on clinical operations.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-19",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "practice_name",
+      "label": "Medical Practice Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Family Clinics LLC",
+      "required": true,
+      "group": "Practice Info"
+    },
+    {
+      "id": "consultant_name",
+      "label": "Consultant Full Name / Firm",
+      "type": "text",
+      "placeholder": "e.g. Healthcare Advisors Group LLC",
+      "required": true,
+      "group": "Consultant Info"
+    },
+    {
+      "id": "monthly_retainer",
+      "label": "Monthly Consulting Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 3,500.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Texas",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MEDICAL CONSULTING SERVICES AGREEMENT",
+      "body": "This Consulting Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {practice_name} (\"Practice\"), and {consultant_name} (\"Consultant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Consulting Scope",
+      "body": "Consultant shall provide strategic advisory services, practice management evaluations, and billing audit assistance to Practice. Consultant agrees to dedicate up to 20 hours per month to these tasks.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Retainer Fee",
+      "body": "Practice shall pay Consultant a monthly flat retainer fee of {monthly_retainer}, payable in advance on the 1st of each month.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "hipaa",
+      "heading": "3. HIPAA Safeguards",
+      "body": "To the extent Consultant has access to patient charts, coding logs, or billing data, Consultant agrees to execute a separate HIPAA Business Associate Agreement (BAA) and safeguard all patient data.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "hipaa-baa"
+  ],
+  "faq": [
+    {
+      "question": "Does this cover medical billing tasks?",
+      "answer": "No. This is an advisory consulting agreement. Routine billing tasks require a dedicated Medical Billing Outsourcing Contract."
+    },
+    {
+      "question": "Can either party cancel early?",
+      "answer": "Yes. This contract supports early termination at-will upon providing 30 days written notice."
+    }
+  ],
+  "tags": [
+    "consulting",
+    "medical",
+    "practice",
+    "billing",
+    "advisor"
+  ],
+  "subcategory": "Administrative / Compliance"
+}

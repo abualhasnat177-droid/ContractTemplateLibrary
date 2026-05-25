@@ -1,0 +1,160 @@
+{
+  "id": "coaching-discovery-call",
+  "slug": "coaching-discovery-call",
+  "category": "consulting",
+  "subcategory": "Engagement Structures",
+  "title": "Coaching Discovery Call Agreement",
+  "description": "Simple terms of agreement for introductory coaching consultations, covering basic expectations and cancellation timelines.",
+  "whatsCovered": [
+    "Duration and focus of the introductory call",
+    "Strict cancellation notice requirements (e.g. 24 hours)",
+    "Coaching is not psychiatric therapy disclaimer",
+    "Confidentiality of introductory metrics shared",
+    "No obligation to sign up for long coaching packages"
+  ],
+  "whenToUse": "Use this brief agreement before a discovery call or introductory diagnostic consultation to establish boundaries and collect basic info.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Company/Individual",
+      "type": "text",
+      "placeholder": "e.g. Apex Corporation",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Street Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Summit Blvd, Suite 400, Chicago, IL",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Horizon Growth Advisors",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Street Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Innovation Way, Austin, TX",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "call_minutes_duration",
+      "label": "Call Duration (Minutes)",
+      "type": "select",
+      "options": [
+        "15",
+        "30",
+        "45",
+        "60"
+      ],
+      "defaultValue": "30",
+      "required": true,
+      "group": "Call Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Illinois",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "COACHING DISCOVERY CALL AGREEMENT",
+      "body": "This professional services agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "1. Independent Contractor Status",
+      "body": "Provider acts solely as an independent contractor. Nothing in this Agreement shall construct an employer-employee relationship, partnership, or joint venture between the parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "coaching_scope",
+      "heading": "2. Coaching Engagement",
+      "body": "Provider shall supply Client with coaching program. Sessions shall follow the schedules and calendar bookings approved by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "medical_disclaimer",
+      "heading": "3. Mental and Physical Health Disclaimer",
+      "body": "Client acknowledges that coaching services do not constitute psychiatric therapy, clinical psychology, medical treatment, or healthcare services. If Client has psychiatric or medical issues, they agree to seek licensed medical professionals.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "discovery_call_terms",
+      "heading": "2. Consultation Call Duration",
+      "body": "Provider shall host a discovery call lasting up to {call_minutes_duration} minutes. Client agrees that this call is diagnostic, and does not oblige Client to buy long-term coaching packages.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "Confidentiality & Trade Secrecy",
+      "body": "Both parties agree to treat all business plans, customer metrics, financial spreadsheets, and personal disclosures shared during the engagement as strictly confidential.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "coaching-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom annexes for specific consulting milestones or agendas."
+    },
+    {
+      "question": "Is this agreement suitable for international clients?",
+      "answer": "Yes, the contract includes governing law and independent contractor clauses that are easily adaptable for cross-border coaching or consulting."
+    }
+  ],
+  "tags": [
+    "discovery",
+    "intro",
+    "coaching",
+    "consultation",
+    "quick"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "patient-consent-form",
+  "slug": "patient-consent-form",
+  "category": "healthcare",
+  "title": "General Patient Treatment Consent",
+  "description": "A standard patient intake consent form permitting healthcare professionals to administer diagnostic tests, physical exams, and basic clinical treatments.",
+  "whatsCovered": [
+    "Consent for physical examinations and diagnostic tests",
+    "Financial responsibility for co-pays and insurance billing",
+    "Acknowledgement of privacy practices and HIPAA rules",
+    "Emergency treatment permissions",
+    "Revocation rights parameters"
+  ],
+  "whenToUse": "Use this consent form as a standard document during patient onboarding or registration at a new medical or wellness practice.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-19",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green",
+      "required": true,
+      "group": "Patient Details"
+    },
+    {
+      "id": "patient_dob",
+      "label": "Patient Date of Birth",
+      "type": "date",
+      "required": true,
+      "group": "Patient Details"
+    },
+    {
+      "id": "clinic_name",
+      "label": "Clinic / Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Medical Clinics Group",
+      "required": true,
+      "group": "Clinic Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Date of Consent",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "PATIENT CONSENT AND OBLIGATION",
+      "body": "This Patient Consent is signed by {patient_name}, DOB: {patient_dob} (\"Patient\"), in favor of {clinic_name} (\"Clinic\"), as of {effective_date}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "consent",
+      "heading": "1. Consent to Routine Care",
+      "body": "Patient hereby authorizes Clinic's medical staff to perform physical examinations, diagnostic tests, lab draws, and routine clinical treatments as deemed necessary by Patient's providers.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "financial",
+      "heading": "2. Financial Responsibility",
+      "body": "Patient understands that they are ultimately responsible for all clinical charges, co-pays, and deductibles not covered by their health insurance provider.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "privacy",
+      "heading": "3. Privacy Practices Acknowledgement",
+      "body": "Patient acknowledges receiving Clinic's Notice of Privacy Practices, which describes how their medical information may be used and disclosed under HIPAA regulations.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This consent document shall be interpreted and governed under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "medical-consent",
+    "hipaa-authorization"
+  ],
+  "faq": [
+    {
+      "question": "Can I refuse a specific test?",
+      "answer": "Yes. This is a general consent. You always retain the right to refuse any specific test, draw, or treatment proposed by your physician."
+    },
+    {
+      "question": "Who bills my insurance?",
+      "answer": "The clinic will bill your insurance provider as a convenience, but any unpaid balances remain your financial responsibility."
+    }
+  ],
+  "tags": [
+    "consent",
+    "patient",
+    "intake",
+    "medical",
+    "clinic"
+  ],
+  "subcategory": "Patient-Facing"
+}

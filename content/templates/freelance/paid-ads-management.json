@@ -1,0 +1,146 @@
+{
+  "id": "paid-ads-management",
+  "slug": "paid-ads-management",
+  "category": "freelance",
+  "subcategory": "Marketing & Growth",
+  "title": "Paid Ads Management Contract",
+  "description": "An ad agency contract detailing ad budget allocations, ad copy creative design, pixel configuration, and return metrics.",
+  "whatsCovered": [
+    "Definition of freelance paid advertising, PPC management, or Meta/Google ad campaigns",
+    "Payment terms, invoice dates, and retainer options",
+    "Intellectual property transfer guidelines upon invoice clearance",
+    "Late payment interest fees and cancellation notice timelines",
+    "Standard governing law and dispute resolution details"
+  ],
+  "whenToUse": "Use this contract when you are hired to provide professional paid advertising, PPC management, or Meta/Google ad campaigns as an independent contractor or agency.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name / Firm",
+      "type": "text",
+      "placeholder": "e.g. Apex Creative Group LLC",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Office Address",
+      "type": "text",
+      "placeholder": "e.g. 10 Pine St, Portland, OR 97201",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Zenith Tech Solutions Inc.",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "ad_platforms",
+      "label": "Target Platforms",
+      "type": "text",
+      "placeholder": "e.g. Meta Ads, Google PPC, and TikTok Ads Manager",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "payment_amount",
+      "label": "Monthly Management Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "PAID ADS MANAGEMENT CONTRACT",
+      "body": "This Services Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Scope of Services",
+      "body": "Manager shall create, monitor, and optimize paid ad campaigns on: {ad_platforms}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment Covenants",
+      "body": "Client shall pay Manager a monthly fee of {payment_amount} for ad campaign management.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "intellectual_property",
+      "heading": "3. Intellectual Property Rights",
+      "body": "All ad copy, banners, and audience target sets belong to the Client.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract after signing?",
+      "answer": "Yes. Any changes to scope, payment, or timelines require a written amendment signed by both parties."
+    },
+    {
+      "question": "Who pays for third-party hosting or materials?",
+      "answer": "Under this contract, the client is responsible for purchasing all third-party subscriptions, hosting, and assets directly."
+    }
+  ],
+  "tags": [
+    "freelance",
+    "contract",
+    "services",
+    "month"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "unanimous-written-consent",
+  "slug": "unanimous-written-consent",
+  "category": "startup",
+  "subcategory": "Operations & Governance",
+  "title": "Board Unanimous Written Consent",
+  "description": "A board resolution template for taking corporate action without convening a formal meeting.",
+  "whatsCovered": [
+    "Formal corporate board resolutions and actions",
+    "Waiver of meeting requirements by directors",
+    "Record of board member digital signatures",
+    "Filing guidelines in the corporate minute book",
+    "Exhibits for board action attachments"
+  ],
+  "whenToUse": "Use this template when the Board of Directors needs to approve stock grants, hire executives, or open bank accounts rapidly.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "board_resolution_date",
+      "label": "Resolution Date",
+      "type": "date",
+      "required": true,
+      "group": "Board Info"
+    },
+    {
+      "id": "board_actions",
+      "label": "Approved Corporate Actions",
+      "type": "textarea",
+      "placeholder": "e.g. Resolved, that the Board hereby approves the appointment of Jane Doe as Chief Technical Officer...",
+      "required": true,
+      "group": "Resolutions"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "BOARD UNANIMOUS WRITTEN CONSENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Board Unanimous Written Consent. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "written_resolutions",
+      "heading": "2. Board Resolutions",
+      "body": "Board approves the corporate resolutions dated {board_resolution_date} regarding actions: {board_actions}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Do all board members need to sign?",
+      "answer": "Yes, a written consent in lieu of a meeting must be signed by 100% of the active board directors to be legally valid."
+    },
+    {
+      "question": "What actions require board consent?",
+      "answer": "Major actions: option pool changes, corporate fundraising, hiring C-level officers, and selling company assets."
+    }
+  ],
+  "tags": [
+    "consent",
+    "writtenconsent",
+    "board",
+    "resolution",
+    "corporate"
+  ]
+}

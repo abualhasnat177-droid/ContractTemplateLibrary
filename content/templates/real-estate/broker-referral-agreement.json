@@ -1,0 +1,146 @@
+{
+  "id": "broker-referral-agreement",
+  "slug": "broker-referral-agreement",
+  "category": "real-estate",
+  "subcategory": "Agent & Brokerage",
+  "title": "Broker-to-Broker Referral Agreement",
+  "description": "A contract detailing referral commission splits between brokers for introducing a buyer or seller client.",
+  "whatsCovered": [
+    "Definition of professional lead referrals, commission splits, and client data",
+    "Security deposits, escrow rules, and payment milestones",
+    "Property access, landlord entry, and keys protocols",
+    "Disclosures, lead paint compliance, and state law notices",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when organizing transactions or agreements for lead referrals, commission splits, and client data to maintain complete legal compliance with state property regulations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Owner / Landlord / First Party Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Property Investments LLC",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Landmark Blvd, Denver, CO 80202",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Tenant / Buyer / Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Ridge Way, Boulder, CO 80301",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "referred_client_name",
+      "label": "Referred Client Full Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Miller",
+      "required": true,
+      "group": "Property Details"
+    },
+    {
+      "id": "referral_fee_percent",
+      "label": "Referral Fee Percentage (%)",
+      "type": "text",
+      "placeholder": "e.g. 25% of the receiving broker's commission",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "BROKER-TO-BROKER REFERRAL AGREEMENT",
+      "body": "This Real Estate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"First Party\"), and {client_name}, located at {client_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Property / Covenants Scope",
+      "body": "Referring Broker refers the buyer/seller client {referred_client_name} to the Receiving Broker for representation.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Financial Obligations & Fees",
+      "body": "Upon successful closing of any transaction for the client, Receiving Broker shall pay Referring Broker a referral fee of {referral_fee_percent}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance",
+      "heading": "3. Disclosures and Environmental Covenants",
+      "body": "Client contact information shall be kept confidential and used solely for the transaction representation.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "residential-lease",
+    "roommate-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement binding in all US states?",
+      "answer": "Yes, but real estate laws vary significantly. Ensure you specify the correct governing state in the Legal Settings field before closing."
+    },
+    {
+      "question": "How are security or escrow funds handled?",
+      "answer": "All security and earnest deposits must be held in dedicated escrow trust accounts in accordance with state license commission laws."
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "contract",
+    "property",
+    "referral"
+  ]
+}

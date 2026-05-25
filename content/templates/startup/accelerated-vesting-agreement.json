@@ -1,0 +1,143 @@
+{
+  "id": "accelerated-vesting-agreement",
+  "slug": "accelerated-vesting-agreement",
+  "category": "startup",
+  "subcategory": "Equity & Compensation",
+  "title": "Accelerated Vesting Agreement",
+  "description": "Outlines 'single trigger' or 'double trigger' acceleration of stock option vesting in M&A scenarios.",
+  "whatsCovered": [
+    "Single-trigger acceleration details (on acquisition)",
+    "Double-trigger acceleration rules (acquisition + termination)",
+    "Vesting acceleration percentages (e.g. 50% or 100%)",
+    "Notice timelines during acquisition cycles",
+    "Integration with Board option plans"
+  ],
+  "whenToUse": "Use this executive option addendum to define vesting acceleration rights if the startup is acquired or the executive is terminated.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "executive_name",
+      "label": "Executive Full Name",
+      "type": "text",
+      "placeholder": "e.g. Harvey Specter",
+      "required": true,
+      "group": "Executive Info"
+    },
+    {
+      "id": "acceleration_trigger",
+      "label": "Acceleration Trigger Type",
+      "type": "select",
+      "options": [
+        "Single Trigger",
+        "Double Trigger",
+        "Custom Board Approval"
+      ],
+      "defaultValue": "Double Trigger",
+      "required": true,
+      "group": "Acceleration Details"
+    },
+    {
+      "id": "acceleration_percentage",
+      "label": "Vesting Acceleration (%)",
+      "type": "text",
+      "placeholder": "e.g. 100.00",
+      "required": true,
+      "group": "Acceleration Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ACCELERATED VESTING AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Accelerated Vesting Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "acceleration_covenants",
+      "heading": "2. Vesting Acceleration Rules",
+      "body": "Executive {executive_name} is granted {acceleration_percentage}% vesting acceleration upon the occurrence of: {acceleration_trigger}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a double-trigger acceleration?",
+      "answer": "It requires two events to trigger acceleration: (1) the company is acquired, AND (2) the executive is terminated without cause within a year."
+    },
+    {
+      "question": "Why is double-trigger preferred over single-trigger?",
+      "answer": "Acquirers prefer double-triggers because it incentivizes the executive team to stay and assist with the post-acquisition integration."
+    }
+  ],
+  "tags": [
+    "acceleration",
+    "vesting",
+    "double-trigger",
+    "exit",
+    "executive"
+  ]
+}

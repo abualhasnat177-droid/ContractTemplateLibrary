@@ -1,0 +1,138 @@
+{
+  "id": "medical-consent",
+  "slug": "medical-consent",
+  "category": "healthcare",
+  "title": "Informed Consent for Medical Treatment",
+  "description": "A legal consent document outlining risks, benefits, and alternative pathways for patients prior to undergoing medical or cosmetic treatments.",
+  "whatsCovered": [
+    "Patient identification and disclosure statements",
+    "Detailed description of the proposed medical treatment",
+    "Acknowledgement of clinical risks and complications",
+    "Identification of alternative clinical pathways",
+    "Patient declaration of understanding and voluntary consent"
+  ],
+  "whenToUse": "Use this form in a clinic, hospital, or wellness setting to secure a patient's informed, written consent prior to administering treatment, surgery, or therapy.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Miller",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "patient_dob",
+      "label": "Patient Date of Birth",
+      "type": "date",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "provider_name",
+      "label": "Healthcare Clinic / Provider",
+      "type": "text",
+      "placeholder": "e.g. Apex Wellness Clinics LLC",
+      "required": true,
+      "group": "Provider Info"
+    },
+    {
+      "id": "treatment_desc",
+      "label": "Proposed Treatment Description",
+      "type": "textarea",
+      "placeholder": "Describe the medical, dental, or aesthetic procedure to be performed...",
+      "required": true,
+      "group": "Treatment Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Date of Consent",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INFORMED CONSENT AND DISCLOSURE",
+      "body": "This Informed Consent is signed on {effective_date} by {patient_name}, DOB: {patient_dob} (the \"Patient\"), in favor of {provider_name} (the \"Provider\") regarding the proposed treatment.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "procedure",
+      "heading": "1. Description of Treatment",
+      "body": "The Patient has requested and hereby consents to the following medical or wellness procedure: {treatment_desc}. The Provider has explained the nature and purpose of this procedure to the Patient.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "risks",
+      "heading": "2. Clinical Risks & Complications",
+      "body": "Patient understands that all medical treatments carry inherent risks, including infection, swelling, bruising, allergic reactions, and failure to achieve desired clinical results. Patient acknowledges that no guarantees have been made.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "alternatives",
+      "heading": "3. Alternatives Explained",
+      "body": "The Provider has discussed reasonable alternative treatments, including the option of receiving no treatment at all, and Patient has chosen to proceed with the specified procedure.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "photography",
+      "heading": "4. Clinical Photography Consent",
+      "body": "Patient consents to the taking of clinical photographs of the treatment area for medical records, tracking progress, and clinical study display (excluding public advertising).",
+      "optional": true,
+      "optionalLabel": "Consent to clinical photographs?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This consent document shall be interpreted and governed under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "hipaa-authorization"
+  ],
+  "faq": [
+    {
+      "question": "What is 'informed consent'?",
+      "answer": "Informed consent means you have been fully educated on the procedure, risks, benefits, and alternatives so you can make an educated choice about your healthcare."
+    },
+    {
+      "question": "Can I revoke my consent before treatment?",
+      "answer": "Yes. You have the right to change your mind and revoke your consent at any time prior to the commencement of the procedure."
+    }
+  ],
+  "tags": [
+    "consent",
+    "medical",
+    "treatment",
+    "patient",
+    "clinic"
+  ],
+  "subcategory": "Patient-Facing"
+}

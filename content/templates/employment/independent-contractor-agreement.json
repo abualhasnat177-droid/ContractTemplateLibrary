@@ -1,0 +1,163 @@
+{
+  "id": "independent-contractor-agreement",
+  "slug": "independent-contractor-agreement",
+  "category": "employment",
+  "title": "Independent Contractor Agreement",
+  "description": "A protective contract between a company and a freelance contractor defining services, payment schedules, intellectual property rights, and tax classifications.",
+  "whatsCovered": [
+    "Definition of freelance services, deadlines, and milestones",
+    "Independent contractor classification (taxes, insurance, and benefits)",
+    "Proprietary rights (work-for-hire IP transfer to the company)",
+    "Confidentiality and non-disclosure covenants",
+    "Termination notice parameters (e.g. 15 days written notice)"
+  ],
+  "whenToUse": "Use this agreement when hiring external freelancers, developers, writers, or service providers to perform project work for your company.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. Nexus Innovations LLC",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Corporate Way, Boston, MA 02110",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "contractor_name",
+      "label": "Contractor Full Name / Entity",
+      "type": "text",
+      "placeholder": "e.g. David Miller Consulting",
+      "required": true,
+      "group": "Contractor Info"
+    },
+    {
+      "id": "contractor_address",
+      "label": "Contractor Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ 85281",
+      "required": true,
+      "group": "Contractor Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "scope_description",
+      "label": "Description of Contractor Work",
+      "type": "textarea",
+      "placeholder": "Describe the specific tasks, deliverables, or services to perform...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "payment_rate",
+      "label": "Contractor Compensation ($)",
+      "type": "currency",
+      "placeholder": "e.g. 5,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Massachusetts",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INDEPENDENT CONTRACTOR AGREEMENT",
+      "body": "This Independent Contractor Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (\"Company\"), and {contractor_name}, located at {contractor_address} (\"Contractor\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Services and Scope",
+      "body": "Contractor agrees to perform the following services for the Company: {scope_description}. Contractor shall determine the method, details, and means of performing these services.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment Terms",
+      "body": "Company agrees to pay Contractor a flat fee of {payment_rate} for the services rendered. Payment shall be due net 30 days after the Contractor submits a detailed completion invoice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "3. Contractor Status & Taxes",
+      "body": "Contractor is an independent contractor. Contractor is not eligible for Company benefits, health plans, or retirement programs. Contractor is solely responsible for paying all federal, state, and local income and self-employment taxes.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "ip",
+      "heading": "4. Intellectual Property Transfer",
+      "body": "Contractor agrees that all files, software code, custom writing, or deliverables created for Company under this Agreement constitute 'work-for-hire' and shall be the sole property of Company upon receipt of payment.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_solicit_clients",
+      "heading": "5. Non-Solicitation of Clients",
+      "body": "For a period of 12 months following termination of this Agreement, Contractor shall not solicit, pitch, or contract directly with any client or customer of Company introduced during the engagement.",
+      "optional": true,
+      "optionalLabel": "Include Client Non-Solicitation Clause?",
+      "enabledByDefault": false,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "governing_law",
+      "heading": "6. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "consulting-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Does this contract make me an employee?",
+      "answer": "No. This contract explicitly establishes that you are an independent contractor. You must manage your own tax filings and are not eligible for employee benefits."
+    },
+    {
+      "question": "What is a 'work-for-hire' clause?",
+      "answer": "It means the intellectual property you create during the project automatically belongs to the hiring company once they pay your invoice."
+    }
+  ],
+  "tags": [
+    "freelance",
+    "contractor",
+    "contract",
+    "employment",
+    "w9"
+  ],
+  "subcategory": "Specialized Employment Types"
+}

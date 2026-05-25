@@ -1,0 +1,148 @@
+{
+  "id": "dual-employment-agreement",
+  "slug": "dual-employment-agreement",
+  "category": "employment",
+  "subcategory": "Specialized Employment Types",
+  "title": "Dual Employment Agreement",
+  "description": "Governs situations where an employee works in two distinct roles or divisions within the same corporate group.",
+  "whatsCovered": [
+    "Allocation of working hours between two divisions",
+    "Dual supervisor hierarchy and reporting setups",
+    "Salary splitting and allocation across tax entities",
+    "Overtime calculation coordination across roles",
+    "Procedure if one role is terminated"
+  ],
+  "whenToUse": "Use this contract to split an employee's hours, compensation, and supervisor chains between two affiliate companies.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee / Worker Name",
+      "type": "text",
+      "placeholder": "e.g. Sarah Connor",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "text",
+      "placeholder": "e.g. 742 Evergreen Terrace, Springfield, OR",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "subsidiary_b_name",
+      "label": "Secondary Affiliate Entity",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow UK Ltd",
+      "required": true,
+      "group": "Affiliates"
+    },
+    {
+      "id": "hours_split",
+      "label": "Hours Split (Primary % / Secondary %)",
+      "type": "text",
+      "placeholder": "e.g. 60% / 40%",
+      "required": true,
+      "group": "Schedule"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "DUAL EMPLOYMENT AGREEMENT",
+      "body": "This corporate document (the \"Agreement\" or \"Acknowledgment\") is executed as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {employee_name}, residing at {employee_address} (\"Employee\" or \"Applicant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_terms",
+      "heading": "1. Scope & Acknowledgment",
+      "body": "This document establishes compliance policies, compensation, onboarding, or offboarding parameters for Dual Employment Agreement. Employee agrees to review the policies and adhere to the guidelines set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "dual_hours_allocations",
+      "heading": "2. Affiliate Hours Split",
+      "body": "Employee shall divide working hours between Company and Affiliate {subsidiary_b_name} matching split: {hours_split}. Overtime counts across the combined entities.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "termination",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Any disputes regarding this policy, benefit calculation, or onboarding agreement shall be resolved through the Company's internal HR procedures or under the laws of the governing jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "employment-contract",
+    "independent-contractor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement template binding?",
+      "answer": "Yes, once signed by both the employee and authorized company representative, it becomes part of the employment record and is contractually binding."
+    },
+    {
+      "question": "Can I customize this template?",
+      "answer": "Yes, you can add custom annexes or clauses using the online editor to match your local state requirements."
+    }
+  ],
+  "tags": [
+    "dual-employment",
+    "affiliates",
+    "payroll-split",
+    "governance",
+    "employment"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "software-development-contract",
+  "slug": "software-development-contract",
+  "category": "freelance",
+  "subcategory": "Tech & Development",
+  "title": "Software Development Contract",
+  "description": "A comprehensive contract for custom software, web app, or mobile development services covering source code delivery, milestone payments, and intellectual property transfer.",
+  "whatsCovered": [
+    "Definition of project scope and milestone deliveries",
+    "Source code delivery and repository access guidelines",
+    "Intellectual property transfer upon final payment",
+    "Post-launch warranty and bug-fixing period",
+    "Hosting credentials and third-party API keys ownership"
+  ],
+  "whenToUse": "Use this contract when you are hired to develop a custom software application, mobile app, or complex website for a corporate client.",
+  "jurisdictions": ["US", "UK", "CA"],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "developer_name",
+      "label": "Developer Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. ByteCraft Solutions LLC",
+      "required": true,
+      "group": "Developer Info"
+    },
+    {
+      "id": "developer_address",
+      "label": "Developer Address",
+      "type": "text",
+      "placeholder": "e.g. 102 Code Way, Austin, TX 78701",
+      "required": true,
+      "group": "Developer Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Innovate Systems Inc.",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 400 Tech Boulevard, Austin, TX 78759",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "project_title",
+      "label": "Project/Application Title",
+      "type": "text",
+      "placeholder": "e.g. Retail Inventory Mobile Application",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "project_cost",
+      "label": "Project Cost ($)",
+      "type": "currency",
+      "placeholder": "e.g. 15,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Texas",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "SOFTWARE DEVELOPMENT AGREEMENT",
+      "body": "This Software Development Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {developer_name}, located at {developer_address} (\"Developer\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope",
+      "heading": "1. Project Scope & Specifications",
+      "body": "Developer agrees to design, build, and deploy the custom software package known as: {project_title} (the \"Software\"), in accordance with the features, design models, and technical requirements mutually agreed upon.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "payment",
+      "heading": "2. Development Compensation",
+      "body": "Client shall pay Developer a total flat fee of {project_cost} for the development services. The fee shall be payable in installments: 50% upfront as a non-refundable commencement deposit, and 50% upon final delivery and acceptance testing of the Software.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "warranty",
+      "heading": "3. Launch Support & Bug-Fixing Warranty",
+      "body": "For a period of 30 days starting from the date of deployment to production, Developer shall resolve any code errors, crashes, or failures that deviate from the agreed specifications at no additional cost to Client.",
+      "optional": true,
+      "optionalLabel": "Include 30-Day Bug Warranty Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "ip",
+      "heading": "4. Intellectual Property Transfer",
+      "body": "Upon receipt of the final payment, Developer hereby transfers and assigns to Client all right, title, and interest in and to the source code, custom graphics, and software documentation created under this Agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed by, and interpreted in accordance with, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": ["web-design-contract", "mutual-nda"],
+  "faq": [
+    {
+      "question": "Who owns the code if the project is cancelled?",
+      "answer": "Under this contract, the developer retains ownership of all intellectual property until the final payment is cleared by the developer."
+    },
+    {
+      "question": "Does this cover cloud hosting or server fees?",
+      "answer": "No. The client is responsible for paying all external hosting subscriptions, domain registrars, and third-party APIs directly."
+    }
+  ],
+  "tags": ["software", "coding", "developer", "mobileapp", "freelance"]
+}

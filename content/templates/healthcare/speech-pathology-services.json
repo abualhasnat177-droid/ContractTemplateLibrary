@@ -1,0 +1,146 @@
+{
+  "id": "speech-pathology-services",
+  "slug": "speech-pathology-services",
+  "category": "healthcare",
+  "subcategory": "Clinical / Practice",
+  "title": "Speech-Language Pathology Services Agreement",
+  "description": "A clinical service agreement for speech-language pathologists (SLPs) offering therapy to private clients or education boards.",
+  "whatsCovered": [
+    "Definition of professional speech therapy, language diagnostics, and voice rehabilitation",
+    "HIPAA compliance rules, records storage, and PHI protection",
+    "Billing routines, insurance claims, and cash splits",
+    "Stark Law, Anti-Kickback Statute, and medical ethics covenants",
+    "Standard governing law and medical liability settings"
+  ],
+  "whenToUse": "Use this agreement when setting up legal guidelines for speech therapy, language diagnostics, and voice rehabilitation to ensure strict compliance with HIPAA and clinical standards.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Medical Provider / Practice",
+      "type": "text",
+      "placeholder": "e.g. Family Health Partners LLC",
+      "required": true,
+      "group": "Clinic Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Practice Office Address",
+      "type": "text",
+      "placeholder": "e.g. 400 Medical Center Dr, Suite 200, Austin, TX 78701",
+      "required": true,
+      "group": "Clinic Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Patient / Contractor Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Patient / Contractor Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Pine St, Austin, TX 78759",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "pathology_scope",
+      "label": "Pathology Services Scope",
+      "type": "textarea",
+      "placeholder": "Describe speech diagnostics, language therapy, or swallow function checks...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "hourly_rate",
+      "label": "Therapy Hourly Rate ($)",
+      "type": "currency",
+      "placeholder": "e.g. 110.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Texas",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "SPEECH-LANGUAGE PATHOLOGY SERVICES AGREEMENT",
+      "body": "This Healthcare Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Practice\"), and {client_name}, located at {client_address} (\"Participant\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Professional Clinical Services",
+      "body": "Pathologist shall provide speech-language assessment, voice training, and pediatric therapy according to: {pathology_scope}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment and Billing Terms",
+      "body": "Client shall pay Pathologist a service fee of {hourly_rate} per hour of therapy provided.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "hipaa",
+      "heading": "3. HIPAA Safeguards and Protected Health Information",
+      "body": "All diagnostic reports, medical letters, and session notes belong to the Client.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "hipaa-baa",
+    "patient-consent-form"
+  ],
+  "faq": [
+    {
+      "question": "Is this contract HIPAA compliant?",
+      "answer": "Yes. It contains standard clauses requiring both parties to maintain administrative and electronic safeguards for patient data."
+    },
+    {
+      "question": "Can this contract be terminated early?",
+      "answer": "Yes, standard terms allow termination by either party upon 30 days written notice, provided all patient chart transfer protocols are followed."
+    }
+  ],
+  "tags": [
+    "healthcare",
+    "contract",
+    "medical",
+    "hour"
+  ]
+}

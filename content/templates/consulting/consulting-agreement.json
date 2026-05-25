@@ -1,0 +1,162 @@
+{
+  "id": "consulting-agreement",
+  "slug": "consulting-agreement",
+  "category": "consulting",
+  "title": "General Consulting Agreement",
+  "description": "A professional service agreement between a consultant and a client defining consulting services, retainer/hourly fees, and intellectual property ownership.",
+  "whatsCovered": [
+    "Definition of consulting services & deliverables",
+    "Compensation structure (hourly rate or flat retainer)",
+    "Expense reimbursement guidelines",
+    "Independent contractor status and tax responsibilities",
+    "Ownership of work product & confidentiality"
+  ],
+  "whenToUse": "Use this agreement when you are offering advisory, coaching, strategic planning, or specialized consulting services to a business client.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-19",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "consultant_name",
+      "label": "Consultant Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Apex Strategy Consulting LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "consultant_address",
+      "label": "Consultant Address",
+      "type": "text",
+      "placeholder": "e.g. 789 Consulting Road, Dallas, TX 75201",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Horizon Enterprises Inc.",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Corporate Circle, Chicago, IL 60601",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "consulting_services",
+      "label": "Description of Services",
+      "type": "textarea",
+      "placeholder": "Describe the advisory services or coaching you will provide...",
+      "required": true,
+      "group": "Engagement Details"
+    },
+    {
+      "id": "hourly_rate",
+      "label": "Hourly Compensation Rate ($)",
+      "type": "currency",
+      "placeholder": "e.g. 150.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Texas",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CONSULTING SERVICES AGREEMENT",
+      "body": "This Consulting Services Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {consultant_name}, located at {consultant_address} (\"Consultant\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Services",
+      "body": "Client hereby engages Consultant, and Consultant agrees to perform, the following consulting services: {consulting_services}. Consultant shall perform the services in a professional manner consistent with industry standards.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Compensation and Invoicing",
+      "body": "Client agrees to pay Consultant an hourly fee of {hourly_rate} for services rendered under this Agreement. Consultant shall submit monthly invoices detailing hours worked, and Client shall pay all approved invoices within 30 days of receipt.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "expenses",
+      "heading": "2.1 Expense Reimbursement",
+      "body": "Client shall reimburse Consultant for reasonable, pre-approved travel and out-of-pocket expenses incurred directly in connection with performing the Services, subject to submission of standard receipts.",
+      "optional": true,
+      "optionalLabel": "Include Expense Reimbursement Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "relationship",
+      "heading": "3. Independent Contractor Status",
+      "body": "Consultant is an independent contractor. Nothing in this Agreement shall be construed to create an employer-employee, partnership, or joint venture relationship. Consultant is solely responsible for all federal, state, and local taxes arising from payments made under this Agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "4. Confidentiality",
+      "body": "Consultant agrees to keep confidential all non-public business, financial, and product information disclosed by Client during the term of this Agreement and shall not disclose such information to any third party without prior written consent.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed by, and construed in accordance with, the laws of the State/Country of {governing_state}. Any disputes shall be settled in courts located in {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "web-design-contract",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "Can I set a flat monthly retainer fee instead of an hourly rate?",
+      "answer": "Yes. You can edit the text in the billing section or customize the compensation clause to reflect a flat retainer structure."
+    },
+    {
+      "question": "Is the consultant an employee of the company?",
+      "answer": "No. This agreement explicitly defines the consultant as an independent contractor, meaning they manage their own taxes and benefits."
+    }
+  ],
+  "tags": [
+    "consulting",
+    "services",
+    "advisor",
+    "hourly"
+  ],
+  "subcategory": "Specialist Consulting"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "team-member-agreement",
+  "slug": "team-member-agreement",
+  "category": "real-estate",
+  "subcategory": "Agent & Brokerage",
+  "title": "Team Member Agreement (Real Estate Team)",
+  "description": "A team charter defining agent splits, team leads commissions, marketing costs, and lead distribution databases.",
+  "whatsCovered": [
+    "Definition of professional real estate team leads, agent splits, and marketing databases",
+    "Security deposits, escrow rules, and payment milestones",
+    "Property access, landlord entry, and keys protocols",
+    "Disclosures, lead paint compliance, and state law notices",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when organizing transactions or agreements for real estate team leads, agent splits, and marketing databases to maintain complete legal compliance with state property regulations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Owner / Landlord / First Party Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Property Investments LLC",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Landmark Blvd, Denver, CO 80202",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Tenant / Buyer / Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Ridge Way, Boulder, CO 80301",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "lead_distribution_rules",
+      "label": "Lead Assignment Rules",
+      "type": "textarea",
+      "placeholder": "Describe how incoming Zillow/MLS leads are assigned to team members...",
+      "required": true,
+      "group": "Property Details"
+    },
+    {
+      "id": "team_split",
+      "label": "Team Lead / Member Split (%)",
+      "type": "text",
+      "placeholder": "e.g. 60/40 team split on team leads, 80/20 on personal leads",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "TEAM MEMBER AGREEMENT (REAL ESTATE TEAM)",
+      "body": "This Real Estate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"First Party\"), and {client_name}, located at {client_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Property / Covenants Scope",
+      "body": "Team Member shall represent the team and follow lead assignment guidelines: {lead_distribution_rules}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Financial Obligations & Fees",
+      "body": "Commissions earned by Team Member shall be divided according to the team commission splits: {team_split}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance",
+      "heading": "3. Disclosures and Environmental Covenants",
+      "body": "All lead databases, CRM profiles, and marketing materials remain the exclusive property of the Team Lead.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "residential-lease",
+    "roommate-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement binding in all US states?",
+      "answer": "Yes, but real estate laws vary significantly. Ensure you specify the correct governing state in the Legal Settings field before closing."
+    },
+    {
+      "question": "How are security or escrow funds handled?",
+      "answer": "All security and earnest deposits must be held in dedicated escrow trust accounts in accordance with state license commission laws."
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "contract",
+    "property",
+    "split"
+  ]
+}

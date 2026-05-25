@@ -1,0 +1,124 @@
+{
+  "id": "group-practice-associate",
+  "slug": "group-practice-associate",
+  "category": "healthcare",
+  "title": "Medical Group Practice Associate Agreement",
+  "description": "An employment agreement for a physician joining an established group medical practice, defining duties, base salary, and professional overhead splits.",
+  "whatsCovered": [
+    "Associate medical duties, scheduling, and on-call schedules",
+    "Base salary guarantees and collections-based performance bonuses",
+    "Shared practice overhead deductions and staff allocation",
+    "Malpractice insurance and licensing fee coverage",
+    "Restrictive covenants (such as patient non-solicitation)"
+  ],
+  "whenToUse": "Use this agreement when you are an established group medical practice onboarding a new associate physician, surgeon, or clinical partner.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "practice_name",
+      "label": "Group Practice Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Medical Associates LLC",
+      "required": true,
+      "group": "Practice Info"
+    },
+    {
+      "id": "physician_name",
+      "label": "Associate Physician Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton",
+      "required": true,
+      "group": "Associate Info"
+    },
+    {
+      "id": "base_salary",
+      "label": "Annual Base Salary ($)",
+      "type": "currency",
+      "placeholder": "e.g. 180,000.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Texas",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ASSOCIATE PHYSICIAN AGREEMENT",
+      "body": "This Group Practice Associate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {practice_name} (\"Practice\"), and {physician_name} (\"Associate\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "duties",
+      "heading": "1. Associate Duties & Schedule",
+      "body": "Associate shall provide clinical services at Practice locations. Associate agrees to dedicate full-time hours (approx. 40 hours per week) and participate in the Practice's shared rotation of evening/weekend on-call coverage.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Compensation and Bonuses",
+      "body": "Practice shall pay Associate an annual base salary of {base_salary}, payable in semi-monthly installments. Associate may also be eligible for discretionary performance bonuses based on collections.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "restrictive_covenant",
+      "heading": "3. Patient Non-Solicitation",
+      "body": "Upon departure from the Practice for any reason, Associate agrees that for a period of 12 months, Associate shall not directly or indirectly contact or solicit patients seen at Practice to join a competing clinical office.",
+      "optional": true,
+      "optionalLabel": "Include Patient Non-Solicitation Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "high"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "independent-contractor-clinical",
+    "medical-director-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Does this contract include partnership track details?",
+      "answer": "No. This is an associate employment agreement. Equity partnership tracks require a separate Partnership Option Agreement."
+    },
+    {
+      "question": "Who owns patient medical charts when I leave?",
+      "answer": "All clinical records, charts, and billing databases remain the exclusive property of the group practice."
+    }
+  ],
+  "tags": [
+    "physician",
+    "doctor",
+    "associate",
+    "grouppractice",
+    "medical"
+  ],
+  "subcategory": "Clinical / Practice"
+}

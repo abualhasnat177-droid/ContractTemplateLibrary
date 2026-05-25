@@ -1,0 +1,141 @@
+{
+  "id": "mutual-release",
+  "slug": "mutual-release",
+  "category": "miscellaneous",
+  "title": "Mutual Release of Claims",
+  "description": "A mutual release agreement signed by two parties who agree to drop all current or future legal disputes and release each other from liability.",
+  "whatsCovered": [
+    "Definition of Party A and Party B participating in the release",
+    "Mutual waiver of all historical and future legal claims",
+    "Non-disclosure of settlement details covenant",
+    "Covenant not to sue each other regarding the dispute",
+    "Governing law and jurisdiction definitions"
+  ],
+  "whenToUse": "Use this mutual release agreement when ending a partnership, resolving a contractor dispute, or settling a business claim where both parties agree to walk away without further litigation.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-15",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a",
+      "label": "Party A Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green Consulting LLC",
+      "required": true,
+      "group": "Party A"
+    },
+    {
+      "id": "party_a_address",
+      "label": "Party A Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Garden St, Portland, OR 97201",
+      "required": true,
+      "group": "Party A"
+    },
+    {
+      "id": "party_b",
+      "label": "Party B Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Zenith Tech Solutions Inc.",
+      "required": true,
+      "group": "Party B"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Party B Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Party B"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "dispute_desc",
+      "label": "Description of Settled Dispute",
+      "type": "textarea",
+      "placeholder": "e.g. the software development delay disputes arising during the Winter 2025 campaign...",
+      "required": true,
+      "group": "Dispute Info"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. New York",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MUTUAL RELEASE AGREEMENT",
+      "body": "This Mutual Release Agreement (the \"Release\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {party_a}, located at {party_a_address} (\"Party A\"), and {party_b}, located at {party_b_address} (\"Party B\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "mutual_release",
+      "heading": "1. Mutual Release & Discharge",
+      "body": "Party A and Party B, on behalf of themselves and their successors, hereby mutually release, acquit, and forever discharge each other from any and all claims, liabilities, lawsuits, and causes of action arising from the following dispute: {dispute_desc}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "no_lawsuit",
+      "heading": "2. Covenant Not to Sue",
+      "body": "Each Party covenants and agrees that it will not institute, maintain, or assist in any lawsuit, administrative claim, or arbitration against the other Party regarding any matter released under this Agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_disparagement",
+      "heading": "3. Mutual Non-Disparagement",
+      "body": "Neither Party shall make, publish, or communicate to any person or in any public forum any comments, statements, or reviews that are defamatory, derogatory, or disparaging to the other Party's business reputation.",
+      "optional": true,
+      "optionalLabel": "Include Mutual Non-Disparagement Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Release shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "Can either of us sue the other later?",
+      "answer": "No. Once both parties sign a mutual release, all legal disputes regarding that specific event are permanently closed, and both parties waive the right to sue."
+    },
+    {
+      "question": "Does this cover future contracts we might sign?",
+      "answer": "No. A mutual release only settles past disputes specifically named in the agreement. It does not waive liability for future unrelated contracts or actions."
+    }
+  ],
+  "tags": [
+    "release",
+    "mutual",
+    "dispute",
+    "compromise",
+    "settlement"
+  ],
+  "subcategory": "Dispute & Resolution"
+}

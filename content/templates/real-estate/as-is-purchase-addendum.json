@@ -1,0 +1,146 @@
+{
+  "id": "as-is-purchase-addendum",
+  "slug": "as-is-purchase-addendum",
+  "category": "real-estate",
+  "subcategory": "Disclosure & Compliance",
+  "title": "AS-IS Property Purchase Addendum",
+  "description": "An addendum stating the buyer purchases the property in its current state without landlord repair obligations.",
+  "whatsCovered": [
+    "Definition of professional as-is sales, repair waivers, and inspection releases",
+    "Security deposits, escrow rules, and payment milestones",
+    "Property access, landlord entry, and keys protocols",
+    "Disclosures, lead paint compliance, and state law notices",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when organizing transactions or agreements for as-is sales, repair waivers, and inspection releases to maintain complete legal compliance with state property regulations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Owner / Landlord / First Party Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Property Investments LLC",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Landmark Blvd, Denver, CO 80202",
+      "required": true,
+      "group": "First Party Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Tenant / Buyer / Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Ridge Way, Boulder, CO 80301",
+      "required": true,
+      "group": "Second Party Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "inspection_acceptance_date",
+      "label": "Inspection Review Deadline",
+      "type": "date",
+      "placeholder": "Describe the property details to perform...",
+      "required": true,
+      "group": "Property Details"
+    },
+    {
+      "id": "maximum_repair_credit_limit",
+      "label": "Maximum Landlord Repair Credit ($)",
+      "type": "currency",
+      "placeholder": "e.g. 0.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "AS-IS PROPERTY PURCHASE ADDENDUM",
+      "body": "This Real Estate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"First Party\"), and {client_name}, located at {client_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Property / Covenants Scope",
+      "body": "Buyer agrees to buy the property in AS-IS state following the review deadline: {inspection_acceptance_date}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Financial Obligations & Fees",
+      "body": "Seller is not liable for any repair costs and provides a repair credit of: {maximum_repair_credit_limit}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance",
+      "heading": "3. Disclosures and Environmental Covenants",
+      "body": "Buyer releases Seller from any claims regarding latent or active property defects.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "residential-lease",
+    "roommate-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Is this agreement binding in all US states?",
+      "answer": "Yes, but real estate laws vary significantly. Ensure you specify the correct governing state in the Legal Settings field before closing."
+    },
+    {
+      "question": "How are security or escrow funds handled?",
+      "answer": "All security and earnest deposits must be held in dedicated escrow trust accounts in accordance with state license commission laws."
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "contract",
+    "property",
+    "addendum"
+  ]
+}

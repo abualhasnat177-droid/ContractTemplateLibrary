@@ -1,0 +1,152 @@
+{
+  "id": "grant-agreement-startup",
+  "slug": "grant-agreement-startup",
+  "category": "startup",
+  "subcategory": "Fundraising & Investment",
+  "title": "Startup Grant Agreement",
+  "description": "An agreement between a grantor and a startup, outlining milestone achievements, report cycles, and funding disbursement schedules.",
+  "whatsCovered": [
+    "Total grant award size and fund distribution schedules",
+    "Performance milestones and progress report cycles",
+    "Authorized use of grant funds (eligible expenses)",
+    "Grantor audit rights and research reports",
+    "Termination of grant for underperformance"
+  ],
+  "whenToUse": "Use this grant agreement when receiving non-dilutive funding from government agencies, research foundations, or corporate accelerators.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "grantor_name",
+      "label": "Grantor Entity Name",
+      "type": "text",
+      "placeholder": "e.g. Foundation for Green Tech Research",
+      "required": true,
+      "group": "Grantor Info"
+    },
+    {
+      "id": "grant_amount",
+      "label": "Grant Award Amount ($)",
+      "type": "currency",
+      "placeholder": "e.g. 150,000.00",
+      "required": true,
+      "group": "Grant Details"
+    },
+    {
+      "id": "reporting_cycle",
+      "label": "Reporting Frequency",
+      "type": "select",
+      "options": [
+        "Monthly",
+        "Quarterly",
+        "Bi-Annually",
+        "On Milestone Complete"
+      ],
+      "defaultValue": "Quarterly",
+      "required": true,
+      "group": "Reporting"
+    },
+    {
+      "id": "project_milestones",
+      "label": "Key Performance Milestone",
+      "type": "textarea",
+      "placeholder": "Describe the technical milestone required to unlock the funding...",
+      "required": true,
+      "group": "Milestones"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "STARTUP GRANT AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Startup Grant Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "grant_terms",
+      "heading": "2. Grant Disbursement Conditions",
+      "body": "Grantor shall distribute {grant_amount} contingent on the milestones: {project_milestones}. Startups shall provide progress reports on a {reporting_cycle} schedule.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Do grants dilute my equity?",
+      "answer": "No, grant agreements are non-dilutive, meaning you receive funds without giving up ownership shares or voting seats."
+    },
+    {
+      "question": "What happens if we fail to hit a milestone?",
+      "answer": "Depending on the terms, the grantor may pause future disbursements, terminate the grant, or demand return of unspent funds."
+    }
+  ],
+  "tags": [
+    "grant",
+    "nondilutive",
+    "funding",
+    "accelerator",
+    "milestone"
+  ]
+}

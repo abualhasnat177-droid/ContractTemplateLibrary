@@ -1,0 +1,148 @@
+{
+  "id": "short-form-nda",
+  "slug": "short-form-nda",
+  "category": "nda",
+  "subcategory": "Format Variants",
+  "title": "Short-Form NDA (1-page)",
+  "description": "A simplified, single-page confidentiality agreement for fast-turnaround business discussions.",
+  "whatsCovered": [
+    "Basic definition of confidential secrets",
+    "Standard obligation of non-disclosure",
+    "Term of 2 years confidentiality",
+    "Simple return of materials request",
+    "Governing law clause"
+  ],
+  "whenToUse": "Use this 1-page NDA when you need a quick, no-nonsense agreement signed by a contractor or advisor before a brief introductory call.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "discussion_topic",
+      "label": "Discussion Topic",
+      "type": "text",
+      "placeholder": "e.g. initial product pitch and marketing review",
+      "required": true,
+      "group": "Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "SHORT-FORM CONFIDENTIALITY AGREEMENT",
+      "body": "This Short-Form NDA is entered into as of {effective_date} by and between {disclosing_party} (\"Discloser\") and {receiving_party} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "terms",
+      "heading": "1. Confidentiality Terms",
+      "body": "Recipient agrees to hold all business plans, software codes, and ideas shared in connection with {discussion_topic} in strict secrecy. Recipient shall not disclose them to third parties or use them for competitive purposes. This obligation shall persist for a term of {term_years} years from the Effective Date, after which it shall expire.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "return",
+      "heading": "2. Return of Materials",
+      "body": "Upon request, Recipient shall immediately return or destroy all physical or digital files containing Discloser's information.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "3. Governing Law",
+      "body": "This Agreement shall be governed by the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "Is a short-form NDA legally binding?",
+      "answer": "Yes, it has the same legal validity as a long NDA, but it excludes complex clauses like non-solicitation or detailed IP assignments to stay under one page."
+    },
+    {
+      "question": "When should I use a long NDA instead?",
+      "answer": "When exchanging source code, proprietary formulas, or corporate financials, a detailed long-form NDA is highly recommended."
+    }
+  ],
+  "tags": [
+    "shortform",
+    "onepage",
+    "quick",
+    "contractor",
+    "nda"
+  ]
+}

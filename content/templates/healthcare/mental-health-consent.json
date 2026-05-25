@@ -1,0 +1,130 @@
+{
+  "id": "mental-health-consent",
+  "slug": "mental-health-consent",
+  "category": "healthcare",
+  "title": "Mental Health Therapy Informed Consent",
+  "description": "An informed consent document signed by clinical counseling or psychotherapy clients outlining confidentiality exceptions and emergency protocols.",
+  "whatsCovered": [
+    "Therapeutic methods, diagnostic evaluations, and target goals",
+    "Strict confidentiality limits (abuse, self-harm, court orders)",
+    "Hourly session rates and billing terms",
+    "Session cancellation policies (24-hour notice rules)",
+    "Emergency contact instructions and crisis line information"
+  ],
+  "whenToUse": "Use this consent form when onboarding a new patient for clinical psychology, counseling, or outpatient psychotherapy services.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-17",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Client / Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "therapist_name",
+      "label": "Therapist Full Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Evelyn Vance, LMFT",
+      "required": true,
+      "group": "Therapist Info"
+    },
+    {
+      "id": "session_rate",
+      "label": "Session Hourly Rate ($)",
+      "type": "currency",
+      "placeholder": "e.g. 150.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "PSYCHOTHERAPY INFORMED CONSENT",
+      "body": "This Informed Consent is entered into by {patient_name} (\"Client\"), in favor of {therapist_name} (\"Therapist\"), on {effective_date}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "approach",
+      "heading": "1. Therapeutic Approach",
+      "body": "Therapist provides clinical evaluation, cognitive behavioral therapy, or psychotherapeutic counseling. Client understands that therapy requires active participation and can sometimes bring up difficult or painful feelings.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "2. Limits of Confidentiality",
+      "body": "All discussions, files, and progress logs are confidential. However, Therapist is legally required to breach confidentiality in the event of: (a) suspicion of abuse or neglect of a child, elder, or vulnerable adult; (b) clear threats of self-harm or suicide; (c) clear threats of violence to others; or (d) formal judicial court subpoenas.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "fees",
+      "heading": "3. Fees & Cancel Rules",
+      "body": "Client agrees to pay Therapist a flat fee of {session_rate} per 50-minute session. Client must provide at least 24 hours' notice to cancel or reschedule. Late cancellations shall be billed the full session rate.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "crisis",
+      "heading": "4. Crisis Support Disclaimer",
+      "body": "Therapist is not available for immediate emergency crisis support. In the event of a mental health emergency, Client agrees to call 911 or visit the nearest hospital emergency room.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Consent shall be governed by, and interpreted in accordance with, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "patient-consent-form",
+    "medical-consent"
+  ],
+  "faq": [
+    {
+      "question": "Can I stop therapy at any time?",
+      "answer": "Yes. You have the right to withdraw from clinical treatment or seek a referral at any time."
+    },
+    {
+      "question": "Does my health insurance cover therapy?",
+      "answer": "Many plans cover outpatient psychotherapy. The clinic can provide billing statements (Superbills) for you to submit to your insurance."
+    }
+  ],
+  "tags": [
+    "psychotherapy",
+    "therapy",
+    "mentalhealth",
+    "consent",
+    "counseling"
+  ],
+  "subcategory": "Patient-Facing"
+}

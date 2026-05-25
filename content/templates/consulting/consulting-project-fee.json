@@ -1,0 +1,148 @@
+{
+  "id": "consulting-project-fee",
+  "slug": "consulting-project-fee",
+  "category": "consulting",
+  "subcategory": "Engagement Structures",
+  "title": "Consulting Project Fee Agreement",
+  "description": "Project-based consulting agreement structured around fixed pricing and milestone delivery payments.",
+  "whatsCovered": [
+    "Total fixed project price and initial deposit fee",
+    "Milestone definitions and completion checkups",
+    "Procedure for handling out-of-scope work (change orders)",
+    "Timeline and estimated project completion date",
+    "Intellectual property transfer upon final payment"
+  ],
+  "whenToUse": "Use this project fee contract when charging a flat fee to execute a defined set of deliverables (e.g. rebuilding a supply chain database).",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Company/Individual",
+      "type": "text",
+      "placeholder": "e.g. Apex Corporation",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Street Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Summit Blvd, Suite 400, Chicago, IL",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Horizon Growth Advisors",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Street Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Innovation Way, Austin, TX",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "project_total_fee",
+      "label": "Total Project Flat Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 12,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "project_milestones_summary",
+      "label": "Milestones Summary",
+      "type": "textarea",
+      "placeholder": "e.g. Phase 1: Database Audit (30%), Phase 2: CRM Migration (40%), Phase 3: Launch (30%)...",
+      "required": true,
+      "group": "Milestones"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Illinois",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CONSULTING PROJECT FEE AGREEMENT",
+      "body": "This professional services agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "1. Independent Contractor Status",
+      "body": "Provider acts solely as an independent contractor. Nothing in this Agreement shall construct an employer-employee relationship, partnership, or joint venture between the parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "project_fee_terms",
+      "heading": "2. Project Pricing and Milestones",
+      "body": "Client shall pay Provider a total flat fee of {project_total_fee} for the complete project deliverables. Payments shall be distributed matching milestones: {project_milestones_summary}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "Confidentiality & Trade Secrecy",
+      "body": "Both parties agree to treat all business plans, customer metrics, financial spreadsheets, and personal disclosures shared during the engagement as strictly confidential.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "coaching-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom annexes for specific consulting milestones or agendas."
+    },
+    {
+      "question": "Is this agreement suitable for international clients?",
+      "answer": "Yes, the contract includes governing law and independent contractor clauses that are easily adaptable for cross-border coaching or consulting."
+    }
+  ],
+  "tags": [
+    "projectfee",
+    "flatfee",
+    "milestone",
+    "consulting",
+    "scope"
+  ]
+}

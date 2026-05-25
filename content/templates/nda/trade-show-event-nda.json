@@ -1,0 +1,162 @@
+{
+  "id": "trade-show-event-nda",
+  "slug": "trade-show-event-nda",
+  "category": "nda",
+  "subcategory": "Situation-Specific",
+  "title": "Trade Show / Event NDA",
+  "description": "Protects proprietary designs and trade secrets shared with event staff or prospective buyers at trade shows and industry expos.",
+  "whatsCovered": [
+    "Product demo features and trade show displays",
+    "Waiver of patent priority claiming for public display",
+    "Prohibition on taking photos or recording demos",
+    "Return of printed product brochures",
+    "Standard governing law for event state"
+  ],
+  "whenToUse": "Use this short, fast NDA at exhibitions, trade shows, or private event rooms before demonstrating unreleased products or prototypes.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "event_name",
+      "label": "Trade Show / Event Name",
+      "type": "text",
+      "placeholder": "e.g. CES 2026 Las Vegas",
+      "required": true,
+      "group": "Event Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "TRADE SHOW / EVENT NDA",
+      "body": "This Unilateral Confidentiality Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {disclosing_party}, located at {disclosing_address} (\"Discloser\"), and {receiving_party}, located at {receiving_address} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information includes all proprietary technical, financial, or business information disclosed by Discloser to Recipient, whether in writing, orally, or visually, including but not limited to trade secrets, blueprints, algorithms, or client rosters.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Obligations",
+      "body": "Recipient agrees to hold Discloser's Confidential Information in trust and secrecy. Recipient shall not copy, disclose, or use the information for any purpose other than to evaluate a prospective business relationship with Discloser. This obligation shall survive for {term_years} years from the Effective Date.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "no_recording",
+      "heading": "3. No Photo or Video Recording",
+      "body": "Recipient shall not photograph, film, or audio-record the demo unit or the private display suite at {event_name}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "4. Exclusions",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach, (b) was already in Recipient's possession, (c) is independently developed, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "Why is a trade show NDA necessary?",
+      "answer": "If you show a new product to an un-contracted person at a public expo, it may count as a public disclosure, which can void your patent eligibility in foreign jurisdictions."
+    },
+    {
+      "question": "Is this template brief?",
+      "answer": "Yes, it is condensed into a high-speed format suitable for quick digital signatures on a tablet or mobile screen."
+    }
+  ],
+  "tags": [
+    "tradeshow",
+    "event",
+    "ces",
+    "demo",
+    "nda"
+  ]
+}

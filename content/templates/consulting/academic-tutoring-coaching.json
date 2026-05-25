@@ -1,0 +1,147 @@
+{
+  "id": "academic-tutoring-coaching",
+  "slug": "academic-tutoring-coaching",
+  "category": "consulting",
+  "subcategory": "Coaching Niches",
+  "title": "Academic / Tutoring Coaching Agreement",
+  "description": "Student tutoring and academic planning coach agreement detailing schedule, rates, and study expectations.",
+  "whatsCovered": [
+    "Tutoring topics and academic milestones",
+    "Varying rates for test preparation vs regular tutoring",
+    "Strict 24-hour cancellation and no-show fee rules",
+    "No guarantee of specific grades or test scores",
+    "Parent consent for minor students"
+  ],
+  "whenToUse": "Use this contract when hiring or acting as a tutor, academic coach, or university preparation consultant.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Company/Individual",
+      "type": "text",
+      "placeholder": "e.g. Apex Corporation",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Street Address",
+      "type": "text",
+      "placeholder": "e.g. 200 Summit Blvd, Suite 400, Chicago, IL",
+      "required": true,
+      "group": "Client"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Name",
+      "type": "text",
+      "placeholder": "e.g. Horizon Growth Advisors",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "provider_address",
+      "label": "Provider Street Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Innovation Way, Austin, TX",
+      "required": true,
+      "group": "Provider"
+    },
+    {
+      "id": "student_subject",
+      "label": "Academic Subject / Target",
+      "type": "text",
+      "placeholder": "e.g. AP Calculus and College Admissions Prep",
+      "required": true,
+      "group": "Academia"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Illinois",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ACADEMIC / TUTORING COACHING AGREEMENT",
+      "body": "This professional services agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Provider\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "status",
+      "heading": "1. Independent Contractor Status",
+      "body": "Provider acts solely as an independent contractor. Nothing in this Agreement shall construct an employer-employee relationship, partnership, or joint venture between the parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "coaching_scope",
+      "heading": "2. Coaching Engagement",
+      "body": "Provider shall supply Client with academic tutoring for subject: {student_subject}. Sessions shall follow the schedules and calendar bookings approved by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "medical_disclaimer",
+      "heading": "3. Mental and Physical Health Disclaimer",
+      "body": "Client acknowledges that coaching services do not constitute psychiatric therapy, clinical psychology, medical treatment, or healthcare services. If Client has psychiatric or medical issues, they agree to seek licensed medical professionals.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "Confidentiality & Trade Secrecy",
+      "body": "Both parties agree to treat all business plans, customer metrics, financial spreadsheets, and personal disclosures shared during the engagement as strictly confidential.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "coaching-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Can I edit this contract template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom annexes for specific consulting milestones or agendas."
+    },
+    {
+      "question": "Is this agreement suitable for international clients?",
+      "answer": "Yes, the contract includes governing law and independent contractor clauses that are easily adaptable for cross-border coaching or consulting."
+    }
+  ],
+  "tags": [
+    "academic",
+    "tutoring",
+    "student",
+    "college",
+    "school"
+  ]
+}

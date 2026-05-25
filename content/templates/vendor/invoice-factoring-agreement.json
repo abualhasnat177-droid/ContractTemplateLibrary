@@ -1,0 +1,148 @@
+{
+  "id": "invoice-factoring-agreement",
+  "slug": "invoice-factoring-agreement",
+  "category": "vendor",
+  "subcategory": "Financial & Payment",
+  "title": "Invoice Factoring Agreement",
+  "description": "Agreement where a business sells accounts receivable invoices to a factoring company to secure cash flow.",
+  "whatsCovered": [
+    "Selling accounts receivable invoices to factor",
+    "Upfront cash advance rates (standard 80-90% of value)",
+    "Factoring fee percentages and reserve account rules",
+    "Recourse vs non-recourse options for defaulted invoices",
+    "Directing clients to pay the factoring firm directly"
+  ],
+  "whenToUse": "Use this factoring agreement to unlock immediate cash from outstanding client invoices at a discount rate.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "EU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Purchasing Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "vendor_name",
+      "label": "Vendor / Supplier Name",
+      "type": "text",
+      "placeholder": "e.g. Globex Manufacturing Solutions",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "vendor_address",
+      "label": "Vendor Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industrial Pkwy, Cleveland, OH",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "advance_rate",
+      "label": "Cash Advance Rate (%)",
+      "type": "text",
+      "placeholder": "e.g. 85.00",
+      "required": true,
+      "group": "Factoring Details"
+    },
+    {
+      "id": "factoring_fee",
+      "label": "Factoring Fee Rate (%)",
+      "type": "text",
+      "placeholder": "e.g. 2.50",
+      "required": true,
+      "group": "Factoring Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INVOICE FACTORING AGREEMENT",
+      "body": "This procurement agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {vendor_name}, located at {vendor_address} (\"Vendor\" or \"Supplier\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_provisions",
+      "heading": "1. Scope of Services & Materials",
+      "body": "This agreement sets out the supply specifications, technology licensing, financial payment terms, or compliance frameworks for Invoice Factoring Agreement. Vendor agrees to perform services or deliver goods matching the quality standards set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "factoring_advance_rates",
+      "heading": "2. Receivables Factoring Advance Fees",
+      "body": "Factor shall buy receivables invoices, providing an advance of {advance_rate}% of value. Factoring fee rate is established at {factoring_fee}%.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance_checks",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Both parties agree to handle transactions in compliance with local commercial codes. Disputes shall be resolved through binding arbitration under the rules of the American Arbitration Association.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "vendor-agreement",
+    "service-level-agreement"
+  ],
+  "faq": [
+    {
+      "question": "How do I customize this procurement template?",
+      "answer": "You can edit this template online and append custom schedules detailing material spec sheets or IT SLA metrics."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by authorized corporate procurement officers, it becomes a legally binding commercial contract."
+    }
+  ],
+  "tags": [
+    "factoring",
+    "invoice",
+    "cashflow",
+    "finance",
+    "debt"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "call-center-services",
+  "slug": "call-center-services",
+  "category": "vendor",
+  "subcategory": "Outsourcing & Operations",
+  "title": "Call Center Services Agreement",
+  "description": "Inbound or outbound call center services agreement outlining call quality SLA, handling times, and payment schedules.",
+  "whatsCovered": [
+    "Inbound call routing and average speed of answer (ASA) SLA",
+    "Call script approval and training schedules",
+    "Video/audio recording storage and quality audits",
+    "Payment schedules based on minutes or ticket volume",
+    "Prohibition on soliciting call center customer records"
+  ],
+  "whenToUse": "Use this contract when hiring a call center vendor to manage client telephone support or lead generation calls.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "EU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Purchasing Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "vendor_name",
+      "label": "Vendor / Supplier Name",
+      "type": "text",
+      "placeholder": "e.g. Globex Manufacturing Solutions",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "vendor_address",
+      "label": "Vendor Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industrial Pkwy, Cleveland, OH",
+      "required": true,
+      "group": "Vendor Info"
+    },
+    {
+      "id": "average_answer_seconds",
+      "label": "ASA SLA Guarantee (Seconds)",
+      "type": "number",
+      "placeholder": "e.g. 30",
+      "required": true,
+      "group": "SLA Metrics"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CALL CENTER SERVICES AGREEMENT",
+      "body": "This procurement agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and {vendor_name}, located at {vendor_address} (\"Vendor\" or \"Supplier\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "general_provisions",
+      "heading": "1. Scope of Services & Materials",
+      "body": "This agreement sets out the supply specifications, technology licensing, financial payment terms, or compliance frameworks for Call Center Services Agreement. Vendor agrees to perform services or deliver goods matching the quality standards set out herein.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "call_center_sla",
+      "heading": "2. Speed of Answer SLAs",
+      "body": "Call center shall answer customer support calls to meet average speed of answer (ASA) SLA of {average_answer_seconds} seconds.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compliance_checks",
+      "heading": "Compliance & Dispute Resolution",
+      "body": "Both parties agree to handle transactions in compliance with local commercial codes. Disputes shall be resolved through binding arbitration under the rules of the American Arbitration Association.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "vendor-agreement",
+    "service-level-agreement"
+  ],
+  "faq": [
+    {
+      "question": "How do I customize this procurement template?",
+      "answer": "You can edit this template online and append custom schedules detailing material spec sheets or IT SLA metrics."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by authorized corporate procurement officers, it becomes a legally binding commercial contract."
+    }
+  ],
+  "tags": [
+    "callcenter",
+    "support",
+    "telephony",
+    "customer-service",
+    "outsourcing"
+  ]
+}

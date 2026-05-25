@@ -1,0 +1,148 @@
+{
+  "id": "s-corp-shareholder",
+  "slug": "s-corp-shareholder",
+  "category": "miscellaneous",
+  "subcategory": "Business Structures",
+  "title": "S-Corp Shareholder Agreement",
+  "description": "Agreement governing S-Corporation stock transfer restrictions, S-status preservation, and shareholder rights.",
+  "whatsCovered": [
+    "Preservation of Subchapter S tax classification",
+    "Restricted stock transfers (ineligible shareholder blocks)",
+    "Right of first refusal (ROFR) for corporation shares",
+    "Shareholder voting agreements and board representation",
+    "S-Corp dividend payout coordination for shareholder taxes"
+  ],
+  "whenToUse": "Use this agreement for an S-Corporation to prevent shareholders from selling stock to ineligible entities (which would destroy S-Corp tax status).",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "share_count",
+      "label": "Authorized Shares",
+      "type": "number",
+      "placeholder": "e.g. 10000",
+      "required": true,
+      "group": "Equity"
+    },
+    {
+      "id": "tax_distribution_pct",
+      "label": "Tax Distribution Percentage (%)",
+      "type": "text",
+      "placeholder": "e.g. 40.00",
+      "required": true,
+      "group": "Taxes"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "S-CORP SHAREHOLDER AGREEMENT",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the S-Corp Shareholder Agreement. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scorp_tax_covenants",
+      "heading": "2. S-Corp Status Preservation",
+      "body": "Shareholders hold {share_count} stock. Shareholders agree to vote in alignment to preserve Subchapter S classification. Tax distribution rate is set at {tax_distribution_pct}%.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "s-corp",
+    "shareholder",
+    "stock",
+    "tax-status",
+    "corporate"
+  ]
+}

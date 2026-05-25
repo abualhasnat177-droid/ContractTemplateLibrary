@@ -1,0 +1,146 @@
+{
+  "id": "model-release-form",
+  "slug": "model-release-form",
+  "category": "creator",
+  "subcategory": "Misc Creator Legal",
+  "title": "Model Release Form",
+  "description": "A model release form granting a photographer/videographer rights to license and sell visual assets containing the model's likeness.",
+  "whatsCovered": [
+    "Definition of creative likeness release, photo licensing, and commercial use releases",
+    "Intellectual property licensing, usage rights, and exclusivity",
+    "Payment milestones, brand payouts, and affiliate commissions",
+    "Content moderation, FTC disclosures compliance, and safety rules",
+    "Standard governing law and contract enforcement guidelines"
+  ],
+  "whenToUse": "Use this contract when establishing guidelines for likeness release, photo licensing, and commercial use releases to ensure legal safety for intellectual property and payments.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "provider_name",
+      "label": "Creator / Licensor Name",
+      "type": "text",
+      "placeholder": "e.g. Alexa Green Influencer LLC",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "provider_address",
+      "label": "Creator Mailing Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Prose Lane, Portland, OR 97201",
+      "required": true,
+      "group": "Creator Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Brand / Licensee Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Cosmetic Group Inc.",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Brand Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Park Avenue, New York, NY 10022",
+      "required": true,
+      "group": "Brand Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "likeness_scope",
+      "label": "Likeness Media Scope",
+      "type": "textarea",
+      "placeholder": "e.g. All photos and videos recorded during the studio shoot on May 23, 2026...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "release_compensation",
+      "label": "Release Compensation ($ or None)",
+      "type": "text",
+      "placeholder": "e.g. $100.00 flat fee or TFP (Time for Print)",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MODEL RELEASE FORM",
+      "body": "This Creator Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {provider_name}, located at {provider_address} (\"Creator\"), and {client_name}, located at {client_address} (\"Brand\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Creative Deliverables & Milestones",
+      "body": "Model grants Photographer irrevocable rights to license and publish media containing the model's likeness: {likeness_scope}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Payment and Sponsorship Fees",
+      "body": "Model agrees that the release compensation is: {release_compensation}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "licensing",
+      "heading": "3. Intellectual Property and FTC Disclosures",
+      "body": "Photographer retains all copyright in the final photos and video files.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "influencer-agreement",
+    "ugc-creator-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Are FTC disclosures mandatory under this contract?",
+      "answer": "Yes. Both parties are legally required to ensure all sponsored posts include clear, conspicuous hashtags such as #ad or #sponsored."
+    },
+    {
+      "question": "Who owns the video files after campaign completion?",
+      "answer": "The creator retains copyright in all original files, granting the brand a licensing right to share and host the assets."
+    }
+  ],
+  "tags": [
+    "creator",
+    "contract",
+    "influencer",
+    "session"
+  ]
+}

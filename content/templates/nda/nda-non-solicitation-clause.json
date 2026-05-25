@@ -1,0 +1,162 @@
+{
+  "id": "nda-non-solicitation-clause",
+  "slug": "nda-non-solicitation-clause",
+  "category": "nda",
+  "subcategory": "Format Variants",
+  "title": "NDA with Non-Solicitation Clause",
+  "description": "Confidentiality agreement containing a strict non-solicitation clause for clients, suppliers, and personnel.",
+  "whatsCovered": [
+    "Confidentiality of business operations",
+    "Non-solicitation of employees and contractors",
+    "Non-solicitation of clients and key accounts",
+    "Liquidated damages per solicited employee",
+    "Audit rights for hiring logs"
+  ],
+  "whenToUse": "Use this agreement when you are worried that the receiving party might try to hire your employees or contract your clients after reviewing your business details.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "solicit_months",
+      "label": "Non-Solicitation Term (Months)",
+      "type": "number",
+      "placeholder": "e.g. 12",
+      "required": true,
+      "group": "Restrictive Covenants"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "NDA WITH NON-SOLICITATION CLAUSE",
+      "body": "This Unilateral Confidentiality Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {disclosing_party}, located at {disclosing_address} (\"Discloser\"), and {receiving_party}, located at {receiving_address} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information includes all proprietary technical, financial, or business information disclosed by Discloser to Recipient, whether in writing, orally, or visually, including but not limited to trade secrets, blueprints, algorithms, or client rosters.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Obligations",
+      "body": "Recipient agrees to hold Discloser's Confidential Information in trust and secrecy. Recipient shall not copy, disclose, or use the information for any purpose other than to evaluate a prospective business relationship with Discloser. This obligation shall survive for {term_years} years from the Effective Date.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_solicit",
+      "heading": "3. Non-Solicitation of Staff and Clients",
+      "body": "Recipient agrees that for a period of {solicit_months} months following discussions, Recipient shall not solicit, recruit, or attempt to hire any of Discloser's employees or solicit Discloser's clients.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "4. Exclusions",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach, (b) was already in Recipient's possession, (c) is independently developed, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "What is employee poaching under this contract?",
+      "answer": "It refers to the receiving party directly or indirectly recruiting or hiring your engineers, designers, or consultants introduced during talks."
+    },
+    {
+      "question": "Can we still recruit each other's staff via public job postings?",
+      "answer": "Yes, standard non-solicitation clauses allow hires resulting from general, public employment ads that aren't targeted."
+    }
+  ],
+  "tags": [
+    "nonsolicit",
+    "staff",
+    "clients",
+    "covenant",
+    "nda"
+  ]
+}

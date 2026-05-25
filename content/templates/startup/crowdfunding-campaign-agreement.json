@@ -1,0 +1,146 @@
+{
+  "id": "crowdfunding-campaign-agreement",
+  "slug": "crowdfunding-campaign-agreement",
+  "category": "startup",
+  "subcategory": "Fundraising & Investment",
+  "title": "Crowdfunding Campaign Agreement",
+  "description": "A promotional services agreement for managing and launching reward-based or equity crowdfunding campaigns.",
+  "whatsCovered": [
+    "Scope of campaign launch and promotional design services",
+    "Campaign timeline, launch date, and goal requirements",
+    "Service fee, retainer, and commission percentage splits",
+    "Ownership of campaign video assets and email lists",
+    "Indemnification for platform policy violations"
+  ],
+  "whenToUse": "Use this agreement when hiring an agency, advisor, or marketing firm to run a Kickstarter, Indiegogo, or Wefunder campaign.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "agency_name",
+      "label": "Marketing Agency / Manager Name",
+      "type": "text",
+      "placeholder": "e.g. LaunchPad Crowdfunding Group",
+      "required": true,
+      "group": "Agency Info"
+    },
+    {
+      "id": "campaign_platform",
+      "label": "Target Platform",
+      "type": "text",
+      "placeholder": "e.g. Kickstarter",
+      "required": true,
+      "group": "Campaign Details"
+    },
+    {
+      "id": "retainer_fee",
+      "label": "Monthly Retainer Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 3,500.00",
+      "required": true,
+      "group": "Fees"
+    },
+    {
+      "id": "commission_rate",
+      "label": "Campaign Revenue Split (%)",
+      "type": "text",
+      "placeholder": "e.g. 5.00",
+      "required": true,
+      "group": "Fees"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CROWDFUNDING CAMPAIGN AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Crowdfunding Campaign Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "crowdfunding_fees",
+      "heading": "2. Agency Fees and Commissions",
+      "body": "Startup Client shall pay Agency a retainer of {retainer_fee} per month, plus a success commission fee of {commission_rate}% of the total funds raised on {campaign_platform}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Are platform fees included in the agency commission?",
+      "answer": "No, standard platforms (Kickstarter, Wefunder) deduct their fees (usually 5%) separately from any agency commissions."
+    },
+    {
+      "question": "Who owns the email list collected during the campaign?",
+      "answer": "This template ensures the startup owns the subscriber list and backer database post-campaign."
+    }
+  ],
+  "tags": [
+    "crowdfunding",
+    "marketing",
+    "kickstarter",
+    "equity",
+    "commission"
+  ]
+}

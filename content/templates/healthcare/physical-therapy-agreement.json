@@ -1,0 +1,123 @@
+{
+  "id": "physical-therapy-agreement",
+  "slug": "physical-therapy-agreement",
+  "category": "healthcare",
+  "title": "Physical Therapy Services Agreement",
+  "description": "A therapy services agreement defining treatment plans, physical therapy protocols, billing charges, and compliance waivers.",
+  "whatsCovered": [
+    "Definition of physical therapy treatments and progress reviews",
+    "Therapist qualifications and professional certifications",
+    "Hourly or session-based billing fees and co-pays",
+    "Late cancellation fee schedules (typically 24-hour notice)",
+    "Liability release for exercise and muscle rehabilitation risks"
+  ],
+  "whenToUse": "Use this service agreement when onboarding a patient for a rehabilitation, muscle therapy, or physical therapy treatment plan.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-19",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Miller",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "therapist_name",
+      "label": "Therapist Full Name / Clinic",
+      "type": "text",
+      "placeholder": "e.g. Peak Motion Therapy Center",
+      "required": true,
+      "group": "Therapist Info"
+    },
+    {
+      "id": "hourly_rate",
+      "label": "Session Hourly Rate ($)",
+      "type": "currency",
+      "placeholder": "e.g. 110.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "PHYSICAL THERAPY SERVICES AGREEMENT",
+      "body": "This Therapy Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {patient_name} (\"Patient\"), and {therapist_name} (\"Therapist\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "treatment",
+      "heading": "1. Rehabilitation Treatment",
+      "body": "Therapist shall perform evaluation and physical therapy sessions for Patient. The treatment plan will consist of exercises, stretches, and muscle training targets tailored to Patient's recovery.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "billing",
+      "heading": "2. Fees & Payments",
+      "body": "Patient shall pay Therapist a session fee of {hourly_rate} per hour of physical therapy. Payments are due at the time of each clinical visit unless covered by insurance billing agreements.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "waiver",
+      "heading": "3. Physical Injury Waiver",
+      "body": "Patient understands that physical therapy exercises carry a minor risk of muscle strain, fatigue, or soreness. Patient agrees to perform all exercises in accordance with instructions and waives claims for routine soreness.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "patient-consent-form",
+    "medical-consent"
+  ],
+  "faq": [
+    {
+      "question": "What happens if I miss a scheduled session?",
+      "answer": "You must cancel at least 24 hours in advance to avoid being charged a late cancellation fee."
+    },
+    {
+      "question": "Do I need a physician referral first?",
+      "answer": "Direct access laws allow physical therapy without a referral in many states, but your insurance may require a doctor referral to process payouts."
+    }
+  ],
+  "tags": [
+    "physicaltherapy",
+    "rehab",
+    "therapy",
+    "exercise",
+    "patient"
+  ],
+  "subcategory": "Clinical / Practice"
+}

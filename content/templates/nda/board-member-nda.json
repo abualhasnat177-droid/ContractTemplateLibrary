@@ -1,0 +1,162 @@
+{
+  "id": "board-member-nda",
+  "slug": "board-member-nda",
+  "category": "nda",
+  "subcategory": "Situation-Specific",
+  "title": "Board Member NDA",
+  "description": "For newly appointed advisory or governing board members, protecting quarterly board decks and strategic planning documents.",
+  "whatsCovered": [
+    "Quarterly board decks and strategic planning files",
+    "Merger, acquisition, and funding discussions",
+    "Executive team performance reviews and salary lists",
+    "Strict public relations blackout rules",
+    "Immediate return of physical notebooks"
+  ],
+  "whenToUse": "Use this agreement when appointing board directors, advisory members, or trustees who will review corporate financials, board decks, and strategy documents.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "disclosing_party",
+      "label": "Disclosing Party (Owner of secrets)",
+      "type": "text",
+      "placeholder": "e.g. Phoenix Launch Technologies LLC",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "disclosing_address",
+      "label": "Discloser Address",
+      "type": "text",
+      "placeholder": "e.g. 808 Aerospace Drive, Phoenix, AZ",
+      "required": true,
+      "group": "Discloser"
+    },
+    {
+      "id": "receiving_party",
+      "label": "Receiving Party (Reviewing secrets)",
+      "type": "text",
+      "placeholder": "e.g. John Miller Construction",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "receiving_address",
+      "label": "Recipient Address",
+      "type": "text",
+      "placeholder": "e.g. 45 Landmark Blvd, Tempe, AZ",
+      "required": true,
+      "group": "Recipient"
+    },
+    {
+      "id": "board_company",
+      "label": "Company / Board Designation",
+      "type": "text",
+      "placeholder": "e.g. Acme Corp Board of Directors",
+      "required": true,
+      "group": "Board Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "term_years",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "NDA Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "BOARD MEMBER NDA",
+      "body": "This Unilateral Confidentiality Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {disclosing_party}, located at {disclosing_address} (\"Discloser\"), and {receiving_party}, located at {receiving_address} (\"Recipient\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "definition",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information includes all proprietary technical, financial, or business information disclosed by Discloser to Recipient, whether in writing, orally, or visually, including but not limited to trade secrets, blueprints, algorithms, or client rosters.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligation",
+      "heading": "2. Secrecy Obligations",
+      "body": "Recipient agrees to hold Discloser's Confidential Information in trust and secrecy. Recipient shall not copy, disclose, or use the information for any purpose other than to evaluate a prospective business relationship with Discloser. This obligation shall survive for {term_years} years from the Effective Date.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "public_statements",
+      "heading": "3. Public Announcements",
+      "body": "Director shall not make any public announcements, statements, or press releases concerning board resolutions, company finances, or executive decisions without the board's collective approval.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "4. Exclusions",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach, (b) was already in Recipient's possession, (c) is independently developed, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "unilateral-nda"
+  ],
+  "faq": [
+    {
+      "question": "Why do directors need a separate board NDA?",
+      "answer": "Board discussions cover highly confidential corporate decisions, M&A prospects, executive compensation, and audits, which are not protected under employee contracts."
+    },
+    {
+      "question": "Does this NDA expire after they leave the board?",
+      "answer": "No, confidentiality obligations survive the termination of their board membership, particularly for corporate trade secrets and financial archives."
+    }
+  ],
+  "tags": [
+    "board",
+    "advisor",
+    "corporate",
+    "director",
+    "nda"
+  ]
+}

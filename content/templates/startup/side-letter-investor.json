@@ -1,0 +1,138 @@
+{
+  "id": "side-letter-investor",
+  "slug": "side-letter-investor",
+  "category": "startup",
+  "subcategory": "Fundraising & Investment",
+  "title": "Investor Side Letter Agreement",
+  "description": "An agreement offering special rights (like MFN, information rights, or board observation) to a major investor.",
+  "whatsCovered": [
+    "Most Favored Nation (MFN) clause parameters",
+    "Custom investor informational review deadlines",
+    "Board observer invitation and audit access",
+    "Vesting acceleration requirements for investor nominees",
+    "Precedence over standard investor agreements"
+  ],
+  "whenToUse": "Use this side letter when a major angel or VC investor demands custom terms that are not part of the standard Series Seed or Series A terms.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "investor_name",
+      "label": "Investor Entity Name",
+      "type": "text",
+      "placeholder": "e.g. Vantage Point Capital Fund III",
+      "required": true,
+      "group": "Investor Info"
+    },
+    {
+      "id": "min_ownership",
+      "label": "Minimum Ownership for Rights (%)",
+      "type": "text",
+      "placeholder": "e.g. 5.00",
+      "required": true,
+      "group": "Investor Info"
+    },
+    {
+      "id": "mfn_cap",
+      "label": "MFN Valuation Cap Override ($)",
+      "type": "currency",
+      "placeholder": "e.g. 10,000,000.00",
+      "required": true,
+      "group": "MFN Clause"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INVESTOR SIDE LETTER AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Investor Side Letter Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "side_letter_rights",
+      "heading": "2. Investor Protective Covenants",
+      "body": "Investor {investor_name} is granted MFN status. If subsequent convertible debt is issued with a valuation cap below {mfn_cap}, Investor shall be granted such Cap.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a Most Favored Nation (MFN) clause?",
+      "answer": "It guarantees that if the startup issues convertible debt with better terms to later investors, those better terms automatically apply to the current investor."
+    },
+    {
+      "question": "When are side letters used?",
+      "answer": "Typically during seed rounds when lead investors want special tracking rights without drafting a brand new equity structure."
+    }
+  ],
+  "tags": [
+    "side-letter",
+    "mfn",
+    "investor",
+    "seed",
+    "equity"
+  ]
+}

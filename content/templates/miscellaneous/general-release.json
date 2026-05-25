@@ -1,0 +1,155 @@
+{
+  "id": "general-release",
+  "slug": "general-release",
+  "category": "miscellaneous",
+  "title": "General Release and Liability Waiver",
+  "description": "A settlement and release form where one party agrees to waive liability and release all legal claims against another party in exchange for compensation.",
+  "whatsCovered": [
+    "Definition of releasor and releasee parties",
+    "Release and discharge of all past, present, and future claims",
+    "Settlement compensation details (financial or non-financial)",
+    "Non-admission of liability declaration",
+    "Governing law and court dispute settings"
+  ],
+  "whenToUse": "Use this form to settle disputes, waive liability after an accident, or release claims between parties during a commercial exit or legal compromise.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-10",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "releasor_name",
+      "label": "Releasor Full Name / Entity",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green",
+      "required": true,
+      "group": "Releasor Details"
+    },
+    {
+      "id": "releasor_address",
+      "label": "Releasor Address",
+      "type": "text",
+      "placeholder": "e.g. 15 Garden St, Portland, OR 97201",
+      "required": true,
+      "group": "Releasor Details"
+    },
+    {
+      "id": "releasee_name",
+      "label": "Releasee Full Name / Entity",
+      "type": "text",
+      "placeholder": "e.g. Mountain Adventure Tours LLC",
+      "required": true,
+      "group": "Releasee Details"
+    },
+    {
+      "id": "releasee_address",
+      "label": "Releasee Address",
+      "type": "text",
+      "placeholder": "e.g. 909 Summit Lane, Portland, OR 97205",
+      "required": true,
+      "group": "Releasee Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "dispute_desc",
+      "label": "Description of Incident / Claim",
+      "type": "textarea",
+      "placeholder": "e.g. the bicycling accident occurring on May 1st, 2026, on the park trail...",
+      "required": true,
+      "group": "Incident Info"
+    },
+    {
+      "id": "settlement_amount",
+      "label": "Settlement Payment ($)",
+      "type": "currency",
+      "placeholder": "e.g. 1,500.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "GENERAL RELEASE OF ALL CLAIMS",
+      "body": "This General Release of Claims (the \"Release\") is entered into as of {effective_date} (the \"Effective Date\"), by {releasor_name}, located at {releasor_address} (\"Releasor\"), in favor of {releasee_name}, located at {releasee_address} (\"Releasee\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "release",
+      "heading": "1. Release and Discharge",
+      "body": "Releasor hereby releases, acquits, and forever discharges Releasee, including their officers, directors, and employees, from any and all claims, demands, liabilities, and causes of action arising directly or indirectly from the following incident: {dispute_desc}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "settlement",
+      "heading": "2. Consideration",
+      "body": "In exchange for this waiver and release, Releasee shall pay Releasor a settlement sum of {settlement_amount}, payable within 10 business days following the execution of this Agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "no_admission",
+      "heading": "3. Non-Admission of Liability",
+      "body": "This Release represents a compromise settlement of disputed claims. It is explicitly agreed that the payments made under this Release do not constitute, and shall not be construed as, an admission of any liability or wrongdoing by Releasee.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "4. Confidentiality of Settlement",
+      "body": "The Parties agree to keep the existence, terms, and payment amount of this settlement strictly confidential, except as required for tax reporting or legal auditing purposes.",
+      "optional": true,
+      "optionalLabel": "Include Confidentiality/Non-Disclosure of Settlement?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Release shall be governed and construed according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "Can I sue the releasee later if my injury worsens?",
+      "answer": "No. Once you sign a general release and receive the settlement consideration, you permanently waive all future claims related to that specific incident."
+    },
+    {
+      "question": "What is 'consideration'?",
+      "answer": "Consideration is the value exchanged to make the release legally binding, such as a financial payout, return of properties, or mutual drop of lawsuits."
+    }
+  ],
+  "tags": [
+    "release",
+    "waiver",
+    "settlement",
+    "liability",
+    "dispute"
+  ],
+  "subcategory": "Dispute & Resolution"
+}

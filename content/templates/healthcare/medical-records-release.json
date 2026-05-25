@@ -1,0 +1,132 @@
+{
+  "id": "medical-records-release",
+  "slug": "medical-records-release",
+  "category": "healthcare",
+  "title": "Authorization for Release of Medical Records",
+  "description": "A HIPAA-compliant authorization form allowing patient medical charts, clinical history, and laboratory results to be shared between clinics.",
+  "whatsCovered": [
+    "Patient identification and disclosure authorization details",
+    "Disclosing clinical entity (which hospital releases records)",
+    "Receiving clinical entity (which clinic receives records)",
+    "Specific record descriptions (imaging reports, chart summaries)",
+    "HIPAA compliance validity dates and patient revocation terms"
+  ],
+  "whenToUse": "Use this release authorization form to formally request a transfer of a patient's historical medical records from their previous clinic or hospital.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-15",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Samuel Green",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "patient_dob",
+      "label": "Patient Date of Birth",
+      "type": "date",
+      "required": true,
+      "group": "Patient Info"
+    },
+    {
+      "id": "disclosing_provider",
+      "label": "Disclosing Practice (Sender)",
+      "type": "text",
+      "placeholder": "e.g. Westside Family Medical Group",
+      "required": true,
+      "group": "Release Details"
+    },
+    {
+      "id": "receiving_provider",
+      "label": "Receiving Practice (Recipient)",
+      "type": "text",
+      "placeholder": "e.g. Apex Specialty Center LLC",
+      "required": true,
+      "group": "Release Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Oregon",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "AUTHORIZATION FOR RECORD RELEASE",
+      "body": "This Record Release Authorization is signed by {patient_name}, DOB: {patient_dob} (\"Patient\"), authorizing {disclosing_provider} to release records to {receiving_provider}, as of {effective_date}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "release",
+      "heading": "1. Records Released",
+      "body": "Patient hereby authorizes the release of all medical charts, clinical history notes, lab results, imaging reports, and billing files generated during treatment at Disclosing Practice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "psychotherapy_notes",
+      "heading": "1.1 Psychotherapy Notes Consent",
+      "body": "Patient explicitly authorizes the release of mental health psychotherapy notes, if any exist in the patient file.",
+      "optional": true,
+      "optionalLabel": "Include psychotherapy notes release?",
+      "enabledByDefault": false,
+      "riskLevel": "high"
+    },
+    {
+      "id": "purpose",
+      "heading": "2. Purpose of Release",
+      "body": "The records are being released to facilitate continued medical evaluation, diagnostic consulting, or treatment planning at Receiving Practice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "3. Governing Law",
+      "body": "This authorization is intended to comply with HIPAA guidelines and shall be interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "hipaa-authorization",
+    "patient-consent-form"
+  ],
+  "faq": [
+    {
+      "question": "Can I cancel this authorization later?",
+      "answer": "Yes. You have the right to revoke this authorization in writing at any time, except to the extent that the disclosing practice has already released the files."
+    },
+    {
+      "question": "Does the clinic charge for copy fees?",
+      "answer": "Under HIPAA, clinics may only charge a reasonable, cost-based fee for printing or copying medical files."
+    }
+  ],
+  "tags": [
+    "release",
+    "medicalrecords",
+    "hipaa",
+    "authorization",
+    "charts"
+  ],
+  "subcategory": "Patient-Facing"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "indemnification-agreement-officer-director",
+  "slug": "indemnification-agreement-officer-director",
+  "category": "startup",
+  "subcategory": "Operations & Governance",
+  "title": "Director Indemnification Agreement",
+  "description": "Protects startup directors and officers from personal liability, guaranteeing expense advancement and indemnity.",
+  "whatsCovered": [
+    "Indemnification for legal fees, settlements, and judgments",
+    "Right to advancement of legal defense expenses",
+    "Fiduciary duty liability boundaries and D&O insurance",
+    "Procedures for claiming indemnification rights",
+    "Governing law and arbitration of disputes"
+  ],
+  "whenToUse": "Use this agreement when appointing new board members or C-level officers to protect their personal assets from company litigation.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "indemnitee_name",
+      "label": "Indemnitee Director / Officer",
+      "type": "text",
+      "placeholder": "e.g. Gregory House",
+      "required": true,
+      "group": "Indemnitee Info"
+    },
+    {
+      "id": "d_o_insurance_limit",
+      "label": "D&O Insurance Minimum Coverage ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,000,000.00",
+      "required": true,
+      "group": "Insurance"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "DIRECTOR INDEMNIFICATION AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Director Indemnification Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "indemnity_covenants",
+      "heading": "2. Officer Defense Advancement",
+      "body": "Company shall advance all legal expenses of {indemnitee_name} and maintain D&O liability insurance of at least {d_o_insurance_limit}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is expense advancement?",
+      "answer": "It requires the company to pay the director's legal defense bills as they arrive, rather than waiting for the final trial verdict."
+    },
+    {
+      "question": "Does this protect against fraud?",
+      "answer": "No, indemnification agreements explicitly exclude coverage for willful misconduct, criminal acts, or deliberate fraud."
+    }
+  ],
+  "tags": [
+    "indemnity",
+    "director",
+    "officer",
+    "liability",
+    "insurance"
+  ]
+}

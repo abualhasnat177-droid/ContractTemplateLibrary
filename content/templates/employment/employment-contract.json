@@ -1,0 +1,164 @@
+{
+  "id": "employment-contract",
+  "slug": "employment-contract",
+  "category": "employment",
+  "title": "Full-Time Employment Agreement",
+  "description": "A standard employment agreement establishing job duties, annual salary compensation, benefits, and at-will employment relationship parameters.",
+  "whatsCovered": [
+    "Job title, department, and core duties",
+    "Base annual salary and payroll schedules",
+    "At-will employment relationship definition",
+    "Standard employee benefits eligibility",
+    "Conflict of interest and proprietary information covenants"
+  ],
+  "whenToUse": "Use this agreement when hiring a full-time, salaried employee to formalize their position, duties, pay structure, and company policies.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-21",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "employer_name",
+      "label": "Employer / Company Name",
+      "type": "text",
+      "placeholder": "e.g. Acme Innovations Corp",
+      "required": true,
+      "group": "Employer Info"
+    },
+    {
+      "id": "employer_address",
+      "label": "Employer Office Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Industry Pkwy, Seattle, WA 98101",
+      "required": true,
+      "group": "Employer Info"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee Full Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Doe",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Residential Address",
+      "type": "text",
+      "placeholder": "e.g. 12 Pine Street, Apt 3B, Tacoma, WA 98402",
+      "required": true,
+      "group": "Employee Info"
+    },
+    {
+      "id": "start_date",
+      "label": "Employment Start Date",
+      "type": "date",
+      "required": true,
+      "group": "Position Details"
+    },
+    {
+      "id": "job_title",
+      "label": "Job Title",
+      "type": "text",
+      "placeholder": "e.g. Senior Software Engineer",
+      "required": true,
+      "group": "Position Details"
+    },
+    {
+      "id": "salary_amount",
+      "label": "Annual Base Salary ($)",
+      "type": "currency",
+      "placeholder": "e.g. 120,000.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing State",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "EMPLOYMENT AGREEMENT",
+      "body": "This Employment Agreement (the \"Agreement\") is entered into by and between {employer_name}, located at {employer_address} (\"Employer\"), and {employee_name}, residing at {employee_address} (\"Employee\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "position",
+      "heading": "1. Position and Start Date",
+      "body": "Employee shall be employed in the position of {job_title} beginning on {start_date}. Employee agrees to perform all duties reasonably assigned to this role and to comply with all Employer policies and handbooks.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "at_will",
+      "heading": "2. At-Will Employment",
+      "body": "Employee's employment with Employer is 'at-will.' This means that either Employee or Employer may terminate the employment relationship at any time, for any reason or no reason, with or without prior notice.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "salary",
+      "heading": "3. Compensation",
+      "body": "Employer shall pay Employee a base annual salary of {salary_amount}, payable in equal installments in accordance with Employer's standard payroll schedules. Payments are subject to all standard tax withholdings and deductions.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "benefits",
+      "heading": "3.1 Employee Benefits",
+      "body": "Employee shall be eligible to participate in Employer-sponsored health, retirement, and paid time off (PTO) programs on the same terms as other similarly situated employees, subject to standard plan documents.",
+      "optional": true,
+      "optionalLabel": "Include Benefits Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "non_compete",
+      "heading": "4. Non-Compete Covenant",
+      "body": "For a period of 12 months following termination of employment, Employee shall not directly or indirectly engage in, perform services for, or assist any business that directly competes with the primary business of Employer within a 25-mile radius.",
+      "optional": true,
+      "optionalLabel": "Include Post-Employment Non-Compete Clause?",
+      "enabledByDefault": false,
+      "riskLevel": "high"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed by the laws of the State/Country of {governing_state}. Any disputes shall be brought in the state or federal courts of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What does 'at-will' employment mean?",
+      "answer": "It means either you or the company can end the employment relationship at any time, for any lawful reason, without liability."
+    },
+    {
+      "question": "Are post-employment non-compete clauses enforceable?",
+      "answer": "Enforceability varies heavily by state. For example, California and Minnesota ban employee non-competes, while other states allow them if the geographic radius and duration are reasonable."
+    }
+  ],
+  "tags": [
+    "employment",
+    "hiring",
+    "salary",
+    "hr",
+    "fulltime"
+  ],
+  "subcategory": "Specialized Employment Types"
+}

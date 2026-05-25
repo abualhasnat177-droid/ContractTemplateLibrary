@@ -1,0 +1,172 @@
+{
+  "id": "web-design-contract",
+  "slug": "web-design-contract",
+  "category": "freelance",
+  "subcategory": "Design & Creative",
+  "title": "Web Design & Development Agreement",
+  "description": "A comprehensive contract between a freelance web designer and a client, establishing scope of work, intellectual property rights, and payment terms.",
+  "whatsCovered": [
+    "Detailed scope of services and design iterations",
+    "Payment terms, milestones, and invoice schedules",
+    "Intellectual property transfer upon final payment",
+    "Client dependencies and approval workflow",
+    "Limitation of liability and governing law"
+  ],
+  "whenToUse": "Use this agreement when you are hired to design, develop, and launch a website for a client, ensuring your creative work and payments are legally protected.",
+  "jurisdictions": ["US", "UK", "CA", "AU"],
+  "jurisdictionNotes": {
+    "US": "This agreement is governed by the state chosen in the jurisdiction field.",
+    "UK": "Appropriate for England and Wales; references standard UK consumer and business contract principles."
+  },
+  "lastReviewedAt": "2026-05-15",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "designer_name",
+      "label": "Designer Full Name / Entity",
+      "type": "text",
+      "placeholder": "e.g. John Doe Design LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "designer_address",
+      "label": "Designer Address",
+      "type": "text",
+      "placeholder": "e.g. 123 Creative Way, Austin, TX 78701",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "designer_email",
+      "label": "Designer Email",
+      "type": "email",
+      "placeholder": "e.g. designer@example.com",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Acme Corporation",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 456 Business Blvd, Suite 100, New York, NY 10001",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "project_scope",
+      "label": "Project Scope of Work",
+      "type": "textarea",
+      "placeholder": "Describe what you will design and develop...",
+      "required": true,
+      "group": "Project Details"
+    },
+    {
+      "id": "payment_amount",
+      "label": "Total Project Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 5,000.00",
+      "required": true,
+      "group": "Payment"
+    },
+    {
+      "id": "initial_deposit",
+      "label": "Initial Deposit Amount ($)",
+      "type": "currency",
+      "placeholder": "e.g. 2,500.00",
+      "required": true,
+      "group": "Payment"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. New York",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "WEB DESIGN AND DEVELOPMENT AGREEMENT",
+      "body": "This Web Design and Development Agreement (the \"Agreement\") is entered into and made effective as of {effective_date} (the \"Effective Date\"), by and between {designer_name}, located at {designer_address} (\"Designer\"), and {client_name}, located at {client_address} (\"Client\"). Designer and Client may collectively be referred to as the \"Parties.\"",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Services and Deliverables",
+      "body": "Designer agrees to perform web design and development services as specified in the project scope of work: {project_scope} (the \"Services\"). Any additional services outside this scope will require a written amendment signed by both Parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "payment",
+      "heading": "2. Payment and Milestone Fees",
+      "body": "In consideration for the Services, Client agrees to pay Designer a total project fee of {payment_amount}. Client shall pay an initial non-refundable deposit of {initial_deposit} before work commences. The remaining balance shall be paid upon completion and approval of the deliverables before launching the final website.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "late_payment",
+      "heading": "2.1 Late Fees and Interest",
+      "body": "If Client fails to make any payment within 15 days of the due date, interest shall accrue on the unpaid balance at a rate of 1.5% per month, or the maximum rate permitted by law, whichever is lower.",
+      "optional": true,
+      "optionalLabel": "Include Late Payment Penalty Clause?",
+      "enabledByDefault": true,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "ip",
+      "heading": "3. Intellectual Property Transfer",
+      "body": "Upon receipt of final, full payment from Client, Designer hereby assigns and transfers all rights, title, and interest in the custom design deliverables created under this Agreement to Client. Designer retains all rights to any pre-existing code, libraries, and tools used during the project.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "portfolio",
+      "heading": "3.1 Portfolio and Promotional Rights",
+      "body": "Designer retains a non-exclusive, perpetual, royalty-free license to display screenshots and links to the completed project in Designer's professional portfolio, case studies, and marketing materials.",
+      "optional": true,
+      "optionalLabel": "Allow designer to show work in portfolio?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law and Jurisdiction",
+      "body": "This Agreement shall be governed by, and construed in accordance with, the laws of the State/Country of {governing_state}, without regard to its conflict of laws principles. Any legal action arising under this Agreement shall be brought exclusively in the courts located in {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": ["mutual-nda", "co-founder-agreement", "general-consulting-agreement"],
+  "faq": [
+    {
+      "question": "Can I modify this contract after it is signed?",
+      "answer": "Yes, but any changes or amendments must be written down and signed by both the designer and the client to be legally binding."
+    },
+    {
+      "question": "Who owns the website code after completion?",
+      "answer": "Under this contract, ownership of the design deliverables transfers to the client only after final payment has been made. The designer retains ownership of pre-existing materials and libraries."
+    }
+  ],
+  "tags": ["design", "freelance", "website", "developer"]
+}

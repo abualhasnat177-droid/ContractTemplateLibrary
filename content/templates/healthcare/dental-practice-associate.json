@@ -1,0 +1,132 @@
+{
+  "id": "dental-practice-associate",
+  "slug": "dental-practice-associate",
+  "category": "healthcare",
+  "title": "Dental Practice Associate Agreement",
+  "description": "An employment agreement for a licensed dentist joining a dental group practice, defining clinical hours, collections-based compensation, and patient protection covenants.",
+  "whatsCovered": [
+    "Associate dentist duties, dental license requirements, and clinical hours",
+    "Base salary guarantees and collections/production percentage bonuses",
+    "Professional liability (malpractice) insurance obligations",
+    "Restrictive covenants (such as patient and staff non-solicitation)",
+    "Standard dispute resolution and governing law"
+  ],
+  "whenToUse": "Use this agreement when you are an established dental clinic or practice owner hiring an associate dentist to join your team.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-15",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "clinic_name",
+      "label": "Dental Clinic Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Family Dental Group",
+      "required": true,
+      "group": "Clinic Info"
+    },
+    {
+      "id": "dentist_name",
+      "label": "Associate Dentist Name",
+      "type": "text",
+      "placeholder": "e.g. Dr. Arthur Pendelton, DDS",
+      "required": true,
+      "group": "Associate Info"
+    },
+    {
+      "id": "base_salary",
+      "label": "Annual Base Salary ($)",
+      "type": "currency",
+      "placeholder": "e.g. 140,000.00",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "production_percentage",
+      "label": "Production Bonus Percentage (%)",
+      "type": "text",
+      "placeholder": "e.g. 30",
+      "required": true,
+      "group": "Financials"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. California",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ASSOCIATE DENTIST AGREEMENT",
+      "body": "This Dental Practice Associate Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {clinic_name} (\"Clinic\"), and {dentist_name} (\"Associate\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "duties",
+      "heading": "1. Associate Dentist Duties",
+      "body": "Associate shall provide professional dental care at Clinic offices. Associate represents that they hold and will maintain an active DDS or DMD dental license in this jurisdiction.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Base Salary and Production Bonus",
+      "body": "Clinic shall pay Associate an annual base salary of {base_salary}. Additionally, Associate shall receive a performance bonus equal to {production_percentage}% of Associate's net collections/production exceeding the monthly threshold.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "restrictive_covenant",
+      "heading": "3. Dental Patient Non-Solicitation",
+      "body": "Upon departure from the Clinic for any reason, Associate agrees that for a period of 12 months, Associate shall not directly or indirectly contact or solicit patients seen at Clinic to join a competing dental office.",
+      "optional": true,
+      "optionalLabel": "Include Dental Patient Non-Solicitation?",
+      "enabledByDefault": true,
+      "riskLevel": "high"
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted according to the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "independent-contractor-clinical",
+    "group-practice-associate"
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between collections and production?",
+      "answer": "Production is the dollar value of dental services performed. Collections is the actual cash collected from patients and insurance. Most practices calculate bonuses on collections to prevent bad debt losses."
+    },
+    {
+      "question": "Does this cover dental supplies?",
+      "answer": "Yes. The practice owner is responsible for providing all chair space, dental assistants, equipment, and lab materials."
+    }
+  ],
+  "tags": [
+    "dentist",
+    "dental",
+    "associate",
+    "clinic",
+    "dds"
+  ],
+  "subcategory": "Clinical / Practice"
+}

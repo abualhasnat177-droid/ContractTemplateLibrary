@@ -1,0 +1,163 @@
+{
+  "id": "mutual-nda",
+  "slug": "mutual-nda",
+  "category": "nda",
+  "title": "Mutual Non-Disclosure Agreement",
+  "description": "A standard bilateral non-disclosure agreement to protect confidential information shared between two parties during business discussions.",
+  "whatsCovered": [
+    "Definition of Confidential Information",
+    "Obligations of confidentiality and non-use",
+    "Standard exclusions from confidentiality",
+    "Term of protection and return of materials",
+    "Remedies for breach and governing law"
+  ],
+  "whenToUse": "Use this mutual NDA when both you and another company or individual will be sharing sensitive business, technical, or financial information with each other.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-18",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "Party A Company/Individual Name",
+      "type": "text",
+      "placeholder": "e.g. InnovateTech Inc.",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_a_address",
+      "label": "Party A Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovation Way, San Jose, CA 95112",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Party B Company/Individual Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Ventures LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Party B Address",
+      "type": "text",
+      "placeholder": "e.g. 500 Equity Towers, Boston, MA 02108",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Dates"
+    },
+    {
+      "id": "purpose",
+      "label": "Purpose of Sharing Information",
+      "type": "text",
+      "placeholder": "e.g. discussing a potential software integration partnership",
+      "required": true,
+      "group": "Purpose"
+    },
+    {
+      "id": "confidentiality_period",
+      "label": "Confidentiality Term (Years)",
+      "type": "select",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "Indefinite"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "Legal Terms"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "MUTUAL NON-DISCLOSURE AGREEMENT",
+      "body": "This Mutual Non-Disclosure Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, located at {party_a_address}, and {party_b_name}, located at {party_b_address}. The parties are entering into discussions regarding {purpose} (the \"Purpose\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "1. Confidential Information",
+      "body": "Confidential Information refers to any proprietary information, technical data, trade secrets, or know-how disclosed by either party during discussions. For the purpose of this Agreement, information is confidential if marked as confidential or would reasonably be understood as such due to its nature.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligations",
+      "heading": "2. Obligations of Confidentiality",
+      "body": "Each Party agrees: (a) to hold the other party's Confidential Information in strict confidence, (b) to use such information only for the Purpose, and (c) to restrict access to employees or representatives who have a need to know and are bound by confidentiality obligations. These obligations shall persist for a period of {confidentiality_period} years from disclosure.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "exclusions",
+      "heading": "3. Exclusions from Confidentiality",
+      "body": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach of this Agreement, (b) was already in the receiving party's possession before disclosure, (c) is independently developed without use of the disclosing party's information, or (d) is required to be disclosed by law.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "non_solicit",
+      "heading": "4. Non-Solicitation of Employees",
+      "body": "For a period of 12 months following the termination of discussions, neither party shall directly or indirectly solicit for employment any employee of the other party with whom they had contact during the evaluation of the Purpose.",
+      "optional": true,
+      "optionalLabel": "Include Employee Non-Solicitation Clause?",
+      "enabledByDefault": false,
+      "riskLevel": "high"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law and Remedies",
+      "body": "This Agreement shall be governed by the laws of the State/Country of {governing_state}. The parties acknowledge that any breach of this Agreement may cause irreparable harm for which monetary damages alone would be insufficient, entitling the disclosing party to seek injunctive relief.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "web-design-contract",
+    "co-founder-agreement",
+    "employee-nda"
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between a mutual and one-way NDA?",
+      "answer": "A mutual NDA protects confidential information shared by both parties. A one-way NDA only protects information shared by one party (e.g. from employer to employee)."
+    },
+    {
+      "question": "What happens if someone breaches the NDA?",
+      "answer": "The non-breaching party can sue for damages, seek an injunction to stop further disclosure, and demand the return of all shared materials."
+    }
+  ],
+  "tags": [
+    "nda",
+    "confidentiality",
+    "startup",
+    "legal"
+  ],
+  "subcategory": "Standard NDAs"
+}

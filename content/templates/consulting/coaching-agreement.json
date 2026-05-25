@@ -1,0 +1,169 @@
+{
+  "id": "coaching-agreement",
+  "slug": "coaching-agreement",
+  "category": "consulting",
+  "title": "Professional Coaching Agreement",
+  "description": "A structured personal development or executive business coaching contract specifying session counts, monthly retainer fees, and scheduling/cancellation policies.",
+  "whatsCovered": [
+    "Definition of coaching engagement (business, career, or personal)",
+    "Monthly fees and scheduled sessions allotment",
+    "Cancellation and rescheduling notice timelines (e.g. 24-hour notice)",
+    "Confidentiality of client business and career history",
+    "Disclaimer that coaching is not therapy or psychological counseling"
+  ],
+  "whenToUse": "Use this contract when you are an executive coach, life coach, or career consultant providing structured advisory sessions to a client.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-19",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "coach_name",
+      "label": "Coach Full Name / Company",
+      "type": "text",
+      "placeholder": "e.g. Elevate Leadership Coaching Group",
+      "required": true,
+      "group": "Coach Info"
+    },
+    {
+      "id": "coach_address",
+      "label": "Coach Office Address",
+      "type": "text",
+      "placeholder": "e.g. 44 Mountain View Road, Boulder, CO 80301",
+      "required": true,
+      "group": "Coach Info"
+    },
+    {
+      "id": "client_name",
+      "label": "Client Full Name",
+      "type": "text",
+      "placeholder": "e.g. Arthur Pendelton",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "text",
+      "placeholder": "e.g. 10 Pine St, Denver, CO 80202",
+      "required": true,
+      "group": "Client Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "monthly_fee",
+      "label": "Monthly Retainer Fee ($)",
+      "type": "currency",
+      "placeholder": "e.g. 750.00",
+      "required": true,
+      "group": "Compensation"
+    },
+    {
+      "id": "sessions_count",
+      "label": "Sessions per Month",
+      "type": "select",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "defaultValue": "2",
+      "required": true,
+      "group": "Engagement Specs"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Colorado",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "COACHING SERVICES AGREEMENT",
+      "body": "This Coaching Agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {coach_name}, located at {coach_address} (\"Coach\"), and {client_name}, located at {client_address} (\"Client\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "services",
+      "heading": "1. Coaching Engagement",
+      "body": "Coach agrees to provide Client with {sessions_count} coaching sessions per month, each session lasting approximately 60 minutes. Sessions shall be held via Zoom, telephone, or in-person as mutually agreed.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "compensation",
+      "heading": "2. Retainer and Payments",
+      "body": "Client shall pay Coach a monthly retainer fee of {monthly_fee}, payable in advance on the 1st of each month. Payments are non-refundable once sessions have commenced.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "cancellation",
+      "heading": "3. Cancellation & Rescheduling Policy",
+      "body": "Client must provide at least 24 hours' notice to reschedule or cancel a session. Failure to provide 24 hours' notice shall result in the forfeiture of that session without refund.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "disclaimer",
+      "heading": "4. Disclaimer and Coaching Limits",
+      "body": "Client understands that coaching is not therapy, medical advice, or psychiatric counseling. Coach does not diagnose or treat any mental health disorders, and coaching is not a substitute for professional clinical care.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "guarantees",
+      "heading": "4.1 No Professional Guarantees",
+      "body": "Coach makes no financial, career, or personal success guarantees. Client remains fully responsible for implementing advisory feedback and directing their own career/business choices.",
+      "optional": true,
+      "optionalLabel": "Include No Guarantees Disclaimer?",
+      "enabledByDefault": true,
+      "riskLevel": "low"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This Agreement shall be governed by, and interpreted in accordance with, the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "consulting-agreement",
+    "mutual-nda"
+  ],
+  "faq": [
+    {
+      "question": "Can I carry over unused sessions to the next month?",
+      "answer": "No. Unused sessions do not roll over to the next billing cycle. It is up to the client to schedule their monthly sessions."
+    },
+    {
+      "question": "Is coaching confidential?",
+      "answer": "Yes. All conversations, business plans, and personal records shared during coaching sessions are held in strict privacy."
+    }
+  ],
+  "tags": [
+    "coaching",
+    "mentor",
+    "executive",
+    "advisor",
+    "consulting"
+  ],
+  "subcategory": "Coaching Niches"
+}

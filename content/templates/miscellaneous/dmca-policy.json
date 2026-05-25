@@ -1,0 +1,148 @@
+{
+  "id": "dmca-policy",
+  "slug": "dmca-policy",
+  "category": "miscellaneous",
+  "subcategory": "IP & Digital",
+  "title": "DMCA Policy Template",
+  "description": "Digital Millennium Copyright Act policy, establishing website copyright notice paths and takedown rules.",
+  "whatsCovered": [
+    "Copyright infringement notice reporting requirements",
+    "Designated DMCA agent contact coordinates",
+    "Required elements of a valid takedown notice",
+    "Counter-notice procedures for wrongly flagged users",
+    "Repeat infringer policy (banning repeat violators)"
+  ],
+  "whenToUse": "Use this legal page on your website or app platform to qualify for DMCA safe harbor protections against user copyright violations.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "party_a_name",
+      "label": "First Party Name",
+      "type": "text",
+      "placeholder": "e.g. John Doe",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_a_address",
+      "label": "First Party Address",
+      "type": "text",
+      "placeholder": "e.g. 101 Pine St, Seattle, WA",
+      "required": true,
+      "group": "First Party"
+    },
+    {
+      "id": "party_b_name",
+      "label": "Second Party Name",
+      "type": "text",
+      "placeholder": "e.g. Jane Smith",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "party_b_address",
+      "label": "Second Party Address",
+      "type": "text",
+      "placeholder": "e.g. 202 Maple Ave, Portland, OR",
+      "required": true,
+      "group": "Second Party"
+    },
+    {
+      "id": "dmca_agent_name",
+      "label": "Designated DMCA Agent Name",
+      "type": "text",
+      "placeholder": "e.g. Legal Dept - DMCA Agent",
+      "required": true,
+      "group": "Agent Info"
+    },
+    {
+      "id": "dmca_email",
+      "label": "Designated DMCA Email",
+      "type": "text",
+      "placeholder": "e.g. dmca@cyberflow.com",
+      "required": true,
+      "group": "Agent Info"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Washington",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "DMCA POLICY TEMPLATE",
+      "body": "This agreement or policy (the \"Agreement\") is executed as of {effective_date} (the \"Effective Date\"), by and between {party_a_name}, residing/located at {party_a_address} (\"First Party\"), and {party_b_name}, residing/located at {party_b_address} (\"Second Party\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope_misc",
+      "heading": "1. Core Framework",
+      "body": "This agreement establishes the legal rights, bylaws, transfers, waivers, or consent structures for the DMCA Policy Template. The parties agree to adhere to the terms and declarations set out below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "dmca_notices",
+      "heading": "2. Copyright Notice Agent",
+      "body": "Takedown notices must be sent to Designated Agent: {dmca_agent_name} via email: {dmca_email}. Counter-notices shall follow DMCA Safe Harbor rules.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "resolution",
+      "heading": "General Legal Terms",
+      "body": "This document constitutes the entire understanding between the parties. Any amendments must be made in writing and executed by both parties.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release",
+    "mutual-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I customize this legal template?",
+      "answer": "Yes, you can edit this template using the online editor, and add custom schedules or exhibits."
+    },
+    {
+      "question": "Is this agreement binding?",
+      "answer": "Yes, once signed by all parties, it becomes a legally binding contract under state laws."
+    }
+  ],
+  "tags": [
+    "dmca",
+    "copyright",
+    "takedown",
+    "website-terms",
+    "compliance"
+  ]
+}

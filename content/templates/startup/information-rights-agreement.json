@@ -1,0 +1,138 @@
+{
+  "id": "information-rights-agreement",
+  "slug": "information-rights-agreement",
+  "category": "startup",
+  "subcategory": "Fundraising & Investment",
+  "title": "Information Rights Agreement",
+  "description": "Details corporate information disclosures (financial audits, quarterly boards) guaranteed to major equity holders.",
+  "whatsCovered": [
+    "Requirement to deliver quarterly and annual financial statements",
+    "Annual budget and business plan delivery timelines",
+    "Investor inspection rights of facilities and corporate books",
+    "Confidentiality requirements for shared financials",
+    "Threshold of share ownership to qualify for rights"
+  ],
+  "whenToUse": "Use this agreement to establish the reporting schedule and audit files that the startup must supply to major investors.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "investor_name",
+      "label": "Major Investor Name",
+      "type": "text",
+      "placeholder": "e.g. Summit Ventures LP",
+      "required": true,
+      "group": "Investor Info"
+    },
+    {
+      "id": "annual_report_days",
+      "label": "Annual Report Delivery (Days)",
+      "type": "number",
+      "placeholder": "e.g. 90",
+      "required": true,
+      "group": "Reporting Timeline"
+    },
+    {
+      "id": "quarterly_report_days",
+      "label": "Quarterly Report Delivery (Days)",
+      "type": "number",
+      "placeholder": "e.g. 45",
+      "required": true,
+      "group": "Reporting Timeline"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "INFORMATION RIGHTS AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Information Rights Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "info_disclosure",
+      "heading": "2. Information Disclosure Deadlines",
+      "body": "Company shall deliver annual audits to {investor_name} within {annual_report_days} days of year-end, and quarterly statements within {quarterly_report_days} days of quarter-end.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a major investor threshold?",
+      "answer": "It is the minimum number of shares or percentage (e.g. 10%) an investor must hold to be legally entitled to information rights."
+    },
+    {
+      "question": "Are financial summaries confidential?",
+      "answer": "Yes, all data received under information rights is protected by strict non-disclosure obligations."
+    }
+  ],
+  "tags": [
+    "information-rights",
+    "financials",
+    "disclosure",
+    "reporting",
+    "audits"
+  ]
+}

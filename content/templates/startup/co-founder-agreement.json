@@ -1,0 +1,179 @@
+{
+  "id": "co-founder-agreement",
+  "slug": "co-founder-agreement",
+  "category": "startup",
+  "title": "Co-Founder Agreement",
+  "description": "An early-stage co-founder agreement outlining equity distribution, vesting schedules, roles, and intellectual property assignment for startup founders.",
+  "whatsCovered": [
+    "Equity allocation and ownership percentages",
+    "Four-year vesting schedule with a one-year cliff",
+    "Roles, responsibilities, and decision-making mechanisms",
+    "IP transfer to the company prior to incorporation",
+    "Founder departure rules and share buybacks"
+  ],
+  "whenToUse": "Use this co-founder agreement when starting a new company with one or more co-founders to align equity, vesting, and roles before formal incorporation.",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Marcus Sterling, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Project / Startup Name",
+      "type": "text",
+      "placeholder": "e.g. NextGen AI",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "founder_a_name",
+      "label": "Founder A Name",
+      "type": "text",
+      "placeholder": "e.g. Alice Chen",
+      "required": true,
+      "group": "Founder A"
+    },
+    {
+      "id": "founder_a_role",
+      "label": "Founder A Role",
+      "type": "text",
+      "placeholder": "e.g. Chief Executive Officer (CEO)",
+      "required": true,
+      "group": "Founder A"
+    },
+    {
+      "id": "founder_a_equity",
+      "label": "Founder A Equity Percentage (%)",
+      "type": "number",
+      "placeholder": "e.g. 50",
+      "required": true,
+      "group": "Founder A"
+    },
+    {
+      "id": "founder_b_name",
+      "label": "Founder B Name",
+      "type": "text",
+      "placeholder": "e.g. Bob Smith",
+      "required": true,
+      "group": "Founder B"
+    },
+    {
+      "id": "founder_b_role",
+      "label": "Founder B Role",
+      "type": "text",
+      "placeholder": "e.g. Chief Technology Officer (CTO)",
+      "required": true,
+      "group": "Founder B"
+    },
+    {
+      "id": "founder_b_equity",
+      "label": "Founder B Equity Percentage (%)",
+      "type": "number",
+      "placeholder": "e.g. 50",
+      "required": true,
+      "group": "Founder B"
+    },
+    {
+      "id": "cliff_months",
+      "label": "Vesting Cliff Duration (Months)",
+      "type": "select",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "None"
+      ],
+      "defaultValue": "12",
+      "required": true,
+      "group": "Vesting Settings"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction (State/Country)",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "CO-FOUNDER AGREEMENT",
+      "body": "This Co-Founder Agreement (the \"Agreement\") is made as of the date of final signature, by and between {founder_a_name} (\"Founder A\") and {founder_b_name} (\"Founder B\"). Founder A and Founder B are collectively referred to as the \"Founders.\" The Founders intend to develop and operate a business project provisionally named {company_name} (the \"Company\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "roles",
+      "heading": "1. Roles and Responsibilities",
+      "body": "The Founders agree that Founder A shall serve as the {founder_a_role} and Founder B shall serve as the {founder_b_role}. Each Founder shall devote their professional energy and attention to the Company on a full-time basis.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "equity",
+      "heading": "2. Equity Allocation",
+      "body": "Initial equity ownership in the Company shall be split as follows: {founder_a_name} shall own {founder_a_equity}% of the Company's shares, and {founder_b_name} shall own {founder_b_equity}% of the Company's shares.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "vesting",
+      "heading": "3. Vesting and Cliff",
+      "body": "The shares owned by each Founder shall vest over a period of 48 months. All shares are subject to a {cliff_months}-month cliff. No shares shall vest before the cliff period expires. After the cliff, 1/4th of the shares shall vest, and the remaining shares shall vest in equal monthly installments over the following 36 months.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "acceleration",
+      "heading": "3.1 Double-Trigger Vesting Acceleration",
+      "body": "In the event of a Change of Control (acquisition) of the Company AND the termination of a Founder's service without cause within 12 months thereafter, 100% of that Founder's unvested shares shall immediately vest.",
+      "optional": true,
+      "optionalLabel": "Include Vesting Acceleration upon Acquisition?",
+      "enabledByDefault": true,
+      "riskLevel": "medium"
+    },
+    {
+      "id": "ip",
+      "heading": "4. Intellectual Property Assignment",
+      "body": "Each Founder hereby assigns and transfers to the Company, upon its formal incorporation, all right, title, and interest in any intellectual property, concepts, designs, or code created by them relating to the Company's business, either before or after this Agreement.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Dispute Resolution and Governing Law",
+      "body": "This Agreement shall be governed by the laws of the State/Country of {governing_state}. Any disputes arising from this Agreement that cannot be resolved through mutual mediation shall be resolved exclusively through binding arbitration in {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "mutual-nda",
+    "web-design-contract",
+    "advisor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Why is vesting important for co-founders?",
+      "answer": "Vesting ensures that if a co-founder leaves early, they do not retain a huge chunk of the company's equity, protecting the remaining founders and the company."
+    },
+    {
+      "question": "What is a 'cliff'?",
+      "answer": "A cliff is a probationary period. If a founder leaves before the cliff period ends, they receive 0% of their equity."
+    }
+  ],
+  "tags": [
+    "startup",
+    "equity",
+    "co-founder",
+    "vesting"
+  ],
+  "subcategory": "Operations & Governance"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "bridge-loan-agreement",
+  "slug": "bridge-loan-agreement",
+  "category": "startup",
+  "subcategory": "Fundraising & Investment",
+  "title": "Bridge Loan Agreement",
+  "description": "A convertible promissory note structured as a bridge loan to fund operations until a major priced equity round closes.",
+  "whatsCovered": [
+    "Loan principal amount and interest accumulation rules",
+    "Automatic conversion terms into future priced equity",
+    "Maturity date and repayment parameters",
+    "Subordination of loan to primary bank lending",
+    "Default terms and acceleration of loan maturity"
+  ],
+  "whenToUse": "Use this bridge loan agreement when securing interim funding from existing investors or angels prior to a larger Series A or B round.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "lender_name",
+      "label": "Lender / Investor Name",
+      "type": "text",
+      "placeholder": "e.g. Sierra Capital LLC",
+      "required": true,
+      "group": "Lender Info"
+    },
+    {
+      "id": "loan_principal",
+      "label": "Principal Amount ($)",
+      "type": "currency",
+      "placeholder": "e.g. 500,000.00",
+      "required": true,
+      "group": "Loan Details"
+    },
+    {
+      "id": "interest_rate",
+      "label": "Interest Rate (Annual %)",
+      "type": "text",
+      "placeholder": "e.g. 6.00",
+      "required": true,
+      "group": "Loan Details"
+    },
+    {
+      "id": "maturity_date",
+      "label": "Maturity Date",
+      "type": "date",
+      "required": true,
+      "group": "Loan Details"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "BRIDGE LOAN AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Bridge Loan Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "loan_terms",
+      "heading": "2. Convertible Debt Parameters",
+      "body": "Lender agrees to supply a principal loan of {loan_principal} carrying interest at {interest_rate}% per annum. This principal and interest shall convert to equity on maturity date {maturity_date} if priced round hasn't closed.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a conversion discount?",
+      "answer": "It gives the bridge lender a discount (typically 10-20%) on the share price of the future priced round when their debt converts to stock."
+    },
+    {
+      "question": "What happens if maturity is reached without conversion?",
+      "answer": "The loan becomes due and payable unless the lender agrees to extend the maturity or convert into common stock."
+    }
+  ],
+  "tags": [
+    "bridgeloan",
+    "convertible",
+    "note",
+    "debt",
+    "funding"
+  ]
+}

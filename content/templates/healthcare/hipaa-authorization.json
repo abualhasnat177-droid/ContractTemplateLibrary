@@ -1,0 +1,159 @@
+{
+  "id": "hipaa-authorization",
+  "slug": "hipaa-authorization",
+  "category": "healthcare",
+  "title": "HIPAA Medical Records Release Authorization",
+  "description": "A HIPAA-compliant authorization form allowing medical providers to release a patient's protected health information to a specified third party.",
+  "whatsCovered": [
+    "Patient identification details",
+    "Specific scope of medical records to be disclosed",
+    "Reason/purpose for disclosing healthcare records",
+    "Designated recipient and medical provider identities",
+    "Patient right of revocation and expiration details"
+  ],
+  "whenToUse": "Use this form when you need to authorize a clinic, hospital, or doctor to share your medical records or treatment history with another person or business.",
+  "jurisdictions": [
+    "US"
+  ],
+  "lastReviewedAt": "2026-05-12",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 3,
+  "fields": [
+    {
+      "id": "patient_name",
+      "label": "Patient Full Name",
+      "type": "text",
+      "placeholder": "e.g. Robert Miller",
+      "required": true,
+      "group": "Patient Information"
+    },
+    {
+      "id": "patient_dob",
+      "label": "Patient Date of Birth",
+      "type": "date",
+      "required": true,
+      "group": "Patient Information"
+    },
+    {
+      "id": "provider_name",
+      "label": "Disclosing Health Provider / Clinic",
+      "type": "text",
+      "placeholder": "e.g. Mercy Health Clinic",
+      "required": true,
+      "group": "Healthcare Provider"
+    },
+    {
+      "id": "recipient_name",
+      "label": "Recipient Full Name / Entity",
+      "type": "text",
+      "placeholder": "e.g. Shield Insurance Group",
+      "required": true,
+      "group": "Recipient Information"
+    },
+    {
+      "id": "recipient_address",
+      "label": "Recipient Mailing Address",
+      "type": "text",
+      "placeholder": "e.g. 55 Sentinel Way, Orlando, FL 32801",
+      "required": true,
+      "group": "Recipient Information"
+    },
+    {
+      "id": "release_purpose",
+      "label": "Purpose of Release",
+      "type": "text",
+      "placeholder": "e.g. personal health evaluation, legal claim assessment",
+      "required": true,
+      "group": "Authorization Details"
+    },
+    {
+      "id": "expiration_date",
+      "label": "Expiration Date of Authorization",
+      "type": "date",
+      "required": true,
+      "group": "Authorization Details"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing State",
+      "type": "text",
+      "placeholder": "e.g. Florida",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "patient_details",
+      "heading": "AUTHORIZATION TO RELEASE PROTECTED HEALTH INFORMATION",
+      "body": "Patient Name: {patient_name} | Date of Birth: {patient_dob}. This authorization form complies with the Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "disclosure",
+      "heading": "1. Provider Authorization",
+      "body": "I hereby authorize and direct {provider_name} to disclose and release my protected health information to {recipient_name}, located at {recipient_address}.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "scope",
+      "heading": "2. Scope of Protected Records",
+      "body": "The information authorized for disclosure under this release includes: complete medical records, diagnostic test results, treatment logs, lab work records, billing history, and physician notes.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "psychotherapy_notes",
+      "heading": "2.1 Inclusion of Psychotherapy Notes",
+      "body": "This authorization explicitly includes the release of psychotherapy and counseling session notes, if any exist in the patient's records.",
+      "optional": true,
+      "optionalLabel": "Include psychotherapy/counseling records?",
+      "enabledByDefault": false,
+      "riskLevel": "high"
+    },
+    {
+      "id": "purpose",
+      "heading": "3. Purpose of Disclosure",
+      "body": "This disclosure is requested for the following purpose: {release_purpose}. The recipient agrees to use this information solely for this stated purpose.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "revocation",
+      "heading": "4. Expiration and Patient Rights",
+      "body": "This authorization shall remain valid until {expiration_date}. I understand that I have the right to revoke this authorization in writing at any time by sending a notice to {provider_name}, except to the extent that action has already been taken in reliance on it.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "legal",
+      "heading": "5. Re-disclosure Warning & Governing Law",
+      "body": "I understand that information disclosed pursuant to this authorization may be subject to re-disclosure by the recipient and may no longer be protected by federal privacy regulations. This form shall be interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "general-release"
+  ],
+  "faq": [
+    {
+      "question": "Can I revoke this authorization after signing it?",
+      "answer": "Yes, you can submit a written revocation to your medical provider. Once received, they cannot release any further records (except those already sent)."
+    },
+    {
+      "question": "Does signing this affect my healthcare treatment?",
+      "answer": "No. Healthcare providers cannot condition your medical treatment, enrollment, or eligibility for benefits on whether you sign this authorization."
+    }
+  ],
+  "tags": [
+    "hipaa",
+    "medical",
+    "records",
+    "health",
+    "release"
+  ],
+  "subcategory": "Administrative / Compliance"
+}

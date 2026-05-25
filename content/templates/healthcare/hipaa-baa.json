@@ -1,0 +1,136 @@
+{
+  "id": "hipaa-baa",
+  "slug": "hipaa-baa",
+  "category": "healthcare",
+  "title": "HIPAA Business Associate Agreement (BAA)",
+  "description": "A mandatory HIPAA compliance agreement signed between a healthcare covered entity and a vendor who processes or accesses patient medical records (PHI).",
+  "whatsCovered": [
+    "Permitted and restricted uses of Protected Health Information (PHI)",
+    "Technical safeguards and data breach notifications (72-hour window)",
+    "Subcontractor compliance requirements",
+    "Auditing rights by the DHHS (Department of Health and Human Services)",
+    "Return or destruction of PHI upon agreement termination"
+  ],
+  "whenToUse": "Use this BAA when sharing medical records, billing data, or scheduling logs with a cloud host, software provider, or billing agency.",
+  "jurisdictions": [
+    "US"
+  ],
+  "lastReviewedAt": "2026-05-20",
+  "reviewerName": "Sarah Jenkins, Esq.",
+  "estimatedFillMinutes": 5,
+  "fields": [
+    {
+      "id": "covered_entity",
+      "label": "Covered Entity (Clinic / Hospital)",
+      "type": "text",
+      "placeholder": "e.g. Metro Health Systems LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "business_associate",
+      "label": "Business Associate (Vendor)",
+      "type": "text",
+      "placeholder": "e.g. Apex Cloud Solutions LLC",
+      "required": true,
+      "group": "Parties"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "breach_notice_hours",
+      "label": "Breach Notification Deadline (Hours)",
+      "type": "select",
+      "options": [
+        "24",
+        "48",
+        "72",
+        "5 Days"
+      ],
+      "defaultValue": "72",
+      "required": true,
+      "group": "Security Specs"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. New York",
+      "required": true,
+      "group": "Legal Terms"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "BUSINESS ASSOCIATE AGREEMENT",
+      "body": "This Business Associate Agreement (the \"BAA\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {covered_entity} (\"Covered Entity\"), and {business_associate} (\"Business Associate\").",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "purpose",
+      "heading": "1. Purpose and Scope",
+      "body": "This BAA satisfies the requirements of the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and the HITECH Act. Business Associate agrees to safeguard all Protected Health Information (PHI) created or accessed on behalf of Covered Entity.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "obligations",
+      "heading": "2. Obligations of Business Associate",
+      "body": "Business Associate shall not use or disclose PHI other than as permitted or required by this Agreement or as required by law. Business Associate shall implement administrative, physical, and technical safeguards to prevent unauthorized data access.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "breach",
+      "heading": "3. Data Breach Notification",
+      "body": "In the event of any unauthorized acquisition, access, use, or disclosure of PHI (a \"Breach\"), Business Associate shall notify Covered Entity in writing within {breach_notice_hours} hours of discovery.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "indemnity",
+      "heading": "4. Security Indemnification",
+      "body": "Business Associate agrees to indemnify, defend, and hold harmless Covered Entity from any fines, penalties, or damages arising from a breach of PHI caused directly by Business Associate's negligence.",
+      "optional": true,
+      "optionalLabel": "Include Breach Indemnification?",
+      "enabledByDefault": true,
+      "riskLevel": "high"
+    },
+    {
+      "id": "governing_law",
+      "heading": "5. Governing Law",
+      "body": "This BAA shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "hipaa-authorization",
+    "vendor-agreement"
+  ],
+  "faq": [
+    {
+      "question": "Why is a BAA required under HIPAA?",
+      "answer": "Federal law requires healthcare providers (Covered Entities) to secure written confidentiality assurances from third-party vendors (Business Associates) handling patient records."
+    },
+    {
+      "question": "What happens if the BAA is violated?",
+      "answer": "Violations carry substantial civil and criminal penalties from the Department of Health and Human Services (HHS) Office for Civil Rights (OCR)."
+    }
+  ],
+  "tags": [
+    "hipaa",
+    "baa",
+    "compliance",
+    "medical",
+    "vendor"
+  ],
+  "subcategory": "Administrative / Compliance"
+}

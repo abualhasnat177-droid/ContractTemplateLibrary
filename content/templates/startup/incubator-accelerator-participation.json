@@ -1,0 +1,144 @@
+{
+  "id": "incubator-accelerator-participation",
+  "slug": "incubator-accelerator-participation",
+  "category": "startup",
+  "subcategory": "Operations & Governance",
+  "title": "Accelerator Participation Agreement",
+  "description": "Terms for a startup joining an incubator/accelerator program, exchanging workspace and mentoring for a small equity percentage.",
+  "whatsCovered": [
+    "Accelerator funding cash grant and equity transfer splits",
+    "Program participation guidelines, workshops, and demo day",
+    "Accelerator rights to participate in future rounds",
+    "Intellectual property preservation by the startup",
+    "Termination from program for failure to participate"
+  ],
+  "whenToUse": "Use this agreement to structure terms when a startup joins an accelerator program that provides funding, office space, and advisors.",
+  "jurisdictions": [
+    "US",
+    "CA"
+  ],
+  "lastReviewedAt": "2026-05-23",
+  "reviewerName": "Robert Vance, Esq.",
+  "estimatedFillMinutes": 4,
+  "fields": [
+    {
+      "id": "company_name",
+      "label": "Startup Company Name",
+      "type": "text",
+      "placeholder": "e.g. CyberFlow Technologies Inc.",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "company_address",
+      "label": "Company Office Address",
+      "type": "text",
+      "placeholder": "e.g. 100 Innovators Blvd, San Francisco, CA",
+      "required": true,
+      "group": "Company Info"
+    },
+    {
+      "id": "accelerator_name",
+      "label": "Accelerator Name",
+      "type": "text",
+      "placeholder": "e.g. Apex Tech Launchpad Accelerator",
+      "required": true,
+      "group": "Program Info"
+    },
+    {
+      "id": "program_months",
+      "label": "Program Duration (Months)",
+      "type": "select",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "defaultValue": "3",
+      "required": true,
+      "group": "Program Info"
+    },
+    {
+      "id": "equity_grant",
+      "label": "Equity Transferred to Accelerator (%)",
+      "type": "text",
+      "placeholder": "e.g. 7.00",
+      "required": true,
+      "group": "Equity Exchange"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "group": "Key Dates"
+    },
+    {
+      "id": "governing_state",
+      "label": "Governing Jurisdiction",
+      "type": "text",
+      "placeholder": "e.g. Delaware",
+      "required": true,
+      "group": "Legal Settings"
+    }
+  ],
+  "clauses": [
+    {
+      "id": "intro",
+      "heading": "ACCELERATOR PARTICIPATION AGREEMENT",
+      "body": "This startup agreement (the \"Agreement\") is entered into as of {effective_date} (the \"Effective Date\"), by and between {company_name}, located at {company_address} (the \"Company\"), and the counterparty or stakeholders executing this document below.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "subject",
+      "heading": "1. Core Agreement Terms",
+      "body": "This agreement sets out the transaction and operational terms for Accelerator Participation Agreement. The parties agree to coordinate in good faith to complete milestones, share resources, or grant rights as specified.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "accelerator_equity",
+      "heading": "2. Accelerator Program Equity",
+      "body": "Startup joins Accelerator {accelerator_name} for a {program_months}-month incubator program, transferring {equity_grant}% common stock in exchange.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "confidentiality",
+      "heading": "3. Proprietary Information and Secrecy",
+      "body": "Both parties agree to treat all financial metrics, corporate plans, cap tables, and research files received during the execution of this Agreement as confidential and proprietary.",
+      "optional": false,
+      "enabledByDefault": true
+    },
+    {
+      "id": "governing_law",
+      "heading": "4. Governing Law",
+      "body": "This Agreement shall be governed and interpreted under the laws of the State/Country of {governing_state}.",
+      "optional": false,
+      "enabledByDefault": true
+    }
+  ],
+  "relatedTemplates": [
+    "safe-agreement",
+    "co-founder-agreement"
+  ],
+  "faq": [
+    {
+      "question": "What is a standard equity exchange for accelerators?",
+      "answer": "Most top accelerators take between 5% and 10% of common stock in exchange for program access, workspace, and initial cash."
+    },
+    {
+      "question": "Does the accelerator own my IP?",
+      "answer": "No, the startup retains 100% of its intellectual property. The accelerator only receives equity shares."
+    }
+  ],
+  "tags": [
+    "accelerator",
+    "incubator",
+    "program",
+    "equity",
+    "funding"
+  ]
+}
